@@ -3,8 +3,8 @@ name: Publish OpenCascadeCxxWrap artifact
 # Artifact qualification/publication is release infrastructure, not an ordinary
 # pull-request correctness gate, and it is deliberately manual only.
 #
-# A native OpenCASCADE build occupies a self-hosted runner for a long time and
-# republishes an immutable, rarely-regenerated binary. Triggering it from a push
+# A native OpenCASCADE build is expensive even on a free GitHub-hosted runner
+# and republishes an immutable, rarely-regenerated binary. Triggering it from a push
 # meant every edit to this workflow file started a full rebuild -- including
 # edits that only changed how the build is invoked, which is exactly when it is
 # most likely to fail and least useful to run automatically. Dispatch it when
@@ -32,7 +32,7 @@ env:
 jobs:
   build-qualify-publish:
     name: Build and qualify Linux x86_64 artifact
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 180
 
     steps:
