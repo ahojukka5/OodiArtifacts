@@ -13,25 +13,29 @@ jobs:
   validate:
     name: "lint: workflow policy"
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Require self-hosted-only workflows
+      - name: Require GitHub-hosted workflows
         shell: bash
         run: |
           set -euo pipefail
-          if grep -R -nE 'runs-on:[[:space:]]*(ubuntu|macos|windows)-' .github/workflows; then
-            echo '::error::GitHub-hosted runner label found.'
+          if grep -R -nE '^[[:space:]]*runs-on:[[:space:]]*.*self-hosted' .github/workflows; then
+            echo '::error::Self-hosted runner found in a public repository.'
             exit 1
           fi
-          grep -R -q 'runs-on: self-hosted' .github/workflows
+          if grep -R -nE '^[[:space:]]*runs-on:[[:space:]]*\$\{\{' .github/workflows; then
+            echo '::error::Dynamic runner selection must be reviewed.'
+            exit 1
+          fi
+          grep -R -qE '^[[:space:]]*runs-on:[[:space:]]*(ubuntu|macos|windows)-' .github/workflows
       - name: Validate publication contract
         shell: bash
         run: |
           set -euo pipefail
           workflow=.github/workflows/publish-opencascade-cxxwrap.yml
-          grep -Fq 'runs-on: self-hosted' "$workflow"
+          grep -Fq 'runs-on: ubuntu-latest' "$workflow"
           grep -Fq 'timeout-minutes: 180' "$workflow"
           grep -Fq 'WRAPPER_REF: fc988de3315b21cd900a86548989d2d31293619e' "$workflow"
           grep -Fq 'SOURCE_DATE_EPOCH:' "$workflow"
