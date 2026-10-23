@@ -69,7 +69,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "0.14.12+0",
+    "julia": "1.10.11",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -216,7 +216,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "0.14.12+0",
+    "julia": "1.11.9",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -376,7 +376,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "0.14.12+0",
+    "julia": "1.12.6",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -536,7 +536,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "0.14.12+0",
+    "julia": "1.13.1",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -684,7 +684,7 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "0.14.12+0",
+    "julia": "1.10.12",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -809,9 +809,9 @@
       },
       {
         "path": "final-linux/1.11/delone-full-retry.log",
-        "sha256": "9014132d8289751c333454cde1aa7aa471389bae1fb65b6f4cef93af0ac6eb6e",
-        "bytes": 33,
-        "snapshot": "log-snapshots/9014132d8289751c333454cde1aa7aa471389bae1fb65b6f4cef93af0ac6eb6e.log"
+        "sha256": "42f5834fe4008794325d6e490294711b72312d608033e04e12e5b6060aab561f",
+        "bytes": 18131,
+        "snapshot": "log-snapshots/42f5834fe4008794325d6e490294711b72312d608033e04e12e5b6060aab561f.log"
       },
       {
         "path": "final-linux/1.11/full.log",
@@ -859,7 +859,7 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "0.14.12+0",
+    "julia": "1.11.9",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -892,6 +892,7 @@
     "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
     "full_suite_runtime_basis_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "latest_full_attempt_source_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
     "logs": [
       {
         "path": "final-linux/1.11/delone-full-resumed.log",
@@ -901,9 +902,9 @@
       },
       {
         "path": "final-linux/1.11/delone-full-retry.log",
-        "sha256": "9014132d8289751c333454cde1aa7aa471389bae1fb65b6f4cef93af0ac6eb6e",
-        "bytes": 33,
-        "snapshot": "log-snapshots/9014132d8289751c333454cde1aa7aa471389bae1fb65b6f4cef93af0ac6eb6e.log"
+        "sha256": "42f5834fe4008794325d6e490294711b72312d608033e04e12e5b6060aab561f",
+        "bytes": 18131,
+        "snapshot": "log-snapshots/42f5834fe4008794325d6e490294711b72312d608033e04e12e5b6060aab561f.log"
       },
       {
         "path": "final-linux/1.11/full.log",
@@ -1024,7 +1025,7 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "0.14.12+0",
+    "julia": "1.12.7",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -1148,7 +1149,7 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "0.14.12+0",
+    "julia": "1.13.2",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
