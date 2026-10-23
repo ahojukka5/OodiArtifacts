@@ -122,3 +122,43 @@ Delivery logs are separate from immutable pre-publication provenance.
 checks workflow syntax. On Apple Silicon, `build --configure-only` audits
 the same source/options without attempting the Linux build. A local syntax
 or configure check is not evidence of a completed Linux build.
+
+## Published Apple Silicon artifact
+
+Published on 2026-10-24 (Europe/Helsinki; 2026-10-23 21:04 UTC):
+[OCCT-8.0.1-macos-aarch64-04d2d2f805e3](https://github.com/ahojukka5/OodiArtifacts/releases/tag/OCCT-8.0.1-macos-aarch64-04d2d2f805e3).
+The assets are
+[`OCCT.tar.gz`](https://github.com/ahojukka5/OodiArtifacts/releases/download/OCCT-8.0.1-macos-aarch64-04d2d2f805e3/OCCT.tar.gz)
+and
+[`OCCT.provenance.json`](https://github.com/ahojukka5/OodiArtifacts/releases/download/OCCT-8.0.1-macos-aarch64-04d2d2f805e3/OCCT.provenance.json).
+
+| Identity | Value |
+| --- | --- |
+| Source commit | `b8f597c677811d1f9f4d8a97f5ae2825c0353a42` |
+| Build recipe commit / release target | `2f8d6d67358bd7d9c9b02a7d9f3574831569a9f6` |
+| Artifact `git-tree-sha1` | `04d2d2f805e3e6931e6f02670cc1309f180e5d55` |
+| Archive SHA-256 | `17f2ddb18db38dc94c1e0cafcdee1567b8c837d405c4118265e0aaca666037c0` |
+| Provenance sidecar SHA-256 | `bb1b3ff333f9c2bfd43d62f4cfba610dec4c2a609be1cb7290185dfa6a55cc62` |
+
+The local build used macOS 27.0.1 (26A434), Apple Clang 21.0.0
+(clang-2100.3.34.2), SDK 27.0, Command Line Tools
+27.0.0.0.1788430756, CMake 4.4.2 and Ninja 1.13.2. Architecture is arm64;
+deployment target and every Mach-O minimum OS are 11.0. The source is
+unpatched. No Homebrew runtime dependency or local source/build path is
+embedded in the packaged libraries or CMake metadata.
+
+All 48 toolkits loaded. BREP box validation, Boolean cut volume 4500,
+meshing, STEP export/import and volume preservation, and IGES/STL exports
+passed from the relocated archive, including normal process shutdown.
+These checks passed again after unauthenticated public download. Python's
+Git object implementation, `git write-tree` and Julia 1.13.1
+`Pkg.GitTools.tree_hash` agree on the artifact identity; hashlib and
+`shasum -a 256` agree on the archive hash. The public archive was separately
+downloaded and extracted for Julia's tree-hash check.
+
+The qualification covers this geometry/exchange smoke on the recorded host.
+macOS 11.0 is the audited deployment target; execution on a physical macOS
+11 system was not tested. Optional rendering and RapidJSON/glTF functionality
+remain disabled as described above. Existing 7.9.3 artifacts and downstream
+consumer declarations are unchanged. Linux #25 still requires its separate
+hosted EL8 build and native qualification; Mac success does not qualify Linux.
