@@ -89,7 +89,7 @@ installed host and downloaded Linux runtimes were selected independently.
 | Linux x86_64 glibc (QEMU) | 1.12.7 | Monge | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.12.7 | Delone | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc (QEMU) | 1.13.2 | Monge | PASS | PASS | PASS | pending |
-| Linux x86_64 glibc (QEMU) | 1.13.2 | Delone | PASS | PASS | PASS | pending |
+| Linux x86_64 glibc (QEMU) | 1.13.2 | Delone | PASS | PASS | PASS | PASS |
 
 Monge's complete macOS suites each passed 11,791 assertions, with one
 existing skip for an optional legacy Netgen.jl monorepo integration. Delone's
