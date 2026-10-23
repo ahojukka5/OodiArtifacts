@@ -69,7 +69,7 @@ for Julia 1.10–1.13. Linux full-suite qualification is being completed
 separately, and cancelled, timed-out or partial runs are **not** successes.
 See the [native-matrix evidence and tooling PR #21](https://github.com/ahojukka5/OodiArtifacts/pull/21)
 for the proposed report and machine-readable records. That PR is not yet
-merged into `main`.
+merged into `master`.
 
 Other architectures, including Linux aarch64 and macOS x86_64, are **not**
 covered by this published matrix. Do not infer platform support from the
@@ -115,6 +115,12 @@ is retained for provenance, not recommended as the current Monge binding.
 
 ## Building and publishing
 
+The native **OCCT 8.0.1** runtime has a separate
+[manual Linux build/qualify/publish workflow](.github/workflows/publish-occt-8-linux.yml).
+Its [pinned recipe and qualification contract](docs/occt-8.0.1.md) also
+cover the paired Apple Silicon build. These archives contain OCCT itself,
+have no Julia ABI selector, and do not change existing 7.9.3 consumers.
+
 The checked-in
 [`publish-opencascade-cxxwrap.yml`](.github/workflows/publish-opencascade-cxxwrap.yml)
 is an **existing manual** (`workflow_dispatch`) publisher for a single
@@ -127,9 +133,9 @@ The separate native matrix build scripts, pinned
 `native/Project.toml`, installation evidence and detailed build
 instructions are proposed in
 [PR #21](https://github.com/ahojukka5/OodiArtifacts/pull/21).
-Those files are **not on `main` yet**, so do not follow a command that
+Those files are **not on `master` yet**, so do not follow a command that
 assumes `scripts/build_native.jl` or `docs/native-matrix-20261023.md`
-exists in an ordinary `main` checkout until that PR is merged.
+exists in an ordinary `master` checkout until that PR is merged.
 
 No native artifact publication is triggered by an ordinary push or PR.
 The lightweight [CI workflow](.github/workflows/ci.yml) validates workflow

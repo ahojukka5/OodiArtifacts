@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+project(occt_installed_smoke LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+find_package(OpenCASCADE 8.0.1 EXACT CONFIG REQUIRED)
+add_executable(occt_smoke main.cpp)
+target_include_directories(occt_smoke PRIVATE "${OpenCASCADE_INCLUDE_DIR}")
+target_link_libraries(occt_smoke PRIVATE TKernel TKMath TKBRep TKPrim TKBO
+  TKBool TKTopAlgo TKMesh TKDESTEP TKDEIGES TKDESTL TKXCAF ${CMAKE_DL_LIBS})
+target_compile_definitions(occt_smoke PRIVATE OCCT_LIBRARY_DIR="${OpenCASCADE_LIBRARY_DIR}")

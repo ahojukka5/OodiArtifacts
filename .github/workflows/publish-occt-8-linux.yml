@@ -1,0 +1,102 @@
+name: Publish OCCT 8.0.1 Linux
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish the qualified immutable OCCT 8.0.1 release
+        type: boolean
+        default: false
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: occt-8.0.1-linux
+  cancel-in-progress: false
+
+env:
+  EL8_IMAGE: almalinux:8.10@sha256:e6d31b01fca10ed4f914e84e1139c3a40d6acf3d8346224a32f3e5649b1a3f7d
+
+jobs:
+  build:
+    if: github.repository == 'ahojukka5/OodiArtifacts' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Build and qualify inside pinned EL8 sysroot and runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/occt"
+          docker run --rm --platform linux/amd64 \
+            -e GITHUB_SHA -v "$GITHUB_WORKSPACE:/recipe:ro" \
+            -v "$RUNNER_TEMP/occt:/work" -w /recipe "$EL8_IMAGE" \
+            bash -euxo pipefail -c '
+              dnf --enablerepo=powertools install -y gcc gcc-c++ cmake ninja-build git python39 binutils file tar gzip which
+              python3.9 scripts/occt/occt.py build --work /work
+            ' 2>&1 | tee "$RUNNER_TEMP/occt/build-qualification.log"
+      - name: Preserve build and qualification logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: occt-linux-logs
+          path: |
+            ${{ runner.temp }}/occt/*.log
+            ${{ runner.temp }}/occt/build.json
+            ${{ runner.temp }}/occt/build/CMakeCache.txt
+            ${{ runner.temp }}/occt/build/CMakeFiles/CMakeConfigureLog.yaml
+            ${{ runner.temp }}/occt/build/CMakeFiles/CMakeError.log
+          if-no-files-found: warn
+      - name: Preserve qualified release candidates
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: occt-linux-qualified
+          path: ${{ runner.temp }}/occt/dist/OCCT.*
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    if: inputs.publish && github.repository == 'ahojukka5/OodiArtifacts' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: occt-linux-qualified
+          path: ${{ runner.temp }}/release
+      - name: Publish immutable release and verify unauthenticated delivery
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/occt/occt.py publish "$RUNNER_TEMP/release"
+      - name: Requalify public download in a fresh EL8 container
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/public"
+          python3 - "$RUNNER_TEMP/release/OCCT.provenance.json" "$RUNNER_TEMP/public" <<'PY'
+          import json, pathlib, sys, urllib.request
+          info = json.loads(pathlib.Path(sys.argv[1]).read_text())
+          base = 'https://github.com/ahojukka5/OodiArtifacts/releases/download/' + info['release_tag'] + '/'
+          for name in ('OCCT.tar.gz', 'OCCT.provenance.json'):
+              urllib.request.urlretrieve(base + name, pathlib.Path(sys.argv[2]) / name)
+          PY
+          docker run --rm --platform linux/amd64 \
+            -v "$GITHUB_WORKSPACE:/recipe:ro" -v "$RUNNER_TEMP/public:/public:ro" \
+            -w /recipe "$EL8_IMAGE" bash -euxo pipefail -c '
+              dnf --enablerepo=powertools install -y gcc gcc-c++ cmake ninja-build git python39 binutils file
+              python3.9 scripts/occt/occt.py verify /public
+            ' 2>&1 | tee "$RUNNER_TEMP/release/public-el8.log"
+      - name: Preserve delivery evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: occt-linux-public-delivery
+          path: |
+            ${{ runner.temp }}/release/public-delivery.json
+            ${{ runner.temp }}/release/public-el8.log
