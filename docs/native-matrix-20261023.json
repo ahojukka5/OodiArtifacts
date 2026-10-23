@@ -16,6 +16,11 @@
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "a8f0a7b436c518450e24d3d59c4855a47b51ab92",
     "netgen_runtime_tree": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libnetgen_cxxwrap-5fd776a6/libnetgen_cxxwrap.provenance.json"
   },
   {
@@ -35,6 +40,11 @@
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "6975fda2bf1f433598c43db7e6c568c3c3b47219",
     "netgen_runtime_tree": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libnetgen_cxxwrap-063c21fd/libnetgen_cxxwrap.provenance.json"
   },
   {
@@ -54,6 +64,11 @@
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "c257905bb27ce365e187bec4b4085a387f8c8dc6",
     "netgen_runtime_tree": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libnetgen_cxxwrap-e665a174/libnetgen_cxxwrap.provenance.json"
   },
   {
@@ -73,6 +88,11 @@
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "2c8e3286c36e49cd2f2e4883844266a265341857",
     "netgen_runtime_tree": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libnetgen_cxxwrap-8b265184/libnetgen_cxxwrap.provenance.json"
   },
   {
@@ -91,6 +111,11 @@
     "cxxwrap_version": "0.17.5",
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "a8f0a7b436c518450e24d3d59c4855a47b51ab92",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libopencascade_cxxwrap-2de1d4e9/libopencascade_cxxwrap.provenance.json"
   },
   {
@@ -109,6 +134,11 @@
     "cxxwrap_version": "0.17.5",
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "6975fda2bf1f433598c43db7e6c568c3c3b47219",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libopencascade_cxxwrap-40362230/libopencascade_cxxwrap.provenance.json"
   },
   {
@@ -127,6 +157,11 @@
     "cxxwrap_version": "0.17.5",
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "c257905bb27ce365e187bec4b4085a387f8c8dc6",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libopencascade_cxxwrap-8b685931/libopencascade_cxxwrap.provenance.json"
   },
   {
@@ -145,6 +180,11 @@
     "cxxwrap_version": "0.17.5",
     "libcxxwrap_version": "0.14.12+0",
     "libcxxwrap_artifact": "2c8e3286c36e49cd2f2e4883844266a265341857",
+    "elf_class": "ELF64",
+    "machine": "x86_64",
+    "max_glibc": "2.14",
+    "max_glibcxx": "3.4.21",
+    "rpath": "$ORIGIN",
     "provenance_url": "https://github.com/ahojukka5/oodi-artifacts/releases/download/libopencascade_cxxwrap-969c64a1/libopencascade_cxxwrap.provenance.json"
   },
   {

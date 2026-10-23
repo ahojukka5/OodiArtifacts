@@ -1,0 +1,610 @@
+[
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.10.11",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  17m32.1s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/767cd6ee48466391ac96f00d3114aa953549bec0/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/0a71b26c77c55c2f3fe77b3826052fe9259608f1/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.10/full.log",
+        "sha256": "d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce"
+      },
+      {
+        "path": "final-macos-v2/1.10/monge-full-replay-fix.log",
+        "sha256": "1ae821a2d4e99fe1b7451f762023270b0ae65616b5823c8a635e2b42f241965a"
+      },
+      {
+        "path": "final-macos-v2/1.10/native-replay-fix.log",
+        "sha256": "486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69"
+      },
+      {
+        "path": "final-macos-v2/1.10/native.log",
+        "sha256": "bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0"
+      },
+      {
+        "path": "final-macos-v2/1.10/resolution.log",
+        "sha256": "a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1"
+      }
+    ]
+  },
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.10.11",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Delone.jl (full qualification) | 92319  92319  9m16.6s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/767cd6ee48466391ac96f00d3114aa953549bec0/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/0a71b26c77c55c2f3fe77b3826052fe9259608f1/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.10/full.log",
+        "sha256": "d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce"
+      },
+      {
+        "path": "final-macos-v2/1.10/monge-full-replay-fix.log",
+        "sha256": "1ae821a2d4e99fe1b7451f762023270b0ae65616b5823c8a635e2b42f241965a"
+      },
+      {
+        "path": "final-macos-v2/1.10/native-replay-fix.log",
+        "sha256": "486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69"
+      },
+      {
+        "path": "final-macos-v2/1.10/native.log",
+        "sha256": "bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0"
+      },
+      {
+        "path": "final-macos-v2/1.10/resolution.log",
+        "sha256": "a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1"
+      }
+    ]
+  },
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.11.9",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  22m04.4s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/b2a338c1c49857da6080f63c929cfbce2c140066/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/c9be8c9b996752a0ed5100d6318192e761a65de6/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.11/full.log",
+        "sha256": "d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f"
+      },
+      {
+        "path": "final-macos-v2/1.11/monge-full-replay-fix.log",
+        "sha256": "2749855724eb8edfdb209df8f3b967b9a106c80109204c32ef50c2de02bb87c8"
+      },
+      {
+        "path": "final-macos-v2/1.11/native-replay-fix.log",
+        "sha256": "8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794"
+      },
+      {
+        "path": "final-macos-v2/1.11/native.log",
+        "sha256": "67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9"
+      },
+      {
+        "path": "final-macos-v2/1.11/resolution.log",
+        "sha256": "6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f"
+      }
+    ]
+  },
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.11.9",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Delone.jl (full qualification) | 92344  92344  16m56.0s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/b2a338c1c49857da6080f63c929cfbce2c140066/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/c9be8c9b996752a0ed5100d6318192e761a65de6/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.11/full.log",
+        "sha256": "d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f"
+      },
+      {
+        "path": "final-macos-v2/1.11/monge-full-replay-fix.log",
+        "sha256": "2749855724eb8edfdb209df8f3b967b9a106c80109204c32ef50c2de02bb87c8"
+      },
+      {
+        "path": "final-macos-v2/1.11/native-replay-fix.log",
+        "sha256": "8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794"
+      },
+      {
+        "path": "final-macos-v2/1.11/native.log",
+        "sha256": "67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9"
+      },
+      {
+        "path": "final-macos-v2/1.11/resolution.log",
+        "sha256": "6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f"
+      }
+    ]
+  },
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.12.6",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  23m03.0s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/52eda2983406f3d28ef35be0bacc96277139ba15/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.12/full.log",
+        "sha256": "798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd"
+      },
+      {
+        "path": "final-macos-v2/1.12/native.log",
+        "sha256": "8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3"
+      },
+      {
+        "path": "final-macos-v2/1.12/resolution.log",
+        "sha256": "5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f"
+      }
+    ]
+  },
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.12.6",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Delone.jl (full qualification) | 92344  92344  13m37.6s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/52eda2983406f3d28ef35be0bacc96277139ba15/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.12/full.log",
+        "sha256": "798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd"
+      },
+      {
+        "path": "final-macos-v2/1.12/native.log",
+        "sha256": "8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3"
+      },
+      {
+        "path": "final-macos-v2/1.12/resolution.log",
+        "sha256": "5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f"
+      }
+    ]
+  },
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.13.1",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  19m27.7s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/c44d084b938bdff2cbb7988e754616f867d604dc/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.13/full.log",
+        "sha256": "0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035"
+      },
+      {
+        "path": "final-macos-v2/1.13/native.log",
+        "sha256": "a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632"
+      },
+      {
+        "path": "final-macos-v2/1.13/resolution.log",
+        "sha256": "e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb"
+      }
+    ]
+  },
+  {
+    "platform": "macOS aarch64",
+    "julia": "1.13.1",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "PASS",
+    "full_summary": "Delone.jl (full qualification) | 92343  92343  11m12.8s",
+    "loaded_native_libraries": [
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/c44d084b938bdff2cbb7988e754616f867d604dc/lib/libopencascade_cxxwrap.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+      "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-macos-v2/1.13/full.log",
+        "sha256": "0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035"
+      },
+      {
+        "path": "final-macos-v2/1.13/native.log",
+        "sha256": "a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632"
+      },
+      {
+        "path": "final-macos-v2/1.13/resolution.log",
+        "sha256": "e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.10.12",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.10/depot/artifacts/2de1d4e9f48d471623549edeba8f5c10b70b2b05/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.10/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.10/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.10/depot/artifacts/5fd776a6a69026830aa847fd3eca2b915d8184db/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-linux/1.10/delone-full-resumed.log",
+        "sha256": "ec08949cc92a75307f91e2d7ad98d731dc4a3b0ec2d6150c0fb7643f77d76710"
+      },
+      {
+        "path": "final-linux/1.10/full.log",
+        "sha256": "4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91"
+      },
+      {
+        "path": "final-linux/1.10/native.log",
+        "sha256": "1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617"
+      },
+      {
+        "path": "final-linux/1.10/resolution.log",
+        "sha256": "c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.10.12",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.10/depot/artifacts/2de1d4e9f48d471623549edeba8f5c10b70b2b05/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.10/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.10/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.10/depot/artifacts/5fd776a6a69026830aa847fd3eca2b915d8184db/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-linux/1.10/delone-full-resumed.log",
+        "sha256": "ec08949cc92a75307f91e2d7ad98d731dc4a3b0ec2d6150c0fb7643f77d76710"
+      },
+      {
+        "path": "final-linux/1.10/full.log",
+        "sha256": "4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91"
+      },
+      {
+        "path": "final-linux/1.10/native.log",
+        "sha256": "1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617"
+      },
+      {
+        "path": "final-linux/1.10/resolution.log",
+        "sha256": "c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.11.9",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.11/depot/artifacts/4036223011c580c75a01f85c616a97f55c0905c9/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.11/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.11/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.11/depot/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-linux/1.11/delone-full-resumed.log",
+        "sha256": "4508d48eba553dea4b980d478250b9ccfa1ec407c52489c6a24a9253f26fe74d"
+      },
+      {
+        "path": "final-linux/1.11/full.log",
+        "sha256": "3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540"
+      },
+      {
+        "path": "final-linux/1.11/native.log",
+        "sha256": "958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0"
+      },
+      {
+        "path": "final-linux/1.11/resolution-generic.log",
+        "sha256": "b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4"
+      },
+      {
+        "path": "final-linux/1.11/resolution-retry.log",
+        "sha256": "7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839"
+      },
+      {
+        "path": "final-linux/1.11/resolution-retry2.log",
+        "sha256": "879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f"
+      },
+      {
+        "path": "final-linux/1.11/resolution-staged.log",
+        "sha256": "15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550"
+      },
+      {
+        "path": "final-linux/1.11/resolution.log",
+        "sha256": "4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.11.9",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.11/depot/artifacts/4036223011c580c75a01f85c616a97f55c0905c9/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.11/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.11/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.11/depot/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-linux/1.11/delone-full-resumed.log",
+        "sha256": "4508d48eba553dea4b980d478250b9ccfa1ec407c52489c6a24a9253f26fe74d"
+      },
+      {
+        "path": "final-linux/1.11/full.log",
+        "sha256": "3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540"
+      },
+      {
+        "path": "final-linux/1.11/native.log",
+        "sha256": "958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0"
+      },
+      {
+        "path": "final-linux/1.11/resolution-generic.log",
+        "sha256": "b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4"
+      },
+      {
+        "path": "final-linux/1.11/resolution-retry.log",
+        "sha256": "7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839"
+      },
+      {
+        "path": "final-linux/1.11/resolution-retry2.log",
+        "sha256": "879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f"
+      },
+      {
+        "path": "final-linux/1.11/resolution-staged.log",
+        "sha256": "15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550"
+      },
+      {
+        "path": "final-linux/1.11/resolution.log",
+        "sha256": "4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.12.7",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.12/depot/artifacts/8b68593183c0129b39336453613fe83bfa1b5da0/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.12/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.12/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.12/depot/artifacts/e665a17436a7356a8253924b0e9a01a306e2a5b1/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-linux/1.12/native.log",
+        "sha256": "d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff"
+      },
+      {
+        "path": "final-linux/1.12/resolution-generic.log",
+        "sha256": "5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7"
+      },
+      {
+        "path": "final-linux/1.12/resolution.log",
+        "sha256": "1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.12.7",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.12/depot/artifacts/8b68593183c0129b39336453613fe83bfa1b5da0/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.12/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.12/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.12/depot/artifacts/e665a17436a7356a8253924b0e9a01a306e2a5b1/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-linux/1.12/native.log",
+        "sha256": "d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff"
+      },
+      {
+        "path": "final-linux/1.12/resolution-generic.log",
+        "sha256": "5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7"
+      },
+      {
+        "path": "final-linux/1.12/resolution.log",
+        "sha256": "1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.13.2",
+    "package": "Monge",
+    "package_version": "0.1.0",
+    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.13/depot/artifacts/969c64a1a938ffedcccd6670bbcdd0ffc0126793/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.13/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.13/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.13/depot/artifacts/8b265184eaeeba81cf7b27c7c246b06b937c2447/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "logs": [
+      {
+        "path": "final-linux/1.13/native.log",
+        "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d"
+      },
+      {
+        "path": "final-linux/1.13/resolution-generic.log",
+        "sha256": "719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054"
+      },
+      {
+        "path": "final-linux/1.13/resolution.log",
+        "sha256": "51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779"
+      }
+    ]
+  },
+  {
+    "platform": "Linux x86_64 glibc (QEMU)",
+    "julia": "1.13.2",
+    "package": "Delone",
+    "package_version": "0.1.0",
+    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "resolution": "PASS",
+    "loading": "PASS",
+    "native_execution": "PASS",
+    "full_tests": "pending",
+    "full_summary": null,
+    "loaded_native_libraries": [
+      "/matrix/final-linux/1.13/depot/artifacts/969c64a1a938ffedcccd6670bbcdd0ffc0126793/lib/libopencascade_cxxwrap.so",
+      "/matrix/final-linux/1.13/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+      "/matrix/final-linux/1.13/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+      "/matrix/final-linux/1.13/depot/artifacts/8b265184eaeeba81cf7b27c7c246b06b937c2447/lib/libnetgen_cxxwrap.so"
+    ],
+    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "logs": [
+      {
+        "path": "final-linux/1.13/native.log",
+        "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d"
+      },
+      {
+        "path": "final-linux/1.13/resolution-generic.log",
+        "sha256": "719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054"
+      },
+      {
+        "path": "final-linux/1.13/resolution.log",
+        "sha256": "51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779"
+      }
+    ]
+  }
+]

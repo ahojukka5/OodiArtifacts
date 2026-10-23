@@ -1,6 +1,6 @@
 # oodi-artifacts
 
-Privately-hosted Julia binary artifacts for early Oodi-ecosystem dependencies whose
+GitHub-hosted Julia binary artifacts for early Oodi-ecosystem dependencies whose
 binaries are not yet available from the public artifact CDN (JuliaBinaryWrappers /
 Yggdrasil). Each artifact is attached as a release asset; the consuming package's
 `Artifacts.toml` points its `[[download]]` at the asset URL.

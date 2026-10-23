@@ -13,11 +13,14 @@ Source candidates and qualification revisions:
 
 Delone's Julia 1.10 documentation test was backported at
 `36442f5320ab6f37e7c1c0c7cc89b0a64b849481`; its full 1.10 suite was rerun,
-and the affected test passed 415 checks on every macOS minor. Subsequent
-package commits only correct installation prose and test comments. Runtime
-source, dependency declarations and artifact selections are unchanged.
+and the affected test passed 415 checks on every macOS minor. Subsequent installation prose and test comments leave dependency and artifact
+selection unchanged. Monge then removes redundant replay bookkeeping at
+`aeaea2fb` and restores the original allocation bound; its independent scan
+oracle passes all 22 checks on every macOS minor. Native smoke tests and
+full suites are rerun for that change.
 
-The [machine-readable index](native-matrix-20261023.json) records every new
+The [structured results](native-matrix-20261023-results.json) retain separate
+stage outcomes and log checksums. The [machine-readable index](native-matrix-20261023.json) records every new
 archive checksum, artifact tree, source revision, platform and Julia ABI.
 Each release additionally attaches the full dependency, compiler and library
 linkage provenance. The Linux Netgen runtime remains the existing release
@@ -56,9 +59,9 @@ installed host and downloaded Linux runtimes were selected independently.
 | Linux x86_64 glibc (QEMU) | 1.11.9 | Monge | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.11.9 | Delone | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.12.7 | Monge | PASS | PASS | PASS | pending |
-| Linux x86_64 glibc (QEMU) | 1.12.7 | Delone | PASS | pending | pending | pending |
-| Linux x86_64 glibc (QEMU) | 1.13.2 | Monge | pending | pending | pending | pending |
-| Linux x86_64 glibc (QEMU) | 1.13.2 | Delone | pending | pending | pending | pending |
+| Linux x86_64 glibc (QEMU) | 1.12.7 | Delone | PASS | PASS | PASS | pending |
+| Linux x86_64 glibc (QEMU) | 1.13.2 | Monge | PASS | PASS | PASS | pending |
+| Linux x86_64 glibc (QEMU) | 1.13.2 | Delone | PASS | PASS | PASS | pending |
 
 Monge's complete macOS suites each passed 11,791 assertions, with one
 existing skip for an optional legacy Netgen.jl monorepo integration. Delone's
@@ -66,7 +69,10 @@ macOS full suites passed 92,319 (1.10), 92,344 (1.11/1.12), and 92,343
 (1.13) assertions. The 1.13 count precedes the test-only documentation
 backport; the changed 415-check file was then rerun successfully.
 
-Pending means unverified; it is not a pass. Full suites run through
+Pending means unverified; it is not a pass. The local VM and agent server
+restarted during initial Linux full-suite runs. Interrupted logs are retained;
+resumed package suites are recorded separately and never counted as passes
+without their completion marker. Full suites run through
 `Pkg.test` from the exact clean source checkouts because Monge's gallery
 checks repository history. They use the same fresh depots and published
 native binaries as the URL installation test. No native build or binary
