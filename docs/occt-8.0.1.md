@@ -160,5 +160,47 @@ The qualification covers this geometry/exchange smoke on the recorded host.
 macOS 11.0 is the audited deployment target; execution on a physical macOS
 11 system was not tested. Optional rendering and RapidJSON/glTF functionality
 remain disabled as described above. Existing 7.9.3 artifacts and downstream
-consumer declarations are unchanged. Linux #25 still requires its separate
-hosted EL8 build and native qualification; Mac success does not qualify Linux.
+consumer declarations are unchanged. The independent Linux qualification is
+recorded below; Mac success alone does not qualify Linux.
+
+## Published Linux artifact
+
+The owner-approved manual
+[workflow run 40025009407](https://github.com/ahojukka5/OodiArtifacts/actions/runs/40025009407)
+succeeded, producing exactly one Linux release:
+[OCCT-8.0.1-linux-x86_64-glibc-9ad71dc7bc24](https://github.com/ahojukka5/OodiArtifacts/releases/tag/OCCT-8.0.1-linux-x86_64-glibc-9ad71dc7bc24).
+The assets are
+[`OCCT.tar.gz`](https://github.com/ahojukka5/OodiArtifacts/releases/download/OCCT-8.0.1-linux-x86_64-glibc-9ad71dc7bc24/OCCT.tar.gz)
+and
+[`OCCT.provenance.json`](https://github.com/ahojukka5/OodiArtifacts/releases/download/OCCT-8.0.1-linux-x86_64-glibc-9ad71dc7bc24/OCCT.provenance.json),
+published at 2026-10-23 21:44 UTC (2026-10-24 Europe/Helsinki).
+
+| Identity | Value |
+| --- | --- |
+| Source commit | `b8f597c677811d1f9f4d8a97f5ae2825c0353a42` |
+| Merged build recipe / release target | `d22a008e10826ed76bd32c0a10a76b9e30d9d9a8` |
+| Artifact `git-tree-sha1` | `9ad71dc7bc24252016d89611722806a84a9c100b` |
+| Archive SHA-256 | `27447b3eaa9c16e568651e479c02f466db7957a32c5c3e3122b302232af63762` |
+| Provenance sidecar SHA-256 | `f1040c20eb08e86195e8fcba9bb03002f223d1387a6f89ee137abf7cb2d8eaf6` |
+
+The GitHub-hosted `ubuntu-24.04` build job used the pinned AlmaLinux 8.10
+container, GCC 8.5.0 (Red Hat 8.5.0-29), GNU ld 2.30, CMake 3.26.5,
+Ninja 1.8.2 and four compiler jobs. The complete build job took 31 minutes
+44 seconds, including setup, build, packaging, qualification and uploads.
+No Linux compilation or QEMU was run on the Mac.
+
+All 48 toolkit products match the Mac product set. The actual maximum
+required dynamic symbol versions are **GLIBC 2.27**, **GLIBCXX 3.4.21** and
+**CXXABI 1.3.9**. The C++ string ABI is `cxx11`; runtime paths are `$ORIGIN`.
+This is an EL8/glibc 2.28 runtime qualification. An observed symbol floor
+alone is not a claim that an older Linux distribution was tested.
+
+The relocated installed-prefix native consumer passed in EL8 before
+publication. After public download, it passed on the publication runner
+and again in a fresh EL8 container, including loading every toolkit,
+BREP validation, Boolean volume, meshing, STEP volume roundtrip, IGES/STL
+exports and normal process exit. Build and public-delivery logs are
+preserved as workflow artifacts. A separate unauthenticated download on
+the Mac matched the GitHub asset digests, Python and `git write-tree`
+artifact identities, and Julia 1.13.1 `Pkg.GitTools.tree_hash` after
+extraction. Native Linux execution was performed in CI.
