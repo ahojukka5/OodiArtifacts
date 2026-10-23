@@ -1,71 +1,146 @@
-# oodi-artifacts
+# OodiArtifacts
 
-Privately-hosted Julia binary artifacts for early Oodi-ecosystem dependencies whose
-binaries are not yet available from the public artifact CDN (JuliaBinaryWrappers /
-Yggdrasil). Each artifact is attached as a release asset; the consuming package's
-`Artifacts.toml` points its `[[download]]` at the asset URL.
+**OodiArtifacts** is the public GitHub Release host for native binary artifacts
+used by the [Oodi scientific computing ecosystem](https://github.com/ahojukka5/Oodi.jl).
+It provides versioned, content-addressed downloads while some native dependencies
+are not distributed through JuliaBinaryWrappers / Yggdrasil. It is **not** a Julia
+package, a Julia registry, or a substitute for Julia's package manager.
 
-## Hosted artifacts
+**Canonical repository:** https://github.com/ahojukka5/OodiArtifacts
 
-Current published artifacts include:
+The repository was renamed from `ahojukka5/oodi-artifacts` in October 2026.
+Use the new name for links and future `Artifacts.toml` updates. Consumers with
+older URLs should update them as part of a reviewed, clean-install-qualified
+source change; renaming the host does not justify republishing or changing
+existing artifact contents.
 
-- **libopencascade_cxxwrap — Linux x86_64/glibc**
-  - release: `libopencascade_cxxwrap-707416b9`
-  - Julia artifact tree: `707416b9331d65576938b0ef9cd93301079e8491`
-  - rebuilt on EL8 so the wrapper remains compatible with the intended glibc baseline;
-- **libopencascade_cxxwrap — macOS aarch64**
-  - release: `libopencascade_cxxwrap-fe916c69`
-  - Julia artifact tree: `fe916c696b41979301c71c01e398d3f6efb07466`;
-- **libnetgen_cxxwrap**
-  - latest published release in this repository: `libnetgen_cxxwrap-d2a7f166`;
-  - older retained releases include `cf0507bc`, `890f20b2`, and `654a8ffa` for historical consumer revisions;
-- **NGSolveNetgen**
-  - retained release: `NGSolveNetgen-22b6752d`.
+## How it fits into Julia packaging
 
-The old `libopencascade_cxxwrap-19b04788` release is retained as historical
-provenance only. It is not the current Monge wrapper and must not be presented as
-the installation target.
+| Component | Responsibility |
+| --- | --- |
+| [OodiRegistry](https://github.com/ahojukka5/OodiRegistry) | Registers Julia package names, UUIDs, versions, dependencies and source trees |
+| **OodiArtifacts** | Hosts the native tarballs and their build/provenance records in immutable GitHub Releases |
+| [Monge.jl](https://github.com/ahojukka5/Monge.jl) and [Delone.jl](https://github.com/ahojukka5/Delone.jl) | Select the matching native binaries through their `Artifacts.toml` declarations |
+| Julia Pkg / Artifacts | Downloads the selected asset and checks the archive SHA-256 and extracted artifact Git tree |
 
-Release assets are immutable inputs to consuming `Artifacts.toml` files. A consumer
-should pin the exact artifact tree and download checksum it has qualified rather than
-infer compatibility from the newest release name alone.
+The public artifact downloads do **not** make private Julia package source
+repositories public. The OodiRegistry currently registers Episteme; Monge,
+Delone and DelonePortable have separate source/registration work in progress.
+Publishing a binary release here does not register a Julia package in
+OodiRegistry or Julia General.
 
-## Publishing OpenCascadeCxxWrap
+## Published binary matrix
 
-`.github/workflows/publish-opencascade-cxxwrap.yml` owns the current temporary
-**Linux x86_64/glibc OpenCascade wrapper** publication path until the wrapper moves to
-Yggdrasil. Other artifacts listed above are hosted here but are not currently rebuilt
-by this workflow.
+**Snapshot: 2026-10-23.** GitHub Releases contain the following Julia
+**1.10, 1.11, 1.12 and 1.13** CxxWrap binaries for the two currently
+qualified target platform families. Every table cell links to the exact
+published release. The hexadecimal suffix is derived from the Julia artifact
+content tree; it is **not** a semantic package version.
 
-The workflow pins both the wrapper source revision and the Monge revision used for
-qualification.
+| Artifact | Platform | Julia 1.10 | Julia 1.11 | Julia 1.12 | Julia 1.13 |
+| --- | --- | --- | --- | --- | --- |
+| `libopencascade_cxxwrap` | Linux x86_64 (glibc) | [`2de1d4e9`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-2de1d4e9) | [`40362230`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-40362230) | [`8b685931`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-8b685931) | [`969c64a1`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-969c64a1) |
+| `libopencascade_cxxwrap` | macOS aarch64 | [`767cd6ee`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-767cd6ee) | [`b2a338c1`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-b2a338c1) | [`52eda298`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-52eda298) | [`c44d084b`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-c44d084b) |
+| `libnetgen_cxxwrap` | Linux x86_64 (glibc) | [`5fd776a6`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-5fd776a6) | [`063c21fd`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-063c21fd) | [`e665a174`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-e665a174) | [`8b265184`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-8b265184) |
+| `libnetgen_cxxwrap` | macOS aarch64 | [`0a71b26c`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-0a71b26c) | [`c9be8c9b`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-c9be8c9b) | [`c6d99568`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-c6d99568) | [`a983e9b1`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-a983e9b1) |
 
-The workflow is **manual only** (`workflow_dispatch`). A native OpenCASCADE
-build occupies a self-hosted runner for a long time and republishes an
-immutable, rarely-regenerated binary, so dispatch it when the pinned wrapper
-revision actually changes -- not on every edit to the workflow file.
+The underlying Netgen runtime is independent of the Julia minor version
+and is distributed once per platform:
 
-It builds the Linux x86_64/glibc artifact once and proves the strict raw
-`GeomFill_Gordon` fixture together with the public `gordon_surface` rectangle
-fixture. The deterministic archive, provenance record, and build log are
-uploaded as workflow artifacts.
+| Artifact | Platform | Release |
+| --- | --- | --- |
+| `NGSolveNetgen` (`libngcore`, `libnglib`) | Linux x86_64 (glibc) | [`NGSolveNetgen-22b6752d`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-22b6752d) (retained existing build) |
+| `NGSolveNetgen` (`libngcore`, `libnglib`) | macOS aarch64 | [`NGSolveNetgen-bfef5545`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-bfef5545) (published 2026-10-23) |
 
-Reproducibility is not re-checked by a second native build in the same run. The
-immutable-tag rule below catches a rerun whose bytes differ from an already-published
-tag; first-publication reproducibility therefore rests on the pinned source/toolchain
-inputs plus the qualification evidence recorded by the workflow.
+Browse [all releases](https://github.com/ahojukka5/OodiArtifacts/releases)
+for the tarball and any accompanying `*.provenance.json` or older
+`*.provenance.toml` record. The OpenCASCADE and Netgen wrapper sources are
+maintained separately in
+[OpenCascadeCxxWrap](https://github.com/ahojukka5/OpenCascadeCxxWrap) and
+[NetgenCxxWrap_jll](https://github.com/ahojukka5/NetgenCxxWrap_jll).
 
-The qualification publishes a release named from the Julia artifact tree hash.
-Existing tags are immutable by policy: a rerun succeeds only when both the archive
-bytes and provenance are identical. Every release records the wrapper source commit,
-qualification commit, platform, archive SHA-256, and extracted Julia artifact tree
-hash.
+**Published is not the same as fully qualified.** Source PRs
+[Monge #560](https://github.com/ahojukka5/Monge.jl/pull/560) and
+[Delone #1047](https://github.com/ahojukka5/Delone.jl/pull/1047) propose
+using this native matrix. The initial clean-depot native installation,
+loading and geometry/meshing smoke checks passed across all sixteen
+wrapper/platform/Julia combinations; macOS aarch64 complete suites passed
+for Julia 1.10–1.13. Linux full-suite qualification is being completed
+separately, and cancelled, timed-out or partial runs are **not** successes.
+See the [native-matrix evidence and tooling PR #21](https://github.com/ahojukka5/OodiArtifacts/pull/21)
+for the proposed report and machine-readable records. That PR is not yet
+merged into `main`.
 
-Monge's `Artifacts.toml` should be updated only after that release succeeds and
-the published asset can be installed from a clean depot.
+Other architectures, including Linux aarch64 and macOS x86_64, are **not**
+covered by this published matrix. Do not infer platform support from the
+presence of a release for another architecture.
 
-## License
+## Artifact selection and provenance
 
-The files in this repository are MIT. The release assets are not: each
-binary keeps the license of the wrapper or library it was built from, and
-of OpenCASCADE or Netgen when those are linked in. See [LICENSE](LICENSE).
+- Native wrapper archives are built for a **specific platform and Julia minor
+  ABI**. Monge and Delone must declare the matching `julia_version` selector
+  in `Artifacts.toml`; the Netgen runtime needs no Julia-version selector.
+- Consumers pin an exact `git-tree-sha1` for extracted artifact content and
+  `sha256` for the downloaded tarball. The hash of one is **not** the hash of
+  the other. Do not choose an archive merely because its tag is the newest.
+- New releases include a provenance sidecar with source revision, platform,
+  Julia ABI (where applicable), dependency versions, toolchain and archive/tree
+  identities. Some older releases have less extensive metadata; do not invent
+  missing historical provenance.
+- A release tag and its binary bytes are immutable. Rebuilds belong in
+  **new** content-addressed releases if their contents differ. Preserve the
+  historical releases for reproducible research.
+- The normal user installation path downloads published archives without
+  compiling C++ and without `artifacts/Overrides.toml`. Local developer
+  overrides and experimental builds do not qualify a release.
+
+The new compatibility wrappers use OpenCASCADE/OCCT 7.9.3,
+CxxWrap 0.17.5 and libcxxwrap 0.14.12. Linux binaries were built against
+an EL8-compatible glibc baseline. Release-specific linkage and checksum
+details are authoritative in each release's provenance record, rather than
+in an unversioned README.
+
+### Historical builds
+
+Older tags such as
+[`libopencascade_cxxwrap-707416b9`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-707416b9),
+[`libopencascade_cxxwrap-fe916c69`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-fe916c69),
+[`libnetgen_cxxwrap-d2a7f166`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-d2a7f166) and
+[`libnetgen_cxxwrap-5f0f5daa`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libnetgen_cxxwrap-5f0f5daa)
+remain available for consumers that deliberately pin their exact artifact
+hashes. They are **not** a substitute for selecting the Julia-minor-qualified
+matrix above. The even earlier
+[`libopencascade_cxxwrap-19b04788`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-19b04788)
+is retained for provenance, not recommended as the current Monge binding.
+
+## Building and publishing
+
+The checked-in
+[`publish-opencascade-cxxwrap.yml`](.github/workflows/publish-opencascade-cxxwrap.yml)
+is an **existing manual** (`workflow_dispatch`) publisher for a single
+Linux x86_64 OpenCascade wrapper build. It uses the GitHub-hosted
+`ubuntu-latest` runner and explicit pinned wrapper/Monge revisions. It
+does **not** generate or qualify the entire cross-version matrix, and should
+not be dispatched without reviewing its pins and the intended ABI.
+
+The separate native matrix build scripts, pinned
+`native/Project.toml`, installation evidence and detailed build
+instructions are proposed in
+[PR #21](https://github.com/ahojukka5/OodiArtifacts/pull/21).
+Those files are **not on `main` yet**, so do not follow a command that
+assumes `scripts/build_native.jl` or `docs/native-matrix-20261023.md`
+exists in an ordinary `main` checkout until that PR is merged.
+
+No native artifact publication is triggered by an ordinary push or PR.
+The lightweight [CI workflow](.github/workflows/ci.yml) validates workflow
+policy; it does not publish binaries. Native publication and package release
+qualification are separate operations.
+
+## Licensing
+
+The repository's [MIT license](LICENSE) applies to repository-owned source,
+scripts and documentation. It **does not relicense** the native release
+assets. OpenCascadeCxxWrap and NetgenCxxWrap wrapper code is MIT, while
+linked OpenCASCADE and Netgen components retain their respective LGPL terms
+and exceptions. Consult the per-release source and license provenance
+before redistributing an archive.
