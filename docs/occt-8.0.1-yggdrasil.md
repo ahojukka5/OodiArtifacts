@@ -78,17 +78,35 @@ is introduced by this validation.
 The native build evidence is complete in [PR #26](https://github.com/ahojukka5/OodiArtifacts/pull/26),
 [PR #27](https://github.com/ahojukka5/OodiArtifacts/pull/27) and
 [Linux run 40025009407](https://github.com/ahojukka5/OodiArtifacts/actions/runs/40025009407).
-New Pkg-installed-prefix results must be reported independently of those
-native build jobs. Final test evidence is recorded below after execution.
+New Pkg-installed-prefix results are independent of those native build
+jobs. All four final cases passed from clean committed harness source
+`0ea8ca83ffdb97ccf2024149f7978da54ea2fd7c`. The
+[compact evidence record](occt-8.0.1-pkg-evidence.json) includes every
+actual toolkit filename and its work-relative loaded prefix; raw reports
+retain absolute paths. The native-source build and Pkg-consumer results
+are separate evidence classes.
 
 | Evidence | macOS aarch64 | Linux x86_64/glibc |
 | --- | --- | --- |
-| Native source build and public release | PASS, original local Apple Clang build | PASS, original hosted EL8 build |
-| Native public download/checksum/relocation | PASS, original release evidence | PASS, original EL8 runtime evidence |
-| New Julia 1.10.11 Pkg install/checksums/negative cases | Pending final committed-harness run | Pending manual run |
-| New Julia 1.13.1 Pkg install/checksums/negative cases | Pending final committed-harness run | Pending manual run |
-| New Pkg-prefix and relocated C++ consumer / actual load paths | Pending final committed-harness runs | Pending manual run |
+| Existing native source build / native release qualification | PASS, original local Apple Clang evidence | PASS, original hosted EL8 evidence |
+| New archive/provenance download and checksum / extracted tree | PASS on Julia 1.10.11 and 1.13.1 | PASS on Julia 1.10.11 and 1.13.1 |
+| New actual Pkg artifact selection/install/verify in empty depots | PASS on Julia 1.10.11 and 1.13.1 | PASS on Julia 1.10.11 and 1.13.1 |
+| Wrong checksum / unsupported platform rejection | PASS on both versions | PASS on both versions |
+| Actual shared-library load paths | PASS, all 48 from selected prefix, both versions | PASS, all 48 from selected prefix, both versions |
+| C++ geometry/exchange smoke from Pkg prefix and relocated copy | PASS, both versions, original prefix hidden for relocation | PASS, both versions, original prefix hidden for relocation |
 | BinaryBuilder/Yggdrasil source build | NOT RUN | NOT RUN |
+
+The [Linux qualification run 40040162123](https://github.com/ahojukka5/OodiArtifacts/actions/runs/40040162123)
+succeeded, with both the source-build and publisher jobs skipped. Its
+`occt-pkg-linux-julia-1.10.11` and `occt-pkg-linux-julia-1.13.1` workflow
+artifacts contain the complete logs, Pkg results and load-path reports.
+These new Pkg/C++ cases ran on **Ubuntu 24.04.5 LTS**; the separate original
+native archive build/runtime qualification used EL8. The new Linux C++
+consumer used GNU C++ 13.3.0. The local Mac cases
+ran on macOS 27.0.1 and retain raw reports at
+`~/.cache/oodi/OodiArtifacts/occt-8.0.1-pkg/macos-1.10-final/qualification.json`
+and `macos-1.13-final/qualification.json`, with adjacent console logs.
+No physical macOS 11 host or earlier Linux distribution was tested.
 
 A BinaryBuilder source build was not reproduced on the Mac: Docker's daemon
 is unavailable. The optional BinaryBuilder cross-build matrix is not part
@@ -108,6 +126,17 @@ Native toolchains and measured ABI requirements:
 | Qualified runtime | EL8/glibc 2.28; earlier distributions untested | macOS 27.0.1; 11.0 execution untested |
 | External runtime dependencies | System C/C++/pthread/dl/m/rt libraries only | Packaged OCCT libraries plus Apple system libraries/frameworks |
 | Relocation | `$ORIGIN` | `@rpath` IDs and `@loader_path` search path |
+
+The native Linux image is
+`almalinux:8.10@sha256:e6d31b01fca10ed4f914e84e1139c3a40d6acf3d8346224a32f3e5649b1a3f7d`.
+Permanent native recipe snapshots are
+[Linux d22a008](https://github.com/ahojukka5/OodiArtifacts/blob/d22a008e10826ed76bd32c0a10a76b9e30d9d9a8/scripts/occt/occt.py)
+and
+[Mac 2f8d6d6](https://github.com/ahojukka5/OodiArtifacts/blob/2f8d6d67358bd7d9c9b02a7d9f3574831569a9f6/scripts/occt/build-macos.sh).
+Permanent Pkg qualification snapshots are
+[the artifact declaration](https://github.com/ahojukka5/OodiArtifacts/blob/0ea8ca83ffdb97ccf2024149f7978da54ea2fd7c/Artifacts.toml)
+and
+[the harness](https://github.com/ahojukka5/OodiArtifacts/blob/0ea8ca83ffdb97ccf2024149f7978da54ea2fd7c/scripts/occt/qualify_artifacts.py).
 
 The JSON sidecars contain every library's linkage and the complete Linux
 RPM identities. Source paths in diagnostics are mapped to `/usr/src/occt`
@@ -209,8 +238,13 @@ applied to the published native builds.
 > `b8f597c677811d1f9f4d8a97f5ae2825c0353a42`. The reproducible native recipes,
 > provenance, release hashes, product inventory and independent C++ geometry
 > smoke are available in [OodiArtifacts](https://github.com/ahojukka5/OodiArtifacts/blob/master/docs/occt-8.0.1.md).
-> A focused qualification PR adds real clean-depot Pkg.Artifacts consumption
-> and the detailed [8.0.1 handoff](https://github.com/ahojukka5/OodiArtifacts/blob/test/28-artifact-qualification/docs/occt-8.0.1-yggdrasil.md).
+> Independent clean-depot Pkg.Artifacts installations passed on Julia
+> 1.10.11 and 1.13.1 on both platforms, with actual 48-toolkit load paths
+> and installed/relocated C++ geometry smoke. The detailed 8.0.1 handoff,
+> evidence and copy-ready source-update checklist are in
+> [OodiArtifacts PR #29](https://github.com/ahojukka5/OodiArtifacts/pull/29);
+> [the manual Linux run](https://github.com/ahojukka5/OodiArtifacts/actions/runs/40040162123)
+> contains full public test logs.
 > The current Yggdrasil PR still pins 8.0.0p1. We suggest updating its source
 > version/commit to 8.0.1, reviewing patches under the actual BinaryBuilder
 > toolchains, and independently rebuilding its supported matrix. Our native
