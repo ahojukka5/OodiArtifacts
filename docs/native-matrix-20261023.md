@@ -87,7 +87,7 @@ installed host and downloaded Linux runtimes were selected independently.
 | Linux x86_64 glibc (QEMU) | 1.11.9 | Monge | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.11.9 | Delone | PASS | PASS | PASS | FAIL |
 | Linux x86_64 glibc (QEMU) | 1.12.7 | Monge | PASS | PASS | PASS | pending |
-| Linux x86_64 glibc (QEMU) | 1.12.7 | Delone | PASS | PASS | PASS | pending |
+| Linux x86_64 glibc (QEMU) | 1.12.7 | Delone | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc (QEMU) | 1.13.2 | Monge | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.13.2 | Delone | PASS | PASS | PASS | pending |
 
