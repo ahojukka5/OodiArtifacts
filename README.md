@@ -52,6 +52,17 @@ and is distributed once per platform:
 | `NGSolveNetgen` (`libngcore`, `libnglib`) | Linux x86_64 (glibc) | [`NGSolveNetgen-22b6752d`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-22b6752d) (retained existing build) |
 | `NGSolveNetgen` (`libngcore`, `libnglib`) | macOS aarch64 | [`NGSolveNetgen-bfef5545`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-bfef5545) (published 2026-10-23) |
 
+The separate OCCT 8.0.1 native runtime is available for Apple Silicon:
+
+| Artifact | Platform | Release |
+| --- | --- | --- |
+| `OCCT` 8.0.1 (48 native toolkits, headers, CMake metadata and resources) | macOS aarch64, minimum target 11.0 | [`OCCT-8.0.1-macos-aarch64-04d2d2f805e3`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/OCCT-8.0.1-macos-aarch64-04d2d2f805e3) |
+
+Its [release and qualification record](docs/occt-8.0.1.md#published-apple-silicon-artifact)
+includes both hashes and public-download verification. This runtime has no
+Julia ABI selector and does not upgrade the existing 7.9.3 consumers.
+The paired Linux 8.0.1 publication remains pending its manual hosted build.
+
 Browse [all releases](https://github.com/ahojukka5/OodiArtifacts/releases)
 for the tarball and any accompanying `*.provenance.json` or older
 `*.provenance.toml` record. The OpenCASCADE and Netgen wrapper sources are
