@@ -34,12 +34,16 @@ cxxwrap_project = TOML.parsefile(joinpath(dirname(dirname(Base.find_package("Cxx
 prefix = join([OCCT_jll.artifact_dir, Zlib_jll.artifact_dir, jlcxx_prefix], ';')
 options = String[
     "-DCMAKE_BUILD_TYPE=Release", "-DCMAKE_INSTALL_PREFIX=$stage",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
     "-DCMAKE_PREFIX_PATH=$prefix", "-DCMAKE_INSTALL_RPATH_USE_LINK_PATH=OFF",
     "-DCMAKE_INSTALL_RPATH=" * (Sys.isapple() ? "@loader_path" : "\$ORIGIN"),
     "-DCMAKE_BUILD_WITH_INSTALL_RPATH=ON",
 ]
 if Sys.isapple()
     push!(options, "-DCMAKE_OSX_DEPLOYMENT_TARGET=11.0")
+end
+if haskey(ENV, "NATIVE_TARGET_CXX")
+    push!(options, "-DCMAKE_CXX_COMPILER=$(ENV["NATIVE_TARGET_CXX"])")
 end
 if kind == "NGSolveNetgen"
     hostbin = joinpath(output, "hostbin")
@@ -71,7 +75,10 @@ else
 end
 @info "Native build" kind revision julia VERSION platform=triplet(HostPlatform()) output jobs
 run(`cmake -S $cmake_source -B $build $options`)
-run(`cmake --build $build --parallel $jobs`)
+get(ENV, "NATIVE_CONFIGURE_ONLY", "0") == "1" && exit()
+if get(ENV, "NATIVE_INSTALL_ONLY", "0") != "1"
+    run(`cmake --build $build --parallel $jobs`)
+end
 run(`cmake --install $build`)
 if kind != "NGSolveNetgen"
     cache = read(joinpath(build, "CMakeCache.txt"), String)
@@ -90,6 +97,8 @@ license = isfile(joinpath(source, "LICENSE")) ? joinpath(source, "LICENSE") :
     joinpath(source, "bundled", "LICENSE")
 cp(license, joinpath(licenses, "LICENSE"); force=true)
 open(joinpath(output, "build.toml"), "w") do io
+    target_cxx = get(ENV, "NATIVE_TARGET_CXX", "c++")
+    target_compiler = readchomp(`$target_cxx --version`)
     TOML.print(io, Dict(
         "artifact" => kind, "source_commit" => revision,
         "source_repository" => repositories[kind],
@@ -101,7 +110,10 @@ open(joinpath(output, "build.toml"), "w") do io
         "occt_artifact" => basename(OCCT_jll.artifact_dir),
         "libcxxwrap_artifact" => basename(jlcxx_prefix),
         "cmake" => readchomp(`cmake --version`),
-        "compiler" => readchomp(`c++ --version`),
+        "compiler" => get(ENV, "NATIVE_COMPILATION_COMPILER", target_compiler),
+        "link_compiler" => target_compiler,
+        "compile_method" => get(ENV, "NATIVE_COMPILE_METHOD", "native"),
+        "sysroot_identity" => get(ENV, "NATIVE_SYSROOT_IDENTITY", ""),
         "build_options" => options,
         "qemu_reserved_va" => get(ENV, "QEMU_RESERVED_VA", ""),
     ))
