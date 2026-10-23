@@ -18,7 +18,11 @@ selection unchanged. Monge then removes redundant replay bookkeeping at
 `aeaea2fb` and restores the original allocation bound; its independent scan
 oracle passes all 22 checks on every macOS minor. Native smoke checks and all four macOS
 full suites pass after that change; each suite has 11,791 passes and the
-existing optional integration skip.
+existing optional integration skip. Final Monge commit
+`8b740524f60905343a36d86e1b3577b8260e6f74` changes only a documentation
+cross-reference target inside a docstring; all executable source and artifact
+selections match that full-suite qualification. Both manuals then build on
+Julia 1.12.6 with doctests/export checks enabled and deployment disabled.
 
 Delone's Linux 1.10 full run found a platform-dependent fixture reduction:
 its curved shared-edge sample rounded onto the boundary rather than one ulp
@@ -30,7 +34,10 @@ confirming preserved regression coverage. Remaining Linux checks are running.
 Linux 1.11 also passes the revised case. The first Linux 1.10 full run later
 ended with SIGKILL: the VM kernel recorded memory exhaustion when an extra
 fixture probe overlapped two full suites. That probe was cancelled; subsequent
-qualification uses at most two workers. The incomplete run remains FAIL,
+qualification uses at most two workers. A second OOM interrupted the Linux 1.11 architecture subprocess; that run
+also records an Aqua 180s shutdown timeout. A temporary 4 GiB swap file was
+added to the existing 8 GiB local VM without restarting active tests.
+Interrupted runs remain FAIL,
 with both its fixture failure and resource interruption retained, until rerun.
 
 The [structured results](native-matrix-20261023-results.json) retain separate
@@ -78,7 +85,7 @@ installed host and downloaded Linux runtimes were selected independently.
 | Linux x86_64 glibc (QEMU) | 1.10.12 | Monge | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.10.12 | Delone | PASS | PASS | PASS | FAIL |
 | Linux x86_64 glibc (QEMU) | 1.11.9 | Monge | PASS | PASS | PASS | pending |
-| Linux x86_64 glibc (QEMU) | 1.11.9 | Delone | PASS | PASS | PASS | pending |
+| Linux x86_64 glibc (QEMU) | 1.11.9 | Delone | PASS | PASS | PASS | FAIL |
 | Linux x86_64 glibc (QEMU) | 1.12.7 | Monge | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.12.7 | Delone | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.13.2 | Monge | PASS | PASS | PASS | pending |

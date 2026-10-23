@@ -16,8 +16,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/0a71b26c77c55c2f3fe77b3826052fe9259608f1/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.10/full.log",
@@ -53,7 +69,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "1.10.11",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -68,8 +84,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/0a71b26c77c55c2f3fe77b3826052fe9259608f1/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "full_suite_runtime_basis_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.10/full.log",
@@ -105,7 +137,7 @@
     "boundary_fixture_checks": {
       "result": "PASS",
       "assertions": 62,
-      "source_revision": "223b934d",
+      "source_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
       "log": {
         "path": "curved-boundary-portable-macos-1.10.log",
         "sha256": "ddee87766b0127d06cd5d97804424f2a462cbcdf1d417de85d19cf9c7f6c84b7",
@@ -131,8 +163,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/c9be8c9b996752a0ed5100d6318192e761a65de6/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.11/full.log",
@@ -168,7 +216,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "1.11.9",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -183,8 +231,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/c9be8c9b996752a0ed5100d6318192e761a65de6/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "full_suite_runtime_basis_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.11/full.log",
@@ -220,7 +284,7 @@
     "boundary_fixture_checks": {
       "result": "PASS",
       "assertions": 62,
-      "source_revision": "223b934d",
+      "source_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
       "log": {
         "path": "curved-boundary-portable-macos-1.11.log",
         "sha256": "0022fb362574a01edcce7dab29da8a96d8ac93408d37dd1634234bcea6c4b1fb",
@@ -246,8 +310,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.12/full.log",
@@ -283,7 +363,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "1.12.6",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -298,8 +378,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "full_suite_runtime_basis_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.12/full.log",
@@ -335,7 +431,7 @@
     "boundary_fixture_checks": {
       "result": "PASS",
       "assertions": 62,
-      "source_revision": "223b934d",
+      "source_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
       "log": {
         "path": "curved-boundary-portable-macos-1.12.log",
         "sha256": "d72c101bca2868afcb88aed649dcd8be68d201ccb1f37b2aa682cae58546b52d",
@@ -361,8 +457,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "bd54cbbfe0d3cb3350395fb19efd6b64d6aff10f",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.13/full.log",
@@ -398,7 +510,7 @@
   },
   {
     "platform": "macOS aarch64",
-    "julia": "1.13.1",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -413,8 +525,24 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "bd54cbbfe0d3cb3350395fb19efd6b64d6aff10f",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "full_suite_runtime_basis_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.13/full.log",
@@ -450,7 +578,7 @@
     "boundary_fixture_checks": {
       "result": "PASS",
       "assertions": 62,
-      "source_revision": "223b934d",
+      "source_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
       "log": {
         "path": "curved-boundary-portable-macos-1.13.log",
         "sha256": "cfa615b9eed1ef472abfc6ef7f2ed28fd0962024549473a3081a98e43f42aff3",
@@ -476,8 +604,24 @@
       "/matrix/final-linux/1.10/depot/artifacts/5fd776a6a69026830aa847fd3eca2b915d8184db/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": null,
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": null,
     "logs": [
       {
         "path": "final-linux/1.10/delone-full-resumed.log",
@@ -507,7 +651,7 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "1.10.12",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -522,8 +666,24 @@
       "/matrix/final-linux/1.10/depot/artifacts/5fd776a6a69026830aa847fd3eca2b915d8184db/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "full_suite_runtime_basis_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-linux/1.10/delone-full-resumed.log",
@@ -553,7 +713,7 @@
     "boundary_fixture_checks": {
       "result": "PASS",
       "assertions": 62,
-      "source_revision": "223b934d",
+      "source_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
       "log": {
         "path": "curved-boundary-portable-linux-1.10.log",
         "sha256": "cbd5671fdb2bc7433a7ccb26967e237c1481f8fa33cfe40fa98f1e6208688fa2",
@@ -583,14 +743,30 @@
       "/matrix/final-linux/1.11/depot/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": null,
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": null,
     "logs": [
       {
         "path": "final-linux/1.11/delone-full-resumed.log",
-        "sha256": "4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724",
-        "bytes": 21422,
-        "snapshot": "log-snapshots/4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724.log"
+        "sha256": "ceaa9ff5a4f8692fe0736e6dfe5377cd2553464fd9e7494b668708a1643cffe7",
+        "bytes": 51375,
+        "snapshot": "log-snapshots/ceaa9ff5a4f8692fe0736e6dfe5377cd2553464fd9e7494b668708a1643cffe7.log"
       },
       {
         "path": "final-linux/1.11/full.log",
@@ -638,13 +814,13 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "1.11.9",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
-    "full_tests": "pending",
+    "full_tests": "FAIL",
     "full_summary": null,
     "loaded_native_libraries": [
       "/matrix/final-linux/1.11/depot/artifacts/4036223011c580c75a01f85c616a97f55c0905c9/lib/libopencascade_cxxwrap.so",
@@ -653,14 +829,30 @@
       "/matrix/final-linux/1.11/depot/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": null,
+    "full_suite_runtime_basis_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-linux/1.11/delone-full-resumed.log",
-        "sha256": "4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724",
-        "bytes": 21422,
-        "snapshot": "log-snapshots/4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724.log"
+        "sha256": "ceaa9ff5a4f8692fe0736e6dfe5377cd2553464fd9e7494b668708a1643cffe7",
+        "bytes": 51375,
+        "snapshot": "log-snapshots/ceaa9ff5a4f8692fe0736e6dfe5377cd2553464fd9e7494b668708a1643cffe7.log"
       },
       {
         "path": "final-linux/1.11/full.log",
@@ -708,7 +900,7 @@
     "boundary_fixture_checks": {
       "result": "PASS",
       "assertions": 62,
-      "source_revision": "223b934d",
+      "source_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
       "log": {
         "path": "curved-boundary-portable-linux-1.11.log",
         "sha256": "f46cc45b43479940dcec4e213cc08c170ea27183d9060882fbad0aece515276c",
@@ -734,14 +926,30 @@
       "/matrix/final-linux/1.12/depot/artifacts/e665a17436a7356a8253924b0e9a01a306e2a5b1/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": null,
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "f7da0f8ccf218ea4dae82985c82827f2eb4d01d8",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": null,
     "logs": [
       {
         "path": "final-linux/1.12/delone-full-resumed.log",
-        "sha256": "9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334",
-        "bytes": 16100,
-        "snapshot": "log-snapshots/9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334.log"
+        "sha256": "1b26cf9bc618467524ad8725ef218958910077efb0a528126c1041f9fcdc760a",
+        "bytes": 60943,
+        "snapshot": "log-snapshots/1b26cf9bc618467524ad8725ef218958910077efb0a528126c1041f9fcdc760a.log"
       },
       {
         "path": "final-linux/1.12/native.log",
@@ -765,7 +973,7 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "1.12.7",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -780,14 +988,30 @@
       "/matrix/final-linux/1.12/depot/artifacts/e665a17436a7356a8253924b0e9a01a306e2a5b1/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "f7da0f8ccf218ea4dae82985c82827f2eb4d01d8",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": null,
+    "full_suite_runtime_basis_revision": null,
     "logs": [
       {
         "path": "final-linux/1.12/delone-full-resumed.log",
-        "sha256": "9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334",
-        "bytes": 16100,
-        "snapshot": "log-snapshots/9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334.log"
+        "sha256": "1b26cf9bc618467524ad8725ef218958910077efb0a528126c1041f9fcdc760a",
+        "bytes": 60943,
+        "snapshot": "log-snapshots/1b26cf9bc618467524ad8725ef218958910077efb0a528126c1041f9fcdc760a.log"
       },
       {
         "path": "final-linux/1.12/native.log",
@@ -826,9 +1050,31 @@
       "/matrix/final-linux/1.13/depot/artifacts/8b265184eaeeba81cf7b27c7c246b06b937c2447/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
-    "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
-    "full_suite_runtime_revision": null,
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+    "current_candidate_revision": "8b740524f60905343a36d86e1b3577b8260e6f74",
+    "full_suite_runtime_basis_revision": null,
     "logs": [
+      {
+        "path": "final-linux/1.13/delone-full-resumed.log",
+        "sha256": "549235c5d904fb12aaf76876d854b5d491e5212269770d1985a9b17600321097",
+        "bytes": 29366,
+        "snapshot": "log-snapshots/549235c5d904fb12aaf76876d854b5d491e5212269770d1985a9b17600321097.log"
+      },
       {
         "path": "final-linux/1.13/native.log",
         "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d",
@@ -851,7 +1097,7 @@
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
-    "julia": "1.13.2",
+    "julia": "0.14.12+0",
     "package": "Delone",
     "package_version": "0.1.0",
     "resolution": "PASS",
@@ -866,9 +1112,31 @@
       "/matrix/final-linux/1.13/depot/artifacts/8b265184eaeeba81cf7b27c7c246b06b937c2447/lib/libnetgen_cxxwrap.so"
     ],
     "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "selected_native_dependencies": {
+      "CxxWrap": {
+        "git-tree-sha1": "f7a997d3959648a818c45dda059a45844300b94d",
+        "version": "0.17.5"
+      },
+      "OCCT_jll": {
+        "git-tree-sha1": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+        "version": "7.9.3+0"
+      },
+      "libcxxwrap_julia_jll": {
+        "git-tree-sha1": "2eecfd1759a176424159c1993b66f012a230319f",
+        "version": "0.14.12+0"
+      }
+    },
+    "general_registry_tree_at_report": "51dcb86dd6a866da25c1e6c61530c177039d0faa",
+    "oodi_registry_commit": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
     "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
-    "full_suite_runtime_revision": null,
+    "full_suite_runtime_basis_revision": null,
     "logs": [
+      {
+        "path": "final-linux/1.13/delone-full-resumed.log",
+        "sha256": "549235c5d904fb12aaf76876d854b5d491e5212269770d1985a9b17600321097",
+        "bytes": 29366,
+        "snapshot": "log-snapshots/549235c5d904fb12aaf76876d854b5d491e5212269770d1985a9b17600321097.log"
+      },
       {
         "path": "final-linux/1.13/native.log",
         "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d",
