@@ -48,7 +48,8 @@ def run(args, cwd=None):
 
 
 def capture(args):
-    return subprocess.check_output([str(a) for a in args], text=True).strip()
+    return subprocess.check_output([str(a) for a in args], text=True,
+                                   stderr=subprocess.STDOUT).strip()
 
 
 def save(path, data):
@@ -126,6 +127,7 @@ def libraries(prefix):
 
 
 def audit(prefix):
+    prefix = prefix.resolve()
     products = libraries(prefix)
     names = {p.name.split('.')[0][3:] for p in products}
     if not REQUIRED <= names:
@@ -194,6 +196,8 @@ def audit(prefix):
 
 
 def qualify(prefix, work):
+    prefix = prefix.resolve()
+    work = work.resolve()
     report = audit(prefix)
     work.mkdir(parents=True)
     command = ['cmake', '-S', SMOKE, '-B', work / 'build', '-G', 'Ninja',
@@ -290,6 +294,8 @@ def build(args):
     if system == 'macos-aarch64':
         info['toolchain'].update(os=capture(['sw_vers']), sdk=capture(['xcrun', '--show-sdk-version']),
                                  sdk_path=capture(['xcrun', '--show-sdk-path']), deployment_target='11.0', architecture='arm64')
+        info['toolchain']['developer_directory'] = capture(['xcode-select', '-p'])
+        info['toolchain']['command_line_tools'] = capture(['pkgutil', '--pkg-info=com.apple.pkg.CLTools_Executables'])
     else:
         info['toolchain'].update(sysroot='AlmaLinux 8.10 / glibc 2.28', container=CONTAINER,
                                  packages=capture(['rpm', '-qa', '--qf', '%{NAME}-%{VERSION}-%{RELEASE}.%{ARCH}\n']))
