@@ -5,7 +5,7 @@ No package release tag is created. Binary releases are immutable.
 
 Source candidates and qualification revisions:
 
-- Monge runtime/artifacts `68b588b50112c2a316e4d3db10e988dd86fa25a1`, [PR #560](https://github.com/ahojukka5/Monge.jl/pull/560);
+- Monge initial fresh-depot source `68b588b50112c2a316e4d3db10e988dd86fa25a1`, [PR #560](https://github.com/ahojukka5/Monge.jl/pull/560);
 - Delone/DelonePortable runtime/artifacts
   `c65fe65a42501622960ad0e5d15658fb46299195`,
   [PR #1047](https://github.com/ahojukka5/Delone.jl/pull/1047);
@@ -16,19 +16,40 @@ Delone's Julia 1.10 documentation test was backported at
 and the affected test passed 415 checks on every macOS minor. Subsequent installation prose and test comments leave dependency and artifact
 selection unchanged. Monge then removes redundant replay bookkeeping at
 `aeaea2fb` and restores the original allocation bound; its independent scan
-oracle passes all 22 checks on every macOS minor. Native smoke tests and
-full suites are rerun for that change.
+oracle passes all 22 checks on every macOS minor. Native smoke checks and all four macOS
+full suites pass after that change; each suite has 11,791 passes and the
+existing optional integration skip.
+
+Delone's Linux 1.10 full run found a platform-dependent fixture reduction:
+its curved shared-edge sample rounded onto the boundary rather than one ulp
+past it. Test-only commit `223b934d` moves one coordinate node by one ulp;
+it retains the exact overshoot assertion, independent graph oracle and all
+projection tolerances. The revised 62-check case passes on all macOS minors
+and Linux 1.10; restoring the earlier Newton trial produces ten failures,
+confirming preserved regression coverage. Remaining Linux checks are running.
+Linux 1.11 also passes the revised case. The first Linux 1.10 full run later
+ended with SIGKILL: the VM kernel recorded memory exhaustion when an extra
+fixture probe overlapped two full suites. That probe was cancelled; subsequent
+qualification uses at most two workers. The incomplete run remains FAIL,
+with both its fixture failure and resource interruption retained, until rerun.
 
 The [structured results](native-matrix-20261023-results.json) retain separate
-stage outcomes and log checksums. The [machine-readable index](native-matrix-20261023.json) records every new
+stage outcomes, log checksums and immutable snapshot identities. Bulk logs
+and snapshots remain in the local qualification cache. The [machine-readable index](native-matrix-20261023.json) records every new
 archive checksum, artifact tree, source revision, platform and Julia ABI.
 Each release additionally attaches the full dependency, compiler and library
 linkage provenance. The Linux Netgen runtime remains the existing release
 `NGSolveNetgen-22b6752d`, tree
 `22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b`, archive SHA-256
 `b35522e610fb8c10f201dbdcc87c0be3e1036892e7779f7de0cb9cc76dd3406a`.
-Its content was not changed. macOS uses one newly built Netgen runtime for
-all four Julia minors.
+Its content was not changed. Its embedded `netgen_version.hpp` records
+`6.2.2606` and `ga3e08f0e`, matching the version/source prefix of the pinned
+macOS build. The old release has no separate provenance attachment; its
+archive/tree and embedded identity are retained rather than inventing missing
+historical build metadata. macOS uses one newly built Netgen runtime for
+all four Julia minors. Its provenance records the Julia build-driver version
+and an augmented build-host triplet; `julia_abi = "none"` and the consuming
+artifact declaration has no Julia selector.
 
 ## Installation results
 
@@ -55,7 +76,7 @@ installed host and downloaded Linux runtimes were selected independently.
 | macOS aarch64 | 1.13.1 | Monge | PASS | PASS | PASS | PASS |
 | macOS aarch64 | 1.13.1 | Delone | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc (QEMU) | 1.10.12 | Monge | PASS | PASS | PASS | pending |
-| Linux x86_64 glibc (QEMU) | 1.10.12 | Delone | PASS | PASS | PASS | pending |
+| Linux x86_64 glibc (QEMU) | 1.10.12 | Delone | PASS | PASS | PASS | FAIL |
 | Linux x86_64 glibc (QEMU) | 1.11.9 | Monge | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.11.9 | Delone | PASS | PASS | PASS | pending |
 | Linux x86_64 glibc (QEMU) | 1.12.7 | Monge | PASS | PASS | PASS | pending |
@@ -73,8 +94,8 @@ Pending means unverified; it is not a pass. The local VM and agent server
 restarted during initial Linux full-suite runs. Interrupted logs are retained;
 resumed package suites are recorded separately and never counted as passes
 without their completion marker. Full suites run through
-`Pkg.test` from the exact clean source checkouts because Monge's gallery
-checks repository history. They use the same fresh depots and published
+`Pkg.test` from the exact clean source checkouts because Monge's
+tracked-file and provenance checks require a Git checkout. They use the same fresh depots and published
 native binaries as the URL installation test. No native build or binary
 path override is introduced for those suites. Complete-suite outcomes are
 independent of the geometry and meshing smoke results. Linux complete-suite
@@ -87,6 +108,12 @@ No package compatibility bounds were narrowed to bypass those failures.
 macOS uses the default optimization settings. The test entrypoints and selection are unchanged.
 
 ## Older Julia and later platforms
+
+| Platform | Julia | Package | Resolution | Loading | Native execution | Full tests |
+|---|---|---|---|---|---|---|
+| macOS aarch64 | 1.9.4 | Monge | FAIL (dependency floor) | unrun | unbuilt | unrun |
+| macOS aarch64 | 1.9.4 | Delone | FAIL (dependency floor) | unrun | unbuilt | unrun |
+| macOS aarch64 | 1.9.4 | DelonePortable | PASS | PASS | not applicable | PASS (562) |
 
 Julia 1.9.4 cannot resolve the selected Episteme 0.1 dependency: its UUIDs
 and Dates compatibility requires Julia 1.10. The pinned CxxWrap 0.17.5

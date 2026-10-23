@@ -4,39 +4,50 @@
     "julia": "1.10.11",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
     "full_tests": "PASS",
-    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  17m32.1s",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  12m05.6s",
     "loaded_native_libraries": [
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/767cd6ee48466391ac96f00d3114aa953549bec0/lib/libopencascade_cxxwrap.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/0a71b26c77c55c2f3fe77b3826052fe9259608f1/lib/libnetgen_cxxwrap.dylib"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.10/full.log",
-        "sha256": "d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce"
+        "sha256": "d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce",
+        "bytes": 456928,
+        "snapshot": "log-snapshots/d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce.log"
       },
       {
         "path": "final-macos-v2/1.10/monge-full-replay-fix.log",
-        "sha256": "1ae821a2d4e99fe1b7451f762023270b0ae65616b5823c8a635e2b42f241965a"
+        "sha256": "c1a20ce99f516474aadd1c8140c4c2f8b0d37ad2e9d1ab6b0e616c8d960f776b",
+        "bytes": 141099,
+        "snapshot": "log-snapshots/c1a20ce99f516474aadd1c8140c4c2f8b0d37ad2e9d1ab6b0e616c8d960f776b.log"
       },
       {
         "path": "final-macos-v2/1.10/native-replay-fix.log",
-        "sha256": "486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69"
+        "sha256": "486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69",
+        "bytes": 1236,
+        "snapshot": "log-snapshots/486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69.log"
       },
       {
         "path": "final-macos-v2/1.10/native.log",
-        "sha256": "bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0"
+        "sha256": "bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0",
+        "bytes": 1805,
+        "snapshot": "log-snapshots/bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0.log"
       },
       {
         "path": "final-macos-v2/1.10/resolution.log",
-        "sha256": "a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1"
+        "sha256": "a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1",
+        "bytes": 9339,
+        "snapshot": "log-snapshots/a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1.log"
       }
     ]
   },
@@ -45,7 +56,6 @@
     "julia": "1.10.11",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -57,68 +67,102 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.10/depot/artifacts/0a71b26c77c55c2f3fe77b3826052fe9259608f1/lib/libnetgen_cxxwrap.dylib"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.10/full.log",
-        "sha256": "d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce"
+        "sha256": "d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce",
+        "bytes": 456928,
+        "snapshot": "log-snapshots/d9016a77a22938aaba40e077292aeeb9bea66bdc272a5d07617c91423853f2ce.log"
       },
       {
         "path": "final-macos-v2/1.10/monge-full-replay-fix.log",
-        "sha256": "1ae821a2d4e99fe1b7451f762023270b0ae65616b5823c8a635e2b42f241965a"
+        "sha256": "c1a20ce99f516474aadd1c8140c4c2f8b0d37ad2e9d1ab6b0e616c8d960f776b",
+        "bytes": 141099,
+        "snapshot": "log-snapshots/c1a20ce99f516474aadd1c8140c4c2f8b0d37ad2e9d1ab6b0e616c8d960f776b.log"
       },
       {
         "path": "final-macos-v2/1.10/native-replay-fix.log",
-        "sha256": "486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69"
+        "sha256": "486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69",
+        "bytes": 1236,
+        "snapshot": "log-snapshots/486ce226821f555f6a80fabd6fc81680d83cfbf46e5ae7c60ba14a107b52db69.log"
       },
       {
         "path": "final-macos-v2/1.10/native.log",
-        "sha256": "bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0"
+        "sha256": "bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0",
+        "bytes": 1805,
+        "snapshot": "log-snapshots/bb94184225d8306856723420bfde78b01db38e4403a02592b1a92c6fa3df10f0.log"
       },
       {
         "path": "final-macos-v2/1.10/resolution.log",
-        "sha256": "a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1"
+        "sha256": "a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1",
+        "bytes": 9339,
+        "snapshot": "log-snapshots/a26462283ec51f0a661d9b30e7093f2c9afa31a930ad9962abc863eec6e42be1.log"
       }
-    ]
+    ],
+    "boundary_fixture_checks": {
+      "result": "PASS",
+      "assertions": 62,
+      "source_revision": "223b934d",
+      "log": {
+        "path": "curved-boundary-portable-macos-1.10.log",
+        "sha256": "ddee87766b0127d06cd5d97804424f2a462cbcdf1d417de85d19cf9c7f6c84b7",
+        "bytes": 120,
+        "snapshot": "log-snapshots/ddee87766b0127d06cd5d97804424f2a462cbcdf1d417de85d19cf9c7f6c84b7.log"
+      }
+    }
   },
   {
     "platform": "macOS aarch64",
     "julia": "1.11.9",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
     "full_tests": "PASS",
-    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  22m04.4s",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  13m53.5s",
     "loaded_native_libraries": [
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/b2a338c1c49857da6080f63c929cfbce2c140066/lib/libopencascade_cxxwrap.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/c9be8c9b996752a0ed5100d6318192e761a65de6/lib/libnetgen_cxxwrap.dylib"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.11/full.log",
-        "sha256": "d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f"
+        "sha256": "d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f",
+        "bytes": 189114,
+        "snapshot": "log-snapshots/d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f.log"
       },
       {
         "path": "final-macos-v2/1.11/monge-full-replay-fix.log",
-        "sha256": "2749855724eb8edfdb209df8f3b967b9a106c80109204c32ef50c2de02bb87c8"
+        "sha256": "a70bdd4695ae9ec2b3e957c92c0eaed58d9e469206dbdc7812c470f5cf14bd9c",
+        "bytes": 141118,
+        "snapshot": "log-snapshots/a70bdd4695ae9ec2b3e957c92c0eaed58d9e469206dbdc7812c470f5cf14bd9c.log"
       },
       {
         "path": "final-macos-v2/1.11/native-replay-fix.log",
-        "sha256": "8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794"
+        "sha256": "8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794",
+        "bytes": 1231,
+        "snapshot": "log-snapshots/8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794.log"
       },
       {
         "path": "final-macos-v2/1.11/native.log",
-        "sha256": "67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9"
+        "sha256": "67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9",
+        "bytes": 1800,
+        "snapshot": "log-snapshots/67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9.log"
       },
       {
         "path": "final-macos-v2/1.11/resolution.log",
-        "sha256": "6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f"
+        "sha256": "6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f",
+        "bytes": 9436,
+        "snapshot": "log-snapshots/6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f.log"
       }
     ]
   },
@@ -127,7 +171,6 @@
     "julia": "1.11.9",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -139,60 +182,102 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.11/depot/artifacts/c9be8c9b996752a0ed5100d6318192e761a65de6/lib/libnetgen_cxxwrap.dylib"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.11/full.log",
-        "sha256": "d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f"
+        "sha256": "d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f",
+        "bytes": 189114,
+        "snapshot": "log-snapshots/d23acebf64711b6bf2911c4ed1a0c9a015ce35c474654e3834dc4c3b7b4ff71f.log"
       },
       {
         "path": "final-macos-v2/1.11/monge-full-replay-fix.log",
-        "sha256": "2749855724eb8edfdb209df8f3b967b9a106c80109204c32ef50c2de02bb87c8"
+        "sha256": "a70bdd4695ae9ec2b3e957c92c0eaed58d9e469206dbdc7812c470f5cf14bd9c",
+        "bytes": 141118,
+        "snapshot": "log-snapshots/a70bdd4695ae9ec2b3e957c92c0eaed58d9e469206dbdc7812c470f5cf14bd9c.log"
       },
       {
         "path": "final-macos-v2/1.11/native-replay-fix.log",
-        "sha256": "8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794"
+        "sha256": "8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794",
+        "bytes": 1231,
+        "snapshot": "log-snapshots/8b534354227ebd118732c75142a2e9e56a6d9f23e8babdcfce438469118e4794.log"
       },
       {
         "path": "final-macos-v2/1.11/native.log",
-        "sha256": "67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9"
+        "sha256": "67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9",
+        "bytes": 1800,
+        "snapshot": "log-snapshots/67229157cbcdffafa3c53647d59f6ecaec58970181f7a16e7f817cd9dafc9ab9.log"
       },
       {
         "path": "final-macos-v2/1.11/resolution.log",
-        "sha256": "6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f"
+        "sha256": "6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f",
+        "bytes": 9436,
+        "snapshot": "log-snapshots/6428af3b8848689f9ffb7a1a3895431987e601131d18281937b96a9a1d91a74f.log"
       }
-    ]
+    ],
+    "boundary_fixture_checks": {
+      "result": "PASS",
+      "assertions": 62,
+      "source_revision": "223b934d",
+      "log": {
+        "path": "curved-boundary-portable-macos-1.11.log",
+        "sha256": "0022fb362574a01edcce7dab29da8a96d8ac93408d37dd1634234bcea6c4b1fb",
+        "bytes": 120,
+        "snapshot": "log-snapshots/0022fb362574a01edcce7dab29da8a96d8ac93408d37dd1634234bcea6c4b1fb.log"
+      }
+    }
   },
   {
     "platform": "macOS aarch64",
     "julia": "1.12.6",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
     "full_tests": "PASS",
-    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  23m03.0s",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  14m27.4s",
     "loaded_native_libraries": [
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/52eda2983406f3d28ef35be0bacc96277139ba15/lib/libopencascade_cxxwrap.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.12/full.log",
-        "sha256": "798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd"
+        "sha256": "798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd",
+        "bytes": 200514,
+        "snapshot": "log-snapshots/798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd.log"
+      },
+      {
+        "path": "final-macos-v2/1.12/monge-full-replay-fix.log",
+        "sha256": "2bc555fdcc8ee64edca3bac543c614911337f6e5d5ba4aae3ac3063eb4b0d997",
+        "bytes": 141267,
+        "snapshot": "log-snapshots/2bc555fdcc8ee64edca3bac543c614911337f6e5d5ba4aae3ac3063eb4b0d997.log"
+      },
+      {
+        "path": "final-macos-v2/1.12/native-replay-fix.log",
+        "sha256": "133bf985830e2b2c134e1ee75a3910df2f944569974e23b8f04e77af23f3bd2a",
+        "bytes": 1299,
+        "snapshot": "log-snapshots/133bf985830e2b2c134e1ee75a3910df2f944569974e23b8f04e77af23f3bd2a.log"
       },
       {
         "path": "final-macos-v2/1.12/native.log",
-        "sha256": "8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3"
+        "sha256": "8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3",
+        "bytes": 1833,
+        "snapshot": "log-snapshots/8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3.log"
       },
       {
         "path": "final-macos-v2/1.12/resolution.log",
-        "sha256": "5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f"
+        "sha256": "5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f",
+        "bytes": 9888,
+        "snapshot": "log-snapshots/5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f.log"
       }
     ]
   },
@@ -201,7 +286,6 @@
     "julia": "1.12.6",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -213,52 +297,102 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.12/depot/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.12/full.log",
-        "sha256": "798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd"
+        "sha256": "798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd",
+        "bytes": 200514,
+        "snapshot": "log-snapshots/798d8f1155446578e65cfa17e0ea7fe22727e1ab185a907d3106532e8a7c45cd.log"
+      },
+      {
+        "path": "final-macos-v2/1.12/monge-full-replay-fix.log",
+        "sha256": "2bc555fdcc8ee64edca3bac543c614911337f6e5d5ba4aae3ac3063eb4b0d997",
+        "bytes": 141267,
+        "snapshot": "log-snapshots/2bc555fdcc8ee64edca3bac543c614911337f6e5d5ba4aae3ac3063eb4b0d997.log"
+      },
+      {
+        "path": "final-macos-v2/1.12/native-replay-fix.log",
+        "sha256": "133bf985830e2b2c134e1ee75a3910df2f944569974e23b8f04e77af23f3bd2a",
+        "bytes": 1299,
+        "snapshot": "log-snapshots/133bf985830e2b2c134e1ee75a3910df2f944569974e23b8f04e77af23f3bd2a.log"
       },
       {
         "path": "final-macos-v2/1.12/native.log",
-        "sha256": "8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3"
+        "sha256": "8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3",
+        "bytes": 1833,
+        "snapshot": "log-snapshots/8847af2aefaff5b88ed2e6247f0ab9f2ce358c88320883e38beaba606089d3f3.log"
       },
       {
         "path": "final-macos-v2/1.12/resolution.log",
-        "sha256": "5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f"
+        "sha256": "5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f",
+        "bytes": 9888,
+        "snapshot": "log-snapshots/5a5f90a498eb0e8d67dd71fb542fff0b7acc634bf32b782c4e014a840b314b4f.log"
       }
-    ]
+    ],
+    "boundary_fixture_checks": {
+      "result": "PASS",
+      "assertions": 62,
+      "source_revision": "223b934d",
+      "log": {
+        "path": "curved-boundary-portable-macos-1.12.log",
+        "sha256": "d72c101bca2868afcb88aed649dcd8be68d201ccb1f37b2aa682cae58546b52d",
+        "bytes": 120,
+        "snapshot": "log-snapshots/d72c101bca2868afcb88aed649dcd8be68d201ccb1f37b2aa682cae58546b52d.log"
+      }
+    }
   },
   {
     "platform": "macOS aarch64",
     "julia": "1.13.1",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
     "full_tests": "PASS",
-    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  19m27.7s",
+    "full_summary": "Monge.jl (public Julian API) | 11791       1  11792  13m34.5s",
     "loaded_native_libraries": [
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/c44d084b938bdff2cbb7988e754616f867d604dc/lib/libopencascade_cxxwrap.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": "aeaea2fb43775ff818503298593337829e69fc94",
     "logs": [
       {
         "path": "final-macos-v2/1.13/full.log",
-        "sha256": "0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035"
+        "sha256": "0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035",
+        "bytes": 197222,
+        "snapshot": "log-snapshots/0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035.log"
+      },
+      {
+        "path": "final-macos-v2/1.13/monge-full-replay-fix.log",
+        "sha256": "f3b5450346d16f25e5d539d2a7eeb3b42e14afa0b3b41d915e17fe13b8dbf4c8",
+        "bytes": 141821,
+        "snapshot": "log-snapshots/f3b5450346d16f25e5d539d2a7eeb3b42e14afa0b3b41d915e17fe13b8dbf4c8.log"
+      },
+      {
+        "path": "final-macos-v2/1.13/native-replay-fix.log",
+        "sha256": "432a042dd1fa657bb94a7659da0a371e1ef46d8d8c8c665e0d6bce8385de175e",
+        "bytes": 1266,
+        "snapshot": "log-snapshots/432a042dd1fa657bb94a7659da0a371e1ef46d8d8c8c665e0d6bce8385de175e.log"
       },
       {
         "path": "final-macos-v2/1.13/native.log",
-        "sha256": "a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632"
+        "sha256": "a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632",
+        "bytes": 1674,
+        "snapshot": "log-snapshots/a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632.log"
       },
       {
         "path": "final-macos-v2/1.13/resolution.log",
-        "sha256": "e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb"
+        "sha256": "e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb",
+        "bytes": 9923,
+        "snapshot": "log-snapshots/e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb.log"
       }
     ]
   },
@@ -267,7 +401,6 @@
     "julia": "1.13.1",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -279,28 +412,58 @@
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
       "/Users/jukka/.cache/oodi/engineering/native-matrix-20261023/final-macos-v2/1.13/depot/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-macos-v2/1.13/full.log",
-        "sha256": "0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035"
+        "sha256": "0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035",
+        "bytes": 197222,
+        "snapshot": "log-snapshots/0a458b9b2210e6369eabd7839616b8596ef03b9d142c5e3fe35501ba014c1035.log"
+      },
+      {
+        "path": "final-macos-v2/1.13/monge-full-replay-fix.log",
+        "sha256": "f3b5450346d16f25e5d539d2a7eeb3b42e14afa0b3b41d915e17fe13b8dbf4c8",
+        "bytes": 141821,
+        "snapshot": "log-snapshots/f3b5450346d16f25e5d539d2a7eeb3b42e14afa0b3b41d915e17fe13b8dbf4c8.log"
+      },
+      {
+        "path": "final-macos-v2/1.13/native-replay-fix.log",
+        "sha256": "432a042dd1fa657bb94a7659da0a371e1ef46d8d8c8c665e0d6bce8385de175e",
+        "bytes": 1266,
+        "snapshot": "log-snapshots/432a042dd1fa657bb94a7659da0a371e1ef46d8d8c8c665e0d6bce8385de175e.log"
       },
       {
         "path": "final-macos-v2/1.13/native.log",
-        "sha256": "a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632"
+        "sha256": "a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632",
+        "bytes": 1674,
+        "snapshot": "log-snapshots/a9c38e41ee810e6cde64a6636d855c0b447402296333c00e1cc0276e4188b632.log"
       },
       {
         "path": "final-macos-v2/1.13/resolution.log",
-        "sha256": "e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb"
+        "sha256": "e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb",
+        "bytes": 9923,
+        "snapshot": "log-snapshots/e2ea8455785d4bd5b73557bd879b7395c73cf0e1da4cf585551fa83c919b97fb.log"
       }
-    ]
+    ],
+    "boundary_fixture_checks": {
+      "result": "PASS",
+      "assertions": 62,
+      "source_revision": "223b934d",
+      "log": {
+        "path": "curved-boundary-portable-macos-1.13.log",
+        "sha256": "cfa615b9eed1ef472abfc6ef7f2ed28fd0962024549473a3081a98e43f42aff3",
+        "bytes": 120,
+        "snapshot": "log-snapshots/cfa615b9eed1ef472abfc6ef7f2ed28fd0962024549473a3081a98e43f42aff3.log"
+      }
+    }
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
     "julia": "1.10.12",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -312,23 +475,33 @@
       "/matrix/final-linux/1.10/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.10/depot/artifacts/5fd776a6a69026830aa847fd3eca2b915d8184db/lib/libnetgen_cxxwrap.so"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": null,
     "logs": [
       {
         "path": "final-linux/1.10/delone-full-resumed.log",
-        "sha256": "ec08949cc92a75307f91e2d7ad98d731dc4a3b0ec2d6150c0fb7643f77d76710"
+        "sha256": "a0691a52a1ef409ad4f5ed1cfd95f0de5edf220e802586d09b48e8ad1824015e",
+        "bytes": 20536,
+        "snapshot": "log-snapshots/a0691a52a1ef409ad4f5ed1cfd95f0de5edf220e802586d09b48e8ad1824015e.log"
       },
       {
         "path": "final-linux/1.10/full.log",
-        "sha256": "4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91"
+        "sha256": "4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91",
+        "bytes": 39448,
+        "snapshot": "log-snapshots/4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91.log"
       },
       {
         "path": "final-linux/1.10/native.log",
-        "sha256": "1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617"
+        "sha256": "1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617",
+        "bytes": 1249,
+        "snapshot": "log-snapshots/1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617.log"
       },
       {
         "path": "final-linux/1.10/resolution.log",
-        "sha256": "c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd"
+        "sha256": "c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd",
+        "bytes": 9031,
+        "snapshot": "log-snapshots/c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd.log"
       }
     ]
   },
@@ -337,11 +510,10 @@
     "julia": "1.10.12",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
-    "full_tests": "pending",
+    "full_tests": "FAIL",
     "full_summary": null,
     "loaded_native_libraries": [
       "/matrix/final-linux/1.10/depot/artifacts/2de1d4e9f48d471623549edeba8f5c10b70b2b05/lib/libopencascade_cxxwrap.so",
@@ -349,24 +521,49 @@
       "/matrix/final-linux/1.10/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.10/depot/artifacts/5fd776a6a69026830aa847fd3eca2b915d8184db/lib/libnetgen_cxxwrap.so"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "logs": [
       {
         "path": "final-linux/1.10/delone-full-resumed.log",
-        "sha256": "ec08949cc92a75307f91e2d7ad98d731dc4a3b0ec2d6150c0fb7643f77d76710"
+        "sha256": "a0691a52a1ef409ad4f5ed1cfd95f0de5edf220e802586d09b48e8ad1824015e",
+        "bytes": 20536,
+        "snapshot": "log-snapshots/a0691a52a1ef409ad4f5ed1cfd95f0de5edf220e802586d09b48e8ad1824015e.log"
       },
       {
         "path": "final-linux/1.10/full.log",
-        "sha256": "4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91"
+        "sha256": "4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91",
+        "bytes": 39448,
+        "snapshot": "log-snapshots/4a312257fae3ce4f51dea8e13d515b35beac8ee31a87772fac899bd90aa90d91.log"
       },
       {
         "path": "final-linux/1.10/native.log",
-        "sha256": "1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617"
+        "sha256": "1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617",
+        "bytes": 1249,
+        "snapshot": "log-snapshots/1b85e6afc6f0910146ece17fc6377fab1c5fe41e3d4bb85b053978cdcad3d617.log"
       },
       {
         "path": "final-linux/1.10/resolution.log",
-        "sha256": "c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd"
+        "sha256": "c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd",
+        "bytes": 9031,
+        "snapshot": "log-snapshots/c36e4ae39cdc4d8335de45497268433bf06ee0fd0f29feb1fb2ac5d13076c3dd.log"
       }
+    ],
+    "boundary_fixture_checks": {
+      "result": "PASS",
+      "assertions": 62,
+      "source_revision": "223b934d",
+      "log": {
+        "path": "curved-boundary-portable-linux-1.10.log",
+        "sha256": "cbd5671fdb2bc7433a7ccb26967e237c1481f8fa33cfe40fa98f1e6208688fa2",
+        "bytes": 122,
+        "snapshot": "log-snapshots/cbd5671fdb2bc7433a7ccb26967e237c1481f8fa33cfe40fa98f1e6208688fa2.log"
+      }
+    },
+    "full_test_notes": [
+      "Initial fixture assertion failed before its correction.",
+      "VM kernel OOM killed the first full run while a third probe overlapped two suites; a clean rerun is required."
     ]
   },
   {
@@ -374,7 +571,6 @@
     "julia": "1.11.9",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -386,39 +582,57 @@
       "/matrix/final-linux/1.11/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.11/depot/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": null,
     "logs": [
       {
         "path": "final-linux/1.11/delone-full-resumed.log",
-        "sha256": "4508d48eba553dea4b980d478250b9ccfa1ec407c52489c6a24a9253f26fe74d"
+        "sha256": "4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724",
+        "bytes": 21422,
+        "snapshot": "log-snapshots/4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724.log"
       },
       {
         "path": "final-linux/1.11/full.log",
-        "sha256": "3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540"
+        "sha256": "3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540",
+        "bytes": 4231,
+        "snapshot": "log-snapshots/3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540.log"
       },
       {
         "path": "final-linux/1.11/native.log",
-        "sha256": "958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0"
+        "sha256": "958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0",
+        "bytes": 2832,
+        "snapshot": "log-snapshots/958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0.log"
       },
       {
         "path": "final-linux/1.11/resolution-generic.log",
-        "sha256": "b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4"
+        "sha256": "b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4",
+        "bytes": 9123,
+        "snapshot": "log-snapshots/b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4.log"
       },
       {
         "path": "final-linux/1.11/resolution-retry.log",
-        "sha256": "7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839"
+        "sha256": "7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839",
+        "bytes": 194,
+        "snapshot": "log-snapshots/7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839.log"
       },
       {
         "path": "final-linux/1.11/resolution-retry2.log",
-        "sha256": "879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f"
+        "sha256": "879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f",
+        "bytes": 5710,
+        "snapshot": "log-snapshots/879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f.log"
       },
       {
         "path": "final-linux/1.11/resolution-staged.log",
-        "sha256": "15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550"
+        "sha256": "15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550",
+        "bytes": 7886,
+        "snapshot": "log-snapshots/15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550.log"
       },
       {
         "path": "final-linux/1.11/resolution.log",
-        "sha256": "4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75"
+        "sha256": "4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75",
+        "bytes": 5941,
+        "snapshot": "log-snapshots/4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75.log"
       }
     ]
   },
@@ -427,7 +641,6 @@
     "julia": "1.11.9",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -439,48 +652,76 @@
       "/matrix/final-linux/1.11/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.11/depot/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": null,
     "logs": [
       {
         "path": "final-linux/1.11/delone-full-resumed.log",
-        "sha256": "4508d48eba553dea4b980d478250b9ccfa1ec407c52489c6a24a9253f26fe74d"
+        "sha256": "4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724",
+        "bytes": 21422,
+        "snapshot": "log-snapshots/4740332c22b0ca3f65cb9b2949615fa198e0d6558cfcb8d8d3b7426b53e97724.log"
       },
       {
         "path": "final-linux/1.11/full.log",
-        "sha256": "3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540"
+        "sha256": "3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540",
+        "bytes": 4231,
+        "snapshot": "log-snapshots/3df39cb2dfd25d27bb4ca8ff61753ddbba33e2a6ef96badc01c5883ebeb29540.log"
       },
       {
         "path": "final-linux/1.11/native.log",
-        "sha256": "958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0"
+        "sha256": "958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0",
+        "bytes": 2832,
+        "snapshot": "log-snapshots/958eabee6607c071f7c1dbdab591da5ac47ff6c73d582a5243efe350d905b7b0.log"
       },
       {
         "path": "final-linux/1.11/resolution-generic.log",
-        "sha256": "b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4"
+        "sha256": "b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4",
+        "bytes": 9123,
+        "snapshot": "log-snapshots/b434183472f7d2993dc72f7b57ea26e6ae7d63c2ff333f0d608009b5d1d4e3d4.log"
       },
       {
         "path": "final-linux/1.11/resolution-retry.log",
-        "sha256": "7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839"
+        "sha256": "7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839",
+        "bytes": 194,
+        "snapshot": "log-snapshots/7bbf364e0535f9350f68b9ddec75b98f09746a33c27df7c7c11a9c874f831839.log"
       },
       {
         "path": "final-linux/1.11/resolution-retry2.log",
-        "sha256": "879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f"
+        "sha256": "879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f",
+        "bytes": 5710,
+        "snapshot": "log-snapshots/879b1ed8c3a53ad29b44cc7a48f4ffbae41339635aeeff6c9fed452899f9386f.log"
       },
       {
         "path": "final-linux/1.11/resolution-staged.log",
-        "sha256": "15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550"
+        "sha256": "15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550",
+        "bytes": 7886,
+        "snapshot": "log-snapshots/15376524c2768cc6e83f22b3392b55c132b0292a3b1d257e6d9d94744579e550.log"
       },
       {
         "path": "final-linux/1.11/resolution.log",
-        "sha256": "4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75"
+        "sha256": "4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75",
+        "bytes": 5941,
+        "snapshot": "log-snapshots/4d61af12bf6e5401a01bc579e574b5267e0df59d2ab030793b4a787aa87fbb75.log"
       }
-    ]
+    ],
+    "boundary_fixture_checks": {
+      "result": "PASS",
+      "assertions": 62,
+      "source_revision": "223b934d",
+      "log": {
+        "path": "curved-boundary-portable-linux-1.11.log",
+        "sha256": "f46cc45b43479940dcec4e213cc08c170ea27183d9060882fbad0aece515276c",
+        "bytes": 451,
+        "snapshot": "log-snapshots/f46cc45b43479940dcec4e213cc08c170ea27183d9060882fbad0aece515276c.log"
+      }
+    }
   },
   {
     "platform": "Linux x86_64 glibc (QEMU)",
     "julia": "1.12.7",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -492,19 +733,33 @@
       "/matrix/final-linux/1.12/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.12/depot/artifacts/e665a17436a7356a8253924b0e9a01a306e2a5b1/lib/libnetgen_cxxwrap.so"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": null,
     "logs": [
       {
+        "path": "final-linux/1.12/delone-full-resumed.log",
+        "sha256": "9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334",
+        "bytes": 16100,
+        "snapshot": "log-snapshots/9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334.log"
+      },
+      {
         "path": "final-linux/1.12/native.log",
-        "sha256": "d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff"
+        "sha256": "d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff",
+        "bytes": 3697,
+        "snapshot": "log-snapshots/d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff.log"
       },
       {
         "path": "final-linux/1.12/resolution-generic.log",
-        "sha256": "5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7"
+        "sha256": "5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7",
+        "bytes": 10109,
+        "snapshot": "log-snapshots/5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7.log"
       },
       {
         "path": "final-linux/1.12/resolution.log",
-        "sha256": "1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7"
+        "sha256": "1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7",
+        "bytes": 4042,
+        "snapshot": "log-snapshots/1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7.log"
       }
     ]
   },
@@ -513,7 +768,6 @@
     "julia": "1.12.7",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -525,19 +779,33 @@
       "/matrix/final-linux/1.12/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.12/depot/artifacts/e665a17436a7356a8253924b0e9a01a306e2a5b1/lib/libnetgen_cxxwrap.so"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": null,
     "logs": [
       {
+        "path": "final-linux/1.12/delone-full-resumed.log",
+        "sha256": "9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334",
+        "bytes": 16100,
+        "snapshot": "log-snapshots/9aede1c75628305b151ab58aab579ea4171b6122917966800062f598afe15334.log"
+      },
+      {
         "path": "final-linux/1.12/native.log",
-        "sha256": "d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff"
+        "sha256": "d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff",
+        "bytes": 3697,
+        "snapshot": "log-snapshots/d19b70d09dd6102785317a3c1c521f2255de76a3e4ecf2f68d4156e300b91aff.log"
       },
       {
         "path": "final-linux/1.12/resolution-generic.log",
-        "sha256": "5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7"
+        "sha256": "5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7",
+        "bytes": 10109,
+        "snapshot": "log-snapshots/5c54350b581172fcd7b7945afa508e2b5cf0952038d2845f7db205057d67fbc7.log"
       },
       {
         "path": "final-linux/1.12/resolution.log",
-        "sha256": "1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7"
+        "sha256": "1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7",
+        "bytes": 4042,
+        "snapshot": "log-snapshots/1098d203d2411f3d7fef80e52ffed855fcaa931bdc4cd232110969f416a51ad7.log"
       }
     ]
   },
@@ -546,7 +814,6 @@
     "julia": "1.13.2",
     "package": "Monge",
     "package_version": "0.1.0",
-    "runtime_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -558,19 +825,27 @@
       "/matrix/final-linux/1.13/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.13/depot/artifacts/8b265184eaeeba81cf7b27c7c246b06b937c2447/lib/libnetgen_cxxwrap.so"
     ],
+    "native_installation_revision": "68b588b50112c2a316e4d3db10e988dd86fa25a1",
     "current_candidate_revision": "aeaea2fb43775ff818503298593337829e69fc94",
+    "full_suite_runtime_revision": null,
     "logs": [
       {
         "path": "final-linux/1.13/native.log",
-        "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d"
+        "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d",
+        "bytes": 1184,
+        "snapshot": "log-snapshots/a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d.log"
       },
       {
         "path": "final-linux/1.13/resolution-generic.log",
-        "sha256": "719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054"
+        "sha256": "719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054",
+        "bytes": 10508,
+        "snapshot": "log-snapshots/719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054.log"
       },
       {
         "path": "final-linux/1.13/resolution.log",
-        "sha256": "51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779"
+        "sha256": "51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779",
+        "bytes": 4554,
+        "snapshot": "log-snapshots/51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779.log"
       }
     ]
   },
@@ -579,7 +854,6 @@
     "julia": "1.13.2",
     "package": "Delone",
     "package_version": "0.1.0",
-    "runtime_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
     "resolution": "PASS",
     "loading": "PASS",
     "native_execution": "PASS",
@@ -591,19 +865,27 @@
       "/matrix/final-linux/1.13/depot/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
       "/matrix/final-linux/1.13/depot/artifacts/8b265184eaeeba81cf7b27c7c246b06b937c2447/lib/libnetgen_cxxwrap.so"
     ],
-    "current_candidate_revision": "b9c5ba4f0900c02f37291e237e0993bf5a025b16",
+    "native_installation_revision": "c65fe65a42501622960ad0e5d15658fb46299195",
+    "current_candidate_revision": "223b934ddf6be7c3fd8feb0f3d55b728b385baab",
+    "full_suite_runtime_revision": null,
     "logs": [
       {
         "path": "final-linux/1.13/native.log",
-        "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d"
+        "sha256": "a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d",
+        "bytes": 1184,
+        "snapshot": "log-snapshots/a02c16cdae0e5579bddbf7a5d5d10649188f245f79819a2a706efd0e689ae27d.log"
       },
       {
         "path": "final-linux/1.13/resolution-generic.log",
-        "sha256": "719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054"
+        "sha256": "719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054",
+        "bytes": 10508,
+        "snapshot": "log-snapshots/719313dfd9397ca658d306c8aa8d95710cc40835bf97dbbd307ba31800704054.log"
       },
       {
         "path": "final-linux/1.13/resolution.log",
-        "sha256": "51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779"
+        "sha256": "51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779",
+        "bytes": 4554,
+        "snapshot": "log-snapshots/51ba7b11146dc51e89d51821eb8e135224a412cd0395fefdcfecc9ba960df779.log"
       }
     ]
   }
