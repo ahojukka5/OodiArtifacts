@@ -1,0 +1,19 @@
+# Native OCCT 8.0.1; deliberately independent of the Julia minor ABI.
+[[occt_8_0_1]]
+arch = "aarch64"
+os = "macos"
+git-tree-sha1 = "04d2d2f805e3e6931e6f02670cc1309f180e5d55"
+
+    [[occt_8_0_1.download]]
+    url = "https://github.com/ahojukka5/OodiArtifacts/releases/download/OCCT-8.0.1-macos-aarch64-04d2d2f805e3/OCCT.tar.gz"
+    sha256 = "17f2ddb18db38dc94c1e0cafcdee1567b8c837d405c4118265e0aaca666037c0"
+
+[[occt_8_0_1]]
+arch = "x86_64"
+os = "linux"
+libc = "glibc"
+git-tree-sha1 = "9ad71dc7bc24252016d89611722806a84a9c100b"
+
+    [[occt_8_0_1.download]]
+    url = "https://github.com/ahojukka5/OodiArtifacts/releases/download/OCCT-8.0.1-linux-x86_64-glibc-9ad71dc7bc24/OCCT.tar.gz"
+    sha256 = "27447b3eaa9c16e568651e479c02f466db7957a32c5c3e3122b302232af63762"

@@ -195,7 +195,7 @@ def audit(prefix):
     return {'products': sorted(names), 'libraries': details, 'required_symbol_versions': floor}
 
 
-def qualify(prefix, work):
+def qualify(prefix, work, record_loads=False):
     prefix = prefix.resolve()
     work = work.resolve()
     report = audit(prefix)
@@ -210,8 +210,18 @@ def qualify(prefix, work):
     for key in ('LD_LIBRARY_PATH', 'DYLD_LIBRARY_PATH', 'DYLD_FALLBACK_LIBRARY_PATH', 'CASROOT'):
         env.pop(key, None)
     env['CSF_OCCTResourcePath'] = str(prefix / 'share/opencascade/resources')
-    subprocess.run([str(work / 'build/occt_smoke')] + [str(p) for p in libraries(prefix)],
-                   cwd=work, env=env, check=True)
+    command = [str(work / 'build/occt_smoke')] + [str(p) for p in libraries(prefix)]
+    if record_loads:
+        result = subprocess.run(command, cwd=work, env=env, check=True,
+                                stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        print(result.stdout, flush=True)
+        loaded = {Path(line.removeprefix('OCCT_LOADED_LIBRARY ')).resolve()
+                  for line in result.stdout.splitlines() if line.startswith('OCCT_LOADED_LIBRARY ')}
+        if loaded != set(libraries(prefix)):
+            raise RuntimeError('actual toolkit load paths differ from the selected prefix: ' + str(loaded))
+        report['actual_loaded_libraries'] = sorted(str(path) for path in loaded)
+    else:
+        subprocess.run(command, cwd=work, env=env, check=True)
     report['installed_prefix_smoke'] = 'PASS: toolkit loading, box, Boolean volume, mesh, STEP volume roundtrip, IGES/STL export'
     report['runtime'] = capture(['sw_vers']) if platform.system() == 'Darwin' else Path('/etc/os-release').read_text()
     report['relocated'] = True

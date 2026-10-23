@@ -16,6 +16,28 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#ifdef __APPLE__
+#include <mach-o/dyld.h>
+#else
+#include <link.h>
+#endif
+
+void record_library(const char* path) {
+  if (path && std::string(path).find("/libTK") != std::string::npos)
+    std::cout << "OCCT_LOADED_LIBRARY " << path << '\n';
+}
+
+void record_loaded_libraries() {
+#ifdef __APPLE__
+  for (uint32_t i = 0; i < _dyld_image_count(); ++i)
+    record_library(_dyld_get_image_name(i));
+#else
+  dl_iterate_phdr([](dl_phdr_info* image, size_t, void*) {
+    record_library(image->dlpi_name);
+    return 0;
+  }, nullptr);
+#endif
+}
 
 void require(bool result, const char* message) {
   if (!result) throw std::runtime_error(message);
@@ -55,6 +77,7 @@ int main(int argc, char** argv) {
     StlAPI_Writer stl;
     BRepMesh_IncrementalMesh boxMesh(box, 0.5);
     require(stl.Write(box, "box.stl"), "STL export");
+    record_loaded_libraries();
     std::cout << "OCCT 8.0.1: all toolkits load; BREP, Boolean, mesh, STEP, IGES, STL PASS\n";
     return 0;
   } catch (const std::exception& error) {
