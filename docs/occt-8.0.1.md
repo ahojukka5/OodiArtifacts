@@ -57,6 +57,36 @@ write access only after qualification and when `publish=true`. The default
 are passed into the build container. Never run the Linux build under QEMU
 on the Mac.
 
+## Apple Silicon: local native build
+
+Prerequisites are Apple Command Line Tools (full Xcode is not required),
+Python 3, CMake, Ninja and Git. Run from the recipe checkout:
+
+```sh
+bash scripts/occt/build-macos.sh
+```
+
+Build output stays under `~/.cache/oodi/OodiArtifacts/occt-8.0.1/` by
+default; `OCCT_WORK_DIR` selects a different external cache. The build
+explicitly uses arm64, deployment target macOS 11.0, C++17 and at most six
+compiler jobs. It never consumes the existing OCCT_jll or Homebrew OCCT.
+Apple Clang, SDK, OS, CMake and linker identities are recorded in the
+sidecar. Mach-O dependencies must be the packaged OCCT libraries or Apple
+system libraries/frameworks; Homebrew runtime dependencies fail the audit.
+
+The command builds, packages, then compiles/runs the relocated native
+consumer before leaving candidates in `dist/`. After reviewing the result,
+the authorized publication command is:
+
+```sh
+python3 scripts/occt/occt.py publish \
+  "$HOME/.cache/oodi/OodiArtifacts/occt-8.0.1/dist"
+```
+
+Publication repeats qualification, creates an immutable public release,
+downloads both assets without authentication and repeats checks and smoke
+from a fresh prefix. A build or package failure does not authorize upload.
+
 ## Qualification and immutable release
 
 `scripts/occt/occt.py` checks native architectures, every toolkit's dynamic
