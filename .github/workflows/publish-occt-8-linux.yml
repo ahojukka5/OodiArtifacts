@@ -8,6 +8,11 @@ on:
         type: boolean
         default: false
         required: true
+      qualify_artifacts:
+        description: Only qualify existing Julia artifacts; skip native rebuild/publication
+        type: boolean
+        default: false
+        required: true
 
 permissions:
   contents: read
@@ -21,7 +26,7 @@ env:
 
 jobs:
   build:
-    if: github.repository == 'ahojukka5/OodiArtifacts' && github.ref == 'refs/heads/master'
+    if: github.repository == 'ahojukka5/OodiArtifacts' && github.ref == 'refs/heads/master' && !inputs.qualify_artifacts
     runs-on: ubuntu-24.04
     timeout-minutes: 330
     steps:
@@ -59,7 +64,7 @@ jobs:
 
   publish:
     needs: build
-    if: inputs.publish && github.repository == 'ahojukka5/OodiArtifacts' && github.ref == 'refs/heads/master'
+    if: inputs.publish && github.repository == 'ahojukka5/OodiArtifacts' && github.ref == 'refs/heads/master' && !inputs.qualify_artifacts
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     permissions:
@@ -100,3 +105,36 @@ jobs:
           path: |
             ${{ runner.temp }}/release/public-delivery.json
             ${{ runner.temp }}/release/public-el8.log
+
+  qualify:
+    if: inputs.qualify_artifacts && github.repository == 'ahojukka5/OodiArtifacts'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        julia-version: ['1.10.11', '1.13.1']
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: julia-actions/setup-julia@4c0cb0fce8556fdb04a90347310e5db8b1f98fb9 # v2
+        with:
+          version: ${{ matrix.julia-version }}
+      - name: Install from public releases into a fresh depot and build native consumers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/occt/qualify_artifacts.py \
+            --julia julia --work "$RUNNER_TEMP/occt-pkg-qualification" \
+            2>&1 | tee "$RUNNER_TEMP/occt-pkg-qualification.log"
+      - name: Preserve qualification evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: occt-pkg-linux-julia-${{ matrix.julia-version }}
+          path: |
+            ${{ runner.temp }}/occt-pkg-qualification.log
+            ${{ runner.temp }}/occt-pkg-qualification/qualification.json
+            ${{ runner.temp }}/occt-pkg-qualification/pkg-result.toml
+          if-no-files-found: warn

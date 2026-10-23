@@ -127,6 +127,16 @@ matrix above. The even earlier
 [`libopencascade_cxxwrap-19b04788`](https://github.com/ahojukka5/OodiArtifacts/releases/tag/libopencascade_cxxwrap-19b04788)
 is retained for provenance, not recommended as the current Monge binding.
 
+## Julia artifact consumption
+
+The root [`Artifacts.toml`](Artifacts.toml) selects the existing native OCCT
+8.0.1 releases through the `occt_8_0_1` key on Apple Silicon and Linux
+x86_64/glibc. It has no Julia minor-version selector. The bounded
+[clean-depot test harness and Yggdrasil handoff](docs/occt-8.0.1-yggdrasil.md)
+separate actual Pkg installation, native load/geometry/relocation checks and
+any independent BinaryBuilder source builds. This declaration does not
+create an OCCT_jll package or upgrade Monge/Delone dependencies.
+
 ## Building and publishing
 
 The native **OCCT 8.0.1** runtime has a separate
