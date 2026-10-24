@@ -43,6 +43,10 @@ depot. The recorded trees are matched to the published release index and
 the intended Julia minor. No C++ build, artifact override or binary-path
 override participates in qualification.
 
+Archive SHA-256 values come from the original publication records in the
+release index. Integration runs record the selected installed content trees
+and execution results separately from those archive checksum measurements.
+
 Mac tests run locally on Apple Silicon, macOS 27.0.1. The
 [exact executed Julia driver](../scripts/qualify_native_packages.jl) additionally
 verifies each loaded artifact tree with `verify_artifact(...;
@@ -97,11 +101,11 @@ inferred; the interrupted stages remain unverified pending completed retries.
 | Linux x86_64 glibc | Delone | 1.10.12 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Delone | 1.11 | PASS | PASS | PASS | UNVERIFIED |
 | Linux x86_64 glibc | Delone | 1.12.7 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Delone | 1.13 | PENDING | PENDING | PENDING | PENDING |
+| Linux x86_64 glibc | Delone | 1.13.2 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.10.12 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.11 | PASS | UNVERIFIED | UNVERIFIED | UNVERIFIED |
 | Linux x86_64 glibc | Monge | 1.12.7 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Monge | 1.13 | PASS | IN_PROGRESS | PENDING | PENDING |
+| Linux x86_64 glibc | Monge | 1.13 | PASS | PASS | PASS | IN_PROGRESS |
 | macOS aarch64 | Delone | 1.10.11 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.11.9 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.12.6 | PASS | PASS | PASS | PASS |
