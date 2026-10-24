@@ -76,9 +76,10 @@ Source integration is merged in
 The [integration qualification](docs/native-integration-20261024.md)
 tests their exact source revisions from fresh depots, with separate
 resolution, loading, geometry/meshing and complete-suite outcomes.
-Both packages passed all four stages on macOS aarch64 for Julia 1.10–1.13.
-Linux qualification is in progress; publication alone does not qualify a
-package release. The [original compatibility evidence](docs/native-matrix-20261023.md)
+Both packages passed all four stages on macOS aarch64 and Linux x86_64/glibc
+for Julia 1.10–1.13: sixteen complete package/platform/minor cases.
+These results qualify the revisions in the report; package release and
+registration remain separate. The [original compatibility evidence](docs/native-matrix-20261023.md)
 and [historical results](docs/native-matrix-20261023-results.json) retain
 earlier successes and failures, including the unsuccessful Delone Linux
 1.12 suite. Cancelled, timed-out and partial runs never count as successes.
