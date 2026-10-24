@@ -33,6 +33,8 @@ Resolution, loading, native execution and `Pkg.test` run in separate Julia
 processes. All use the same case's depot and environment, one Julia thread,
 one precompile task and one OpenBLAS thread. Package sources remain clean.
 The package's default complete suite runs without domain or tier filters.
+Monge's public suite reports one existing optional integration skip in its
+`Broken` column; the actual counts remain in the recorded summaries.
 
 Monge's native check constructs a box with volume 6. Delone generates a
 circle mesh, imports the committed STEP box and generates a finite 3D mesh.
@@ -54,7 +56,10 @@ julia +1.10 --startup-file=no --project="$case_dir/env" \
 
 Use an empty `$case_dir/depot` followed by the selected Julia runtime depot
 in `JULIA_DEPOT_PATH`, `JULIA_LOAD_PATH=@:@stdlib`, and
-`JULIA_PKG_PRECOMPILE_AUTO=0`. Then run `load`, `native` and `full` in place
+`JULIA_PKG_PRECOMPILE_AUTO=0`. Set `JULIA_NUM_THREADS`,
+`JULIA_NUM_PRECOMPILE_TASKS` and `OPENBLAS_NUM_THREADS` to `1`, and unset
+native provider/build overrides and `LD_LIBRARY_PATH` / `DYLD_LIBRARY_PATH`
+loader overrides. Then run `load`, `native` and `full` in place
 of `resolve`. Select each Julia executable explicitly; give every
 package/minor combination a new case directory. Sources must be the exact
 Git revisions above. Credentials for private package sources remain local.
@@ -99,11 +104,11 @@ inferred; the interrupted stages remain unverified pending completed retries.
 | macOS aarch64 | Delone | 1.10.11 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.11.9 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.12.6 | PASS | PASS | PASS | PASS |
-| macOS aarch64 | Delone | 1.13.1 | PASS | IN_PROGRESS | NOT RUN | NOT RUN |
+| macOS aarch64 | Delone | 1.13.1 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Monge | 1.10.11 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Monge | 1.11.9 | PASS | PASS | PASS | PASS |
-| macOS aarch64 | Monge | 1.12.6 | PASS | PASS | PASS | IN_PROGRESS |
-| macOS aarch64 | Monge | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| macOS aarch64 | Monge | 1.12.6 | PASS | PASS | PASS | PASS |
+| macOS aarch64 | Monge | 1.13.1 | PASS | PASS | PASS | IN_PROGRESS |
 
 ## Compatibility limits
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T09:06:31.905601+00:00",
+  "collected_at": "2026-10-24T09:16:49.942378+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -532,27 +532,77 @@
       "julia_minor": "1.13",
       "stages": {
         "resolve": "PASS",
-        "load": "IN_PROGRESS",
-        "native": "NOT RUN",
-        "full": "NOT RUN"
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
       },
-      "status": "RUNNING",
+      "status": "PASS",
       "source_files_sha256": {
         "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
         "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
       },
       "julia_version": "1.13.1",
       "started_at": "2026-10-24T09:05:32.275167+00:00",
+      "finished_at": "2026-10-24T09:15:23.021443+00:00",
       "user_depot_initially_empty": true,
       "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
       "logs": [
         {
           "path": "resolve.log",
           "sha256": "74f2a046df7d8c5669d05ed9a8e9a2c46143d4087e28a3f8a508ea86efcb4da3",
           "bytes": 10005,
           "local_snapshot": "snapshots/74f2a046df7d8c5669d05ed9a8e9a2c46143d4087e28a3f8a508ea86efcb4da3.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "a59f042d3c6c439601ae003c14eb8efc8530141310d6997a1edf9f5ccaf3ec6a",
+          "bytes": 264,
+          "local_snapshot": "snapshots/a59f042d3c6c439601ae003c14eb8efc8530141310d6997a1edf9f5ccaf3ec6a.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "89107910bc056de035595c113a99e3b1d776da2194b1eedb04f113abe9f333d1",
+          "bytes": 32,
+          "local_snapshot": "snapshots/89107910bc056de035595c113a99e3b1d776da2194b1eedb04f113abe9f333d1.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "0ba4b1ffa91218812e66959f6d905375bd6e70ab91d97f56ae5016130962173f",
+          "bytes": 55274,
+          "local_snapshot": "snapshots/0ba4b1ffa91218812e66959f6d905375bd6e70ab91d97f56ae5016130962173f.log"
         }
       ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93888  93888  7m34.9s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+        "<case-depot>/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "OCCT_jll": {
+          "version": "7.9.3+0",
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a"
+        },
+        "libcxxwrap_julia_jll": {
+          "version": "0.14.12+0",
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f"
+        },
+        "Episteme": {
+          "version": "0.1.0",
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6"
+        },
+        "Delone": {
+          "version": "0.1.0",
+          "tree": "nothing"
+        },
+        "CxxWrap": {
+          "version": "0.17.5",
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d"
+        }
+      },
       "manifest": {
         "path": "Manifest.toml",
         "sha256": "be4cb1d1560813203e065a24a12c9a867c8f1088cf387a6c39186b6dd299542c",
@@ -560,7 +610,21 @@
         "local_snapshot": "snapshots/be4cb1d1560813203e065a24a12c9a867c8f1088cf387a6c39186b6dd299542c.toml"
       },
       "general_registry_tree": "4785bd4b6bf2d4d8c717c1c4cb6fd9adf8456174",
-      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9"
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "bfef55456815cf0ee5e6d70e6cf9449a365c225b",
+          "archive_sha256": "9ab34e7aa12bd5b930b6a402de1dd49e17c98e5c792de9030259c33a3e6fe839",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/NGSolveNetgen-bfef5545/NGSolveNetgen.tar.gz"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975",
+          "archive_sha256": "7132ede827a84cf021a454592c46118aef08afce25b925a5311c602d2d96fc88",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-a983e9b1/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
     },
     {
       "platform": "macOS aarch64",
@@ -765,17 +829,19 @@
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "PASS"
       },
-      "status": "RUNNING",
+      "status": "PASS",
       "source_files_sha256": {
         "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
         "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
       },
       "julia_version": "1.12.6",
       "started_at": "2026-10-24T08:58:32.453460+00:00",
+      "finished_at": "2026-10-24T09:15:13.971841+00:00",
       "user_depot_initially_empty": true,
       "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
       "logs": [
         {
           "path": "resolve.log",
@@ -794,7 +860,20 @@
           "sha256": "944f670e8e2a465216b9e27e8ce609518487c1b67e1c1cc790f37a8b5040791c",
           "bytes": 31,
           "local_snapshot": "snapshots/944f670e8e2a465216b9e27e8ce609518487c1b67e1c1cc790f37a8b5040791c.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "3ce8b3f3e9287c5b2167581f9b52a5d10db337579c49ce1041e4b3e2a08bf2ff",
+          "bytes": 143754,
+          "local_snapshot": "snapshots/3ce8b3f3e9287c5b2167581f9b52a5d10db337579c49ce1041e4b3e2a08bf2ff.log"
         }
+      ],
+      "full_test_summaries": [
+        "Semantic chair exact and visual artifact qualification |  147    147  8.7s",
+        "Monge static architecture | 1622   1622  8.9s",
+        "OCCT runtime toolkit preload |    2      2  1m05.2s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  7.2s",
+        "Monge.jl (public Julian API) | 11791       1  11792  13m39.3s"
       ],
       "loaded_native_libraries": [
         "<case-depot>/artifacts/52eda2983406f3d28ef35be0bacc96277139ba15/lib/libopencascade_cxxwrap.dylib"
@@ -844,16 +923,81 @@
       "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
       "julia_minor": "1.13",
       "stages": {
-        "resolve": "NOT RUN",
-        "load": "NOT RUN",
-        "native": "NOT RUN",
-        "full": "NOT RUN"
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "IN_PROGRESS"
       },
-      "status": "NOT RUN",
+      "status": "RUNNING",
       "source_files_sha256": {
         "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
         "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
-      }
+      },
+      "julia_version": "1.13.1",
+      "started_at": "2026-10-24T09:15:14.147447+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "ed0d80c5db7e823924ea59add50456693e71c05cd08f82b3a2c6994e87dd95d4",
+          "bytes": 5982,
+          "local_snapshot": "snapshots/ed0d80c5db7e823924ea59add50456693e71c05cd08f82b3a2c6994e87dd95d4.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "24eef76bae5ab33c4bf5d96ef658d4c7df1c5292de78485f156a26989017bc74",
+          "bytes": 29,
+          "local_snapshot": "snapshots/24eef76bae5ab33c4bf5d96ef658d4c7df1c5292de78485f156a26989017bc74.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "e168ed98d89751f6ae34e9c9caff251d5790da3eff4a80bd9fd6e3649dcee30b",
+          "bytes": 31,
+          "local_snapshot": "snapshots/e168ed98d89751f6ae34e9c9caff251d5790da3eff4a80bd9fd6e3649dcee30b.log"
+        }
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/c44d084b938bdff2cbb7988e754616f867d604dc/lib/libopencascade_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "OCCT_jll": {
+          "version": "7.9.3+0",
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a"
+        },
+        "libcxxwrap_julia_jll": {
+          "version": "0.14.12+0",
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f"
+        },
+        "Episteme": {
+          "version": "0.1.0",
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6"
+        },
+        "Monge": {
+          "version": "0.1.0",
+          "tree": "nothing"
+        },
+        "CxxWrap": {
+          "version": "0.17.5",
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "c5479c0bc6bfa5bfbf51a16a9cdea79d60538d7f459d7a9951b510feebb9f59e",
+        "bytes": 7718,
+        "local_snapshot": "snapshots/c5479c0bc6bfa5bfbf51a16a9cdea79d60538d7f459d7a9951b510feebb9f59e.toml"
+      },
+      "general_registry_tree": "4785bd4b6bf2d4d8c717c1c4cb6fd9adf8456174",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "c44d084b938bdff2cbb7988e754616f867d604dc",
+          "archive_sha256": "065f4d9d1e14d8819ea069d43f15d42f8ed0d117168d07b6cc6e5dc8dea3f76a",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-c44d084b/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
     }
   ],
   "interrupted_attempts": [
