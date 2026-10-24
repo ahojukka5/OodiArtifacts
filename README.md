@@ -81,7 +81,8 @@ resolution, loading, geometry/meshing and complete-suite outcomes.
 Both packages passed all four stages on macOS aarch64 and Linux x86_64/glibc
 for Julia 1.10–1.13: sixteen complete package/platform/minor cases.
 These results qualify the exact revisions in the report. Tagging and
-registration are separate, subsequently completed release operations. The [original compatibility evidence](docs/native-matrix-20261023.md)
+registration are separate, subsequently completed release operations.
+The [original compatibility evidence](docs/native-matrix-20261023.md)
 and [historical results](docs/native-matrix-20261023-results.json) retain
 earlier successes and failures, including the unsuccessful Delone Linux
 1.12 suite. Cancelled, timed-out and partial runs never count as successes.
