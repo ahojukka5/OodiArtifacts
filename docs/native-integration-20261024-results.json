@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T10:40:27.505699+00:00",
+  "collected_at": "2026-10-24T11:12:22.976398+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -77,14 +77,55 @@
       "workflow_revision": "9c2f0aa6ebb03c153c62585e5c9350385e9d13e4",
       "workflow_event": "workflow_dispatch",
       "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120847501651",
-      "job_conclusion": "",
+      "job_conclusion": "success",
       "stages": {
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "PASS"
       },
-      "status": "IN_PROGRESS"
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.11.9",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+        "<case-depot>/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93887  93887  36m11.8s"
+      ],
+      "logs": [
+        {
+          "path": "linux-delone-1.11.log",
+          "sha256": "5df6ce3b3dbb8029336574ccad96cf644319baa974a3e5b19c00c30ba5423fc4",
+          "bytes": 121339,
+          "local_snapshot": "snapshots/5df6ce3b3dbb8029336574ccad96cf644319baa974a3e5b19c00c30ba5423fc4.log"
+        }
+      ],
+      "started_at": "2026-10-24T10:22:36Z",
+      "finished_at": "2026-10-24T11:10:36Z",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+          "archive_sha256": "b35522e610fb8c10f201dbdcc87c0be3e1036892e7779f7de0cb9cc76dd3406a",
+          "release_url": "https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-22b6752d"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "063c21fd9f901861adaa875d539acbb00bd4d0f7",
+          "archive_sha256": "0d843c91f605d2b087c128dab80960036f42e2816a0effe2db53cfc8a2cf6ee3",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-063c21fd/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
     },
     {
       "platform": "Linux x86_64 glibc",
@@ -267,9 +308,9 @@
       "job_conclusion": "",
       "stages": {
         "resolve": "PASS",
-        "load": "IN_PROGRESS",
-        "native": "PENDING",
-        "full": "PENDING"
+        "load": "PASS",
+        "native": "PASS",
+        "full": "IN_PROGRESS"
       },
       "status": "IN_PROGRESS"
     },
