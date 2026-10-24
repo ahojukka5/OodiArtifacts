@@ -87,23 +87,25 @@ running, skipped or interrupted stages remain unqualified. The
 [machine-readable results](native-integration-20261024-results.json) record
 each stage, exact runtime and source revision, selected native trees,
 complete-suite summaries, job links and completed-log SHA-256 values.
-Raw logs and environments remain in the local qualification cache rather
-than in this repository.
+Completed log snapshots and Mac environments remain in the local
+qualification cache rather than in this repository. Linux evidence is
+retained in the linked completed job logs and their downloaded snapshots.
 
 Both Linux Julia 1.11 first attempts stopped because their self-hosted
 runners lost communication with GitHub: Monge during loading, Delone during
 the full suite after its native stage passed. Their check-run annotations
 are retained separately in the results. No package test failure is
-inferred; the interrupted stages remain unverified pending completed retries.
+inferred. Those interrupted attempts remain unqualified; completed retry
+results are recorded independently in the table below.
 
 | Platform | Package | Julia | Resolution | Loading | Native execution | Full suite |
 | --- | --- | --- | --- | --- | --- | --- |
 | Linux x86_64 glibc | Delone | 1.10.12 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Delone | 1.11 | PASS | PASS | PASS | IN_PROGRESS |
+| Linux x86_64 glibc | Delone | 1.11.9 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Delone | 1.12.7 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Delone | 1.13.2 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.10.12 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Monge | 1.11 | PASS | IN_PROGRESS | PENDING | PENDING |
+| Linux x86_64 glibc | Monge | 1.11 | PASS | PASS | PASS | IN_PROGRESS |
 | Linux x86_64 glibc | Monge | 1.12.7 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.13.2 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.10.11 | PASS | PASS | PASS | PASS |
