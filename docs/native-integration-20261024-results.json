@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T09:16:49.942378+00:00",
+  "collected_at": "2026-10-24T09:30:44.977539+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -926,17 +926,19 @@
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "PASS"
       },
-      "status": "RUNNING",
+      "status": "PASS",
       "source_files_sha256": {
         "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
         "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
       },
       "julia_version": "1.13.1",
       "started_at": "2026-10-24T09:15:14.147447+00:00",
+      "finished_at": "2026-10-24T09:29:33.030357+00:00",
       "user_depot_initially_empty": true,
       "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
       "logs": [
         {
           "path": "resolve.log",
@@ -955,7 +957,20 @@
           "sha256": "e168ed98d89751f6ae34e9c9caff251d5790da3eff4a80bd9fd6e3649dcee30b",
           "bytes": 31,
           "local_snapshot": "snapshots/e168ed98d89751f6ae34e9c9caff251d5790da3eff4a80bd9fd6e3649dcee30b.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "02f31df848e45df2b2be55be8f2e6d30396581f3dadb3e41f16304df8a098944",
+          "bytes": 143463,
+          "local_snapshot": "snapshots/02f31df848e45df2b2be55be8f2e6d30396581f3dadb3e41f16304df8a098944.log"
         }
+      ],
+      "full_test_summaries": [
+        "Semantic chair exact and visual artifact qualification |  147    147  7.2s",
+        "Monge static architecture | 1622   1622  6.6s",
+        "OCCT runtime toolkit preload |    2      2  4.9s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  6.4s",
+        "Monge.jl (public Julian API) | 11791       1  11792  12m27.0s"
       ],
       "loaded_native_libraries": [
         "<case-depot>/artifacts/c44d084b938bdff2cbb7988e754616f867d604dc/lib/libopencascade_cxxwrap.dylib"
