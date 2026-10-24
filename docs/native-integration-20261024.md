@@ -99,11 +99,11 @@ inferred; the interrupted stages remain unverified pending completed retries.
 | Platform | Package | Julia | Resolution | Loading | Native execution | Full suite |
 | --- | --- | --- | --- | --- | --- | --- |
 | Linux x86_64 glibc | Delone | 1.10.12 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Delone | 1.11 | PASS | PASS | IN_PROGRESS | PENDING |
+| Linux x86_64 glibc | Delone | 1.11 | PASS | PASS | PASS | IN_PROGRESS |
 | Linux x86_64 glibc | Delone | 1.12.7 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Delone | 1.13.2 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.10.12 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Monge | 1.11 | PASS | UNVERIFIED | UNVERIFIED | UNVERIFIED |
+| Linux x86_64 glibc | Monge | 1.11 | PASS | IN_PROGRESS | PENDING | PENDING |
 | Linux x86_64 glibc | Monge | 1.12.7 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.13.2 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.10.11 | PASS | PASS | PASS | PASS |
