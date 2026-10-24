@@ -78,9 +78,12 @@ loading and geometry/meshing smoke checks passed across all sixteen
 wrapper/platform/Julia combinations; macOS aarch64 complete suites passed
 for Julia 1.10–1.13. Linux full-suite qualification is being completed
 separately, and cancelled, timed-out or partial runs are **not** successes.
-See the [native-matrix evidence and tooling PR #21](https://github.com/ahojukka5/OodiArtifacts/pull/21)
-for the proposed report and machine-readable records. That PR is not yet
-merged into `master`.
+The [dated compatibility evidence](docs/native-matrix-20261023.md)
+and [machine-readable results](docs/native-matrix-20261023-results.json)
+preserve the original matrix's successes, failures and limits.
+The subsequent Linux CI matrix passed Monge 1.10–1.13; Delone passed
+1.10, 1.11 and 1.13 while its 1.12 complete suite remained unsuccessful.
+Final integrated source revisions require separate qualification.
 
 Other architectures, including Linux aarch64 and macOS x86_64, are **not**
 covered by this published matrix. Do not infer platform support from the
@@ -140,13 +143,14 @@ Linux x86_64 OpenCascade wrapper build. It uses the GitHub-hosted
 does **not** generate or qualify the entire cross-version matrix, and should
 not be dispatched without reviewing its pins and the intended ABI.
 
-The separate native matrix build scripts, pinned
-`native/Project.toml`, installation evidence and detailed build
-instructions are proposed in
-[PR #21](https://github.com/ahojukka5/OodiArtifacts/pull/21).
-Those files are **not on `master` yet**, so do not follow a command that
-assumes `scripts/build_native.jl` or `docs/native-matrix-20261023.md`
-exists in an ordinary `master` checkout until that PR is merged.
+For the Julia-versioned OpenCascade and Netgen **wrappers**, the
+[source-pinned native build tools](scripts/build_native.jl),
+[Julia dependency specification](native/Project.toml) and
+[dated compatibility report](docs/native-matrix-20261023.md)
+describe the separately qualified binary matrix. These recipes are
+distinct from the OCCT 8.0.1 runtime build described above.
+This repository documents and distributes binaries; it does not
+automatically release Monge or Delone package versions.
 
 No native artifact publication is triggered by an ordinary push or PR.
 The lightweight [CI workflow](.github/workflows/ci.yml) validates workflow
