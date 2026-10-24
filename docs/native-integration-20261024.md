@@ -50,7 +50,7 @@ honor_overrides=false)`. Its SHA-256 is recorded in the results. Each stage
 is invoked as:
 
 ```sh
-julia +1.10 --startup-file=no --project="$case_dir/env" \
+julia +1.10.11 --startup-file=no --project="$case_dir/env" \
   scripts/qualify_native_packages.jl Monge "$source_checkout" "$case_dir" resolve
 ```
 
@@ -77,7 +77,8 @@ identities are recorded separately.
 
 ## Results
 
-Qualification is in progress. Only completed stages count as PASS; queued,
+All eight macOS package/minor cases passed every stage. Linux qualification
+is in progress. Only completed stages count as PASS; queued,
 running, skipped or interrupted stages remain unqualified. The
 [machine-readable results](native-integration-20261024-results.json) record
 each stage, exact runtime and source revision, selected native trees,
@@ -108,7 +109,7 @@ inferred; the interrupted stages remain unverified pending completed retries.
 | macOS aarch64 | Monge | 1.10.11 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Monge | 1.11.9 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Monge | 1.12.6 | PASS | PASS | PASS | PASS |
-| macOS aarch64 | Monge | 1.13.1 | PASS | PASS | PASS | IN_PROGRESS |
+| macOS aarch64 | Monge | 1.13.1 | PASS | PASS | PASS | PASS |
 
 ## Compatibility limits
 

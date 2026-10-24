@@ -76,7 +76,8 @@ Source integration is merged in
 The [integration qualification](docs/native-integration-20261024.md)
 tests their exact source revisions from fresh depots, with separate
 resolution, loading, geometry/meshing and complete-suite outcomes.
-This qualification is in progress; publication alone does not qualify a
+Both packages passed all four stages on macOS aarch64 for Julia 1.10–1.13.
+Linux qualification is in progress; publication alone does not qualify a
 package release. The [original compatibility evidence](docs/native-matrix-20261023.md)
 and [historical results](docs/native-matrix-20261023-results.json) retain
 earlier successes and failures, including the unsuccessful Delone Linux
