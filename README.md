@@ -70,20 +70,17 @@ maintained separately in
 [OpenCascadeCxxWrap](https://github.com/ahojukka5/OpenCascadeCxxWrap) and
 [NetgenCxxWrap_jll](https://github.com/ahojukka5/NetgenCxxWrap_jll).
 
-**Published is not the same as fully qualified.** Source PRs
-[Monge #560](https://github.com/ahojukka5/Monge.jl/pull/560) and
-[Delone #1047](https://github.com/ahojukka5/Delone.jl/pull/1047) propose
-using this native matrix. The initial clean-depot native installation,
-loading and geometry/meshing smoke checks passed across all sixteen
-wrapper/platform/Julia combinations; macOS aarch64 complete suites passed
-for Julia 1.10–1.13. Linux full-suite qualification is being completed
-separately, and cancelled, timed-out or partial runs are **not** successes.
-The [dated compatibility evidence](docs/native-matrix-20261023.md)
-and [machine-readable results](docs/native-matrix-20261023-results.json)
-preserve the original matrix's successes, failures and limits.
-The subsequent Linux CI matrix passed Monge 1.10–1.13; Delone passed
-1.10, 1.11 and 1.13 while its 1.12 complete suite remained unsuccessful.
-Final integrated source revisions require separate qualification.
+Source integration is merged in
+[Monge #564](https://github.com/ahojukka5/Monge.jl/pull/564) and proposed in
+[Delone #1055](https://github.com/ahojukka5/Delone.jl/pull/1055).
+The [integration qualification](docs/native-integration-20261024.md)
+tests their exact source revisions from fresh depots, with separate
+resolution, loading, geometry/meshing and complete-suite outcomes.
+This qualification is in progress; publication alone does not qualify a
+package release. The [original compatibility evidence](docs/native-matrix-20261023.md)
+and [historical results](docs/native-matrix-20261023-results.json) retain
+earlier successes and failures, including the unsuccessful Delone Linux
+1.12 suite. Cancelled, timed-out and partial runs never count as successes.
 
 Other architectures, including Linux aarch64 and macOS x86_64, are **not**
 covered by this published matrix. Do not infer platform support from the
