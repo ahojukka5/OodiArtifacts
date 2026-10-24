@@ -31,7 +31,8 @@ interpret the test project's `[sources]` table.
 
 Resolution, loading, native execution and `Pkg.test` run in separate Julia
 processes. All use the same case's depot and environment, one Julia thread,
-one precompile task and one OpenBLAS thread. Package sources remain clean.
+one precompile task and one OpenBLAS thread. Local source checkout
+cleanliness is recorded before and after each case.
 The package's default complete suite runs without domain or tier filters.
 Monge's public suite reports one existing optional integration skip in its
 `Broken` column; the actual counts remain in the recorded summaries.
@@ -81,9 +82,9 @@ identities are recorded separately.
 
 ## Results
 
-All eight macOS package/minor cases passed every stage. Linux qualification
-is in progress. Only completed stages count as PASS; queued,
-running, skipped or interrupted stages remain unqualified. The
+All sixteen package/platform/minor cases passed resolution, loading,
+native execution and the complete suite: eight local macOS cases and
+eight Linux CI cases. The
 [machine-readable results](native-integration-20261024-results.json) record
 each stage, exact runtime and source revision, selected native trees,
 complete-suite summaries, job links and completed-log SHA-256 values.
@@ -95,8 +96,10 @@ Both Linux Julia 1.11 first attempts stopped because their self-hosted
 runners lost communication with GitHub: Monge during loading, Delone during
 the full suite after its native stage passed. Their check-run annotations
 are retained separately in the results. No package test failure is
-inferred. Those interrupted attempts remain unqualified; completed retry
-results are recorded independently in the table below.
+inferred. Those interrupted attempts remain unqualified. Both independent
+retries completed successfully and qualify the 1.11 cases below. Successful
+original executions retain their original job/log identities when GitHub
+copies them into a later run attempt.
 
 | Platform | Package | Julia | Resolution | Loading | Native execution | Full suite |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -105,7 +108,7 @@ results are recorded independently in the table below.
 | Linux x86_64 glibc | Delone | 1.12.7 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Delone | 1.13.2 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.10.12 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Monge | 1.11 | PASS | PASS | PASS | IN_PROGRESS |
+| Linux x86_64 glibc | Monge | 1.11.9 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.12.7 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.13.2 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.10.11 | PASS | PASS | PASS | PASS |

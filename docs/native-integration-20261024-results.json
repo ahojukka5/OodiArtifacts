@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T11:14:08.709018+00:00",
+  "collected_at": "2026-10-24T11:34:01.416117+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -305,14 +305,51 @@
       "workflow_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
       "workflow_event": "workflow_dispatch",
       "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120849402451",
-      "job_conclusion": "",
+      "job_conclusion": "success",
       "stages": {
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "PASS"
       },
-      "status": "IN_PROGRESS"
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.11.9",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/4036223011c580c75a01f85c616a97f55c0905c9/lib/libopencascade_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Monge static architecture | 1622   1622  33.9s",
+        "OCCT runtime toolkit preload |    2      2  4m49.0s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  30.7s",
+        "Semantic chair exact and visual artifact qualification |  147    147  33.6s",
+        "Monge.jl (public Julian API) | 11791       1  11792  44m16.9s"
+      ],
+      "logs": [
+        {
+          "path": "linux-monge-1.11.log",
+          "sha256": "1046491043422a52a866fd1bbd13b10d565c95b9e3efcdfb7484530cd88311ba",
+          "bytes": 207424,
+          "local_snapshot": "snapshots/1046491043422a52a866fd1bbd13b10d565c95b9e3efcdfb7484530cd88311ba.log"
+        }
+      ],
+      "started_at": "2026-10-24T10:35:22Z",
+      "finished_at": "2026-10-24T11:31:46Z",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "4036223011c580c75a01f85c616a97f55c0905c9",
+          "archive_sha256": "514e95f4b3243b3faf37890fce20ecee60313d9708967c479d6a04ce71c49ed6",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-40362230/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
     },
     {
       "platform": "Linux x86_64 glibc",
