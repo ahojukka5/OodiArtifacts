@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T10:16:34.148293+00:00",
+  "collected_at": "2026-10-24T10:28:36.583438+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -69,21 +69,15 @@
       "julia_minor": "1.11",
       "workflow_revision": "9c2f0aa6ebb03c153c62585e5c9350385e9d13e4",
       "workflow_event": "workflow_dispatch",
-      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334165",
-      "job_conclusion": "failure",
+      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120847501651",
+      "job_conclusion": "",
       "stages": {
         "resolve": "PASS",
         "load": "PASS",
-        "native": "PASS",
-        "full": "UNVERIFIED"
+        "native": "IN_PROGRESS",
+        "full": "PENDING"
       },
-      "status": "INTERRUPTED",
-      "annotations": [
-        "The self-hosted runner lost communication with the server. Verify the machine is running and has a healthy network connection. Anything in your workflow that terminates the runner process, starves it for CPU/Memory, or blocks its network access can cause this error."
-      ],
-      "actual_checkout_verified": false,
-      "started_at": "2026-10-24T08:38:51Z",
-      "finished_at": "2026-10-24T08:57:55Z"
+      "status": "IN_PROGRESS"
     },
     {
       "platform": "Linux x86_64 glibc",
@@ -312,14 +306,44 @@
       "workflow_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
       "workflow_event": "workflow_dispatch",
       "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177108",
-      "job_conclusion": "",
+      "job_conclusion": "success",
       "stages": {
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "PASS"
       },
-      "status": "IN_PROGRESS"
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.13.2",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/969c64a1a938ffedcccd6670bbcdd0ffc0126793/lib/libopencascade_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Monge static architecture | 1622   1622  20.8s",
+        "OCCT runtime toolkit preload |    2      2  12.7s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  15.8s",
+        "Semantic chair exact and visual artifact qualification |  147    147  22.4s",
+        "Monge.jl (public Julian API) | 11791       1  11792  34m29.4s"
+      ],
+      "logs": [
+        {
+          "path": "linux-monge-1.13.log",
+          "sha256": "2fbcef68684f9575b40c53e1490c95f204088abc714bd63e807819ab419e4ded",
+          "bytes": 206530,
+          "local_snapshot": "snapshots/2fbcef68684f9575b40c53e1490c95f204088abc714bd63e807819ab419e4ded.log"
+        }
+      ],
+      "started_at": "2026-10-24T09:43:54Z",
+      "finished_at": "2026-10-24T10:23:55Z",
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "969c64a1a938ffedcccd6670bbcdd0ffc0126793",
+          "archive_sha256": "a79fa57110fd12e9b6440242d74688df6ba90e1295264e37e1ccf3b8b6690571",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-969c64a1/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
     },
     {
       "platform": "macOS aarch64",
