@@ -1,0 +1,1354 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-24T11:34:01.416117+00:00",
+  "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
+  "sources": {
+    "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+    "Delone": "631628e08f577f2c1b99830b3d55eff6bea831c8"
+  },
+  "package_version": "0.1.0",
+  "macos_driver_sha256": "d19fba6ea94f6bac2da87b6f84e11743e5b1966bb024c471a0c3556e5f042190",
+  "release_index": "native-matrix-20261023.json",
+  "archive_sha256_basis": "Original publication index; integration checks selected installed trees, not new tarball checksum measurements",
+  "results": [
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.10",
+      "workflow_revision": "9c2f0aa6ebb03c153c62585e5c9350385e9d13e4",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334010",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.10.12",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+        "<case-depot>/artifacts/5fd776a6a69026830aa847fd3eca2b915d8184db/lib/libnetgen_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93862  93862  23m22.8s"
+      ],
+      "logs": [
+        {
+          "path": "linux-delone-1.10.log",
+          "sha256": "4b3b7b28709ea668f2566555cbb8fc4eaa538958f6615239024deb5789a06e6c",
+          "bytes": 115493,
+          "local_snapshot": "snapshots/4b3b7b28709ea668f2566555cbb8fc4eaa538958f6615239024deb5789a06e6c.log"
+        }
+      ],
+      "started_at": "2026-10-24T08:05:42Z",
+      "finished_at": "2026-10-24T08:38:49Z",
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+          "archive_sha256": "b35522e610fb8c10f201dbdcc87c0be3e1036892e7779f7de0cb9cc76dd3406a",
+          "release_url": "https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-22b6752d"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "5fd776a6a69026830aa847fd3eca2b915d8184db",
+          "archive_sha256": "34637e05a973ef80d82665f5dd12ce44445dfc66a6d69924d102c2497ef5e4e2",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-5fd776a6/libnetgen_cxxwrap.tar.gz"
+        }
+      ],
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      }
+    },
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.11",
+      "workflow_revision": "9c2f0aa6ebb03c153c62585e5c9350385e9d13e4",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120847501651",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.11.9",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+        "<case-depot>/artifacts/063c21fd9f901861adaa875d539acbb00bd4d0f7/lib/libnetgen_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93887  93887  36m11.8s"
+      ],
+      "logs": [
+        {
+          "path": "linux-delone-1.11.log",
+          "sha256": "5df6ce3b3dbb8029336574ccad96cf644319baa974a3e5b19c00c30ba5423fc4",
+          "bytes": 121339,
+          "local_snapshot": "snapshots/5df6ce3b3dbb8029336574ccad96cf644319baa974a3e5b19c00c30ba5423fc4.log"
+        }
+      ],
+      "started_at": "2026-10-24T10:22:36Z",
+      "finished_at": "2026-10-24T11:10:36Z",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+          "archive_sha256": "b35522e610fb8c10f201dbdcc87c0be3e1036892e7779f7de0cb9cc76dd3406a",
+          "release_url": "https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-22b6752d"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "063c21fd9f901861adaa875d539acbb00bd4d0f7",
+          "archive_sha256": "0d843c91f605d2b087c128dab80960036f42e2816a0effe2db53cfc8a2cf6ee3",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-063c21fd/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.12",
+      "workflow_revision": "9c2f0aa6ebb03c153c62585e5c9350385e9d13e4",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334200",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.12.7",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+        "<case-depot>/artifacts/e665a17436a7356a8253924b0e9a01a306e2a5b1/lib/libnetgen_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93887  93887  35m31.8s"
+      ],
+      "logs": [
+        {
+          "path": "linux-delone-1.12.log",
+          "sha256": "55acfb34a9d30c76fdc3cf757e4d066dfd706e5b79b121fac14633f27c6f6022",
+          "bytes": 153882,
+          "local_snapshot": "snapshots/55acfb34a9d30c76fdc3cf757e4d066dfd706e5b79b121fac14633f27c6f6022.log"
+        }
+      ],
+      "started_at": "2026-10-24T08:57:56Z",
+      "finished_at": "2026-10-24T09:45:31Z",
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+          "archive_sha256": "b35522e610fb8c10f201dbdcc87c0be3e1036892e7779f7de0cb9cc76dd3406a",
+          "release_url": "https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-22b6752d"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "e665a17436a7356a8253924b0e9a01a306e2a5b1",
+          "archive_sha256": "b686b4efbf4dc9b8bcb72d0c753a113289c3551a805ac52a7b533a9809d57e2e",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-e665a174/libnetgen_cxxwrap.tar.gz"
+        }
+      ],
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      }
+    },
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.13",
+      "workflow_revision": "9c2f0aa6ebb03c153c62585e5c9350385e9d13e4",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334150",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.13.2",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libngcore.so",
+        "<case-depot>/artifacts/22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b/lib/libnglib.so",
+        "<case-depot>/artifacts/8b265184eaeeba81cf7b27c7c246b06b937c2447/lib/libnetgen_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93887  93887  22m53.9s"
+      ],
+      "logs": [
+        {
+          "path": "linux-delone-1.13.log",
+          "sha256": "052fb894c701366facd01fb9de567fbbb841a2546983d3b2961c7c4c622231ec",
+          "bytes": 133449,
+          "local_snapshot": "snapshots/052fb894c701366facd01fb9de567fbbb841a2546983d3b2961c7c4c622231ec.log"
+        }
+      ],
+      "started_at": "2026-10-24T09:46:18Z",
+      "finished_at": "2026-10-24T10:15:49Z",
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "22b6752d1a2d14a9e02e48ea3abfbf3d901ac79b",
+          "archive_sha256": "b35522e610fb8c10f201dbdcc87c0be3e1036892e7779f7de0cb9cc76dd3406a",
+          "release_url": "https://github.com/ahojukka5/OodiArtifacts/releases/tag/NGSolveNetgen-22b6752d"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "8b265184eaeeba81cf7b27c7c246b06b937c2447",
+          "archive_sha256": "e3f5845ee5e5b42d2c86dac53a29b7e62c1614871f5ef1d4881fab3dc8bf60b0",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-8b265184/libnetgen_cxxwrap.tar.gz"
+        }
+      ],
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      }
+    },
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.10",
+      "workflow_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177132",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.10.12",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/2de1d4e9f48d471623549edeba8f5c10b70b2b05/lib/libopencascade_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Monge static architecture | 1622   1622  20.0s",
+        "OCCT runtime toolkit preload |    2      2  4m00.8s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  29.1s",
+        "Semantic chair exact and visual artifact qualification |  147    147  17.8s",
+        "Monge.jl (public Julian API) | 11791       1  11792  32m19.5s"
+      ],
+      "logs": [
+        {
+          "path": "linux-monge-1.10.log",
+          "sha256": "b8379a4bb98c9c4c1e942f119abdb3c1768faf0b3635ecc454cf41e0de40b4b8",
+          "bytes": 203813,
+          "local_snapshot": "snapshots/b8379a4bb98c9c4c1e942f119abdb3c1768faf0b3635ecc454cf41e0de40b4b8.log"
+        }
+      ],
+      "started_at": "2026-10-24T07:53:39Z",
+      "finished_at": "2026-10-24T08:35:57Z",
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "2de1d4e9f48d471623549edeba8f5c10b70b2b05",
+          "archive_sha256": "7af0c03297f5cf699bf7877288cb3fb5959620208c9011fac2f0b261d7bb2c5e",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-2de1d4e9/libopencascade_cxxwrap.tar.gz"
+        }
+      ],
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      }
+    },
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.11",
+      "workflow_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120849402451",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.11.9",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/4036223011c580c75a01f85c616a97f55c0905c9/lib/libopencascade_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Monge static architecture | 1622   1622  33.9s",
+        "OCCT runtime toolkit preload |    2      2  4m49.0s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  30.7s",
+        "Semantic chair exact and visual artifact qualification |  147    147  33.6s",
+        "Monge.jl (public Julian API) | 11791       1  11792  44m16.9s"
+      ],
+      "logs": [
+        {
+          "path": "linux-monge-1.11.log",
+          "sha256": "1046491043422a52a866fd1bbd13b10d565c95b9e3efcdfb7484530cd88311ba",
+          "bytes": 207424,
+          "local_snapshot": "snapshots/1046491043422a52a866fd1bbd13b10d565c95b9e3efcdfb7484530cd88311ba.log"
+        }
+      ],
+      "started_at": "2026-10-24T10:35:22Z",
+      "finished_at": "2026-10-24T11:31:46Z",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "4036223011c580c75a01f85c616a97f55c0905c9",
+          "archive_sha256": "514e95f4b3243b3faf37890fce20ecee60313d9708967c479d6a04ce71c49ed6",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-40362230/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.12",
+      "workflow_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177035",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.12.7",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/8b68593183c0129b39336453613fe83bfa1b5da0/lib/libopencascade_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Monge static architecture | 1622   1622  33.7s",
+        "OCCT runtime toolkit preload |    2      2  4m45.3s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  25.3s",
+        "Semantic chair exact and visual artifact qualification |  147    147  32.1s",
+        "Monge.jl (public Julian API) | 11791       1  11792  45m16.4s"
+      ],
+      "logs": [
+        {
+          "path": "linux-monge-1.12.log",
+          "sha256": "5c00544d0967880e9d5f62cf514f965a836cd62d9b6698d2262f243cc5245106",
+          "bytes": 209482,
+          "local_snapshot": "snapshots/5c00544d0967880e9d5f62cf514f965a836cd62d9b6698d2262f243cc5245106.log"
+        }
+      ],
+      "started_at": "2026-10-24T08:46:01Z",
+      "finished_at": "2026-10-24T09:43:16Z",
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "8b68593183c0129b39336453613fe83bfa1b5da0",
+          "archive_sha256": "e81d20fa06ed410eb8fe0a6d2df35c542e795b441b849b68b1e54ce2abd26b4e",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-8b685931/libopencascade_cxxwrap.tar.gz"
+        }
+      ],
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      }
+    },
+    {
+      "platform": "Linux x86_64 glibc",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.13",
+      "workflow_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "workflow_event": "workflow_dispatch",
+      "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177108",
+      "job_conclusion": "success",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "actual_checkout_verified": true,
+      "julia_version": "1.13.2",
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/969c64a1a938ffedcccd6670bbcdd0ffc0126793/lib/libopencascade_cxxwrap.so"
+      ],
+      "full_test_summaries": [
+        "Monge static architecture | 1622   1622  20.8s",
+        "OCCT runtime toolkit preload |    2      2  12.7s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  15.8s",
+        "Semantic chair exact and visual artifact qualification |  147    147  22.4s",
+        "Monge.jl (public Julian API) | 11791       1  11792  34m29.4s"
+      ],
+      "logs": [
+        {
+          "path": "linux-monge-1.13.log",
+          "sha256": "2fbcef68684f9575b40c53e1490c95f204088abc714bd63e807819ab419e4ded",
+          "bytes": 206530,
+          "local_snapshot": "snapshots/2fbcef68684f9575b40c53e1490c95f204088abc714bd63e807819ab419e4ded.log"
+        }
+      ],
+      "started_at": "2026-10-24T09:43:54Z",
+      "finished_at": "2026-10-24T10:23:55Z",
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "969c64a1a938ffedcccd6670bbcdd0ffc0126793",
+          "archive_sha256": "a79fa57110fd12e9b6440242d74688df6ba90e1295264e37e1ccf3b8b6690571",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-969c64a1/libopencascade_cxxwrap.tar.gz"
+        }
+      ],
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      }
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.10",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      },
+      "julia_version": "1.10.11",
+      "started_at": "2026-10-24T08:26:24.657866+00:00",
+      "finished_at": "2026-10-24T08:37:27.303170+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "ff574daa07669d0c1d13977e1c86dc4b3663c34c5f78dca6a475827cb846345d",
+          "bytes": 10153,
+          "local_snapshot": "snapshots/ff574daa07669d0c1d13977e1c86dc4b3663c34c5f78dca6a475827cb846345d.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "125a2b1be340435c9d1817b08d975447d412700f6e5352fef6671646f5402f5b",
+          "bytes": 265,
+          "local_snapshot": "snapshots/125a2b1be340435c9d1817b08d975447d412700f6e5352fef6671646f5402f5b.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "2c63918a86a3b0506a163ec9168990576e7e265fde42dabf6a002c8df393ff0e",
+          "bytes": 33,
+          "local_snapshot": "snapshots/2c63918a86a3b0506a163ec9168990576e7e265fde42dabf6a002c8df393ff0e.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "c02e934758bba1a68611075770c19091dddfdaf0fb861eb9fcb93e8e1d21419e",
+          "bytes": 44589,
+          "local_snapshot": "snapshots/c02e934758bba1a68611075770c19091dddfdaf0fb861eb9fcb93e8e1d21419e.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93863  93863  8m15.3s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+        "<case-depot>/artifacts/0a71b26c77c55c2f3fe77b3826052fe9259608f1/lib/libnetgen_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "Delone": {
+          "tree": "nothing",
+          "version": "0.1.0"
+        },
+        "libcxxwrap_julia_jll": {
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f",
+          "version": "0.14.12+0"
+        },
+        "Episteme": {
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6",
+          "version": "0.1.0"
+        },
+        "CxxWrap": {
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d",
+          "version": "0.17.5"
+        },
+        "OCCT_jll": {
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+          "version": "7.9.3+0"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "ca6ea431e0af626bc2be7fea6002ed70b39aa59d837c39b5d14d59ae40fc32e6",
+        "bytes": 14777,
+        "local_snapshot": "snapshots/ca6ea431e0af626bc2be7fea6002ed70b39aa59d837c39b5d14d59ae40fc32e6.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "bfef55456815cf0ee5e6d70e6cf9449a365c225b",
+          "archive_sha256": "9ab34e7aa12bd5b930b6a402de1dd49e17c98e5c792de9030259c33a3e6fe839",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/NGSolveNetgen-bfef5545/NGSolveNetgen.tar.gz"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "0a71b26c77c55c2f3fe77b3826052fe9259608f1",
+          "archive_sha256": "0a71d7fa0d175c7da7a9bc25ad9bcb15d6c8cfda76dcd8708fde7f90b23d848a",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-0a71b26c/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.11",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      },
+      "julia_version": "1.11.9",
+      "started_at": "2026-10-24T08:37:27.812019+00:00",
+      "finished_at": "2026-10-24T08:52:38.355979+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "7d5a7a894c91dbfd4637cfc3c61c26ee40fa17bdb8012b1b0a0c49e0cfed9f07",
+          "bytes": 9705,
+          "local_snapshot": "snapshots/7d5a7a894c91dbfd4637cfc3c61c26ee40fa17bdb8012b1b0a0c49e0cfed9f07.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "a2e8f630429c4c2d21af2d19ba4f32209b897b0a6086cbd18ea6bc4d8476c471",
+          "bytes": 1945,
+          "local_snapshot": "snapshots/a2e8f630429c4c2d21af2d19ba4f32209b897b0a6086cbd18ea6bc4d8476c471.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "c69eac7fc69fa06c245bd8f842e1476852dc447ec7494c3ec5a97b4b982c3cd1",
+          "bytes": 32,
+          "local_snapshot": "snapshots/c69eac7fc69fa06c245bd8f842e1476852dc447ec7494c3ec5a97b4b982c3cd1.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "459f3bd8d58e7b236cd1feea452a4f08d5c778d8baf27a46703b33d488280700",
+          "bytes": 46681,
+          "local_snapshot": "snapshots/459f3bd8d58e7b236cd1feea452a4f08d5c778d8baf27a46703b33d488280700.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93888  93888  11m44.4s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+        "<case-depot>/artifacts/c9be8c9b996752a0ed5100d6318192e761a65de6/lib/libnetgen_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "Delone": {
+          "tree": "nothing",
+          "version": "0.1.0"
+        },
+        "libcxxwrap_julia_jll": {
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f",
+          "version": "0.14.12+0"
+        },
+        "Episteme": {
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6",
+          "version": "0.1.0"
+        },
+        "CxxWrap": {
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d",
+          "version": "0.17.5"
+        },
+        "OCCT_jll": {
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+          "version": "7.9.3+0"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "a9202a99414562b86e831c73443f703ce2b33fe9f85d1f9107f646bcc3f9a172",
+        "bytes": 14650,
+        "local_snapshot": "snapshots/a9202a99414562b86e831c73443f703ce2b33fe9f85d1f9107f646bcc3f9a172.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "bfef55456815cf0ee5e6d70e6cf9449a365c225b",
+          "archive_sha256": "9ab34e7aa12bd5b930b6a402de1dd49e17c98e5c792de9030259c33a3e6fe839",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/NGSolveNetgen-bfef5545/NGSolveNetgen.tar.gz"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "c9be8c9b996752a0ed5100d6318192e761a65de6",
+          "archive_sha256": "ba9c8404b3a4ca8530e5cf22c30c13dddaf446f8d70f97f74e7f2c170a3d0b53",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-c9be8c9b/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.12",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      },
+      "julia_version": "1.12.6",
+      "started_at": "2026-10-24T08:52:38.845764+00:00",
+      "finished_at": "2026-10-24T09:05:31.962709+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "60cc7847a848b1616ce5e368371719d70313825f706c5a54fa36541999992fc5",
+          "bytes": 10027,
+          "local_snapshot": "snapshots/60cc7847a848b1616ce5e368371719d70313825f706c5a54fa36541999992fc5.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "12cef37cb450ef362479a3b5446811af6590390ba0d326f2c0387e4a5e64c629",
+          "bytes": 1948,
+          "local_snapshot": "snapshots/12cef37cb450ef362479a3b5446811af6590390ba0d326f2c0387e4a5e64c629.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "d16ebca9ac6d55340d49e9abca2af8f5bea75533c57b59d95e4efe4742b14dec",
+          "bytes": 32,
+          "local_snapshot": "snapshots/d16ebca9ac6d55340d49e9abca2af8f5bea75533c57b59d95e4efe4742b14dec.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "3a70bf090c146f2670858c2d50c7f160735add7df5d18c0f7d79e9f2c0466542",
+          "bytes": 57751,
+          "local_snapshot": "snapshots/3a70bf090c146f2670858c2d50c7f160735add7df5d18c0f7d79e9f2c0466542.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93888  93888  9m23.8s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+        "<case-depot>/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "Delone": {
+          "tree": "nothing",
+          "version": "0.1.0"
+        },
+        "libcxxwrap_julia_jll": {
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f",
+          "version": "0.14.12+0"
+        },
+        "Episteme": {
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6",
+          "version": "0.1.0"
+        },
+        "CxxWrap": {
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d",
+          "version": "0.17.5"
+        },
+        "OCCT_jll": {
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+          "version": "7.9.3+0"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "c6d88baa3edc2759f862dfac008a1c6dc4aa51c63ee86b40106535d0176fc603",
+        "bytes": 14927,
+        "local_snapshot": "snapshots/c6d88baa3edc2759f862dfac008a1c6dc4aa51c63ee86b40106535d0176fc603.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "bfef55456815cf0ee5e6d70e6cf9449a365c225b",
+          "archive_sha256": "9ab34e7aa12bd5b930b6a402de1dd49e17c98e5c792de9030259c33a3e6fe839",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/NGSolveNetgen-bfef5545/NGSolveNetgen.tar.gz"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "c6d9956843da841ea19199116fda7f802ec42f6e",
+          "archive_sha256": "d85c3b93ab48acadcaa8cbaee9d9cf427d932c16727deab5cb36473e72f911e2",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-c6d99568/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Delone",
+      "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
+      "julia_minor": "1.13",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      },
+      "julia_version": "1.13.1",
+      "started_at": "2026-10-24T09:05:32.275167+00:00",
+      "finished_at": "2026-10-24T09:15:23.021443+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "74f2a046df7d8c5669d05ed9a8e9a2c46143d4087e28a3f8a508ea86efcb4da3",
+          "bytes": 10005,
+          "local_snapshot": "snapshots/74f2a046df7d8c5669d05ed9a8e9a2c46143d4087e28a3f8a508ea86efcb4da3.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "a59f042d3c6c439601ae003c14eb8efc8530141310d6997a1edf9f5ccaf3ec6a",
+          "bytes": 264,
+          "local_snapshot": "snapshots/a59f042d3c6c439601ae003c14eb8efc8530141310d6997a1edf9f5ccaf3ec6a.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "89107910bc056de035595c113a99e3b1d776da2194b1eedb04f113abe9f333d1",
+          "bytes": 32,
+          "local_snapshot": "snapshots/89107910bc056de035595c113a99e3b1d776da2194b1eedb04f113abe9f333d1.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "0ba4b1ffa91218812e66959f6d905375bd6e70ab91d97f56ae5016130962173f",
+          "bytes": 55274,
+          "local_snapshot": "snapshots/0ba4b1ffa91218812e66959f6d905375bd6e70ab91d97f56ae5016130962173f.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93888  93888  7m34.9s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+        "<case-depot>/artifacts/a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975/lib/libnetgen_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "OCCT_jll": {
+          "version": "7.9.3+0",
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a"
+        },
+        "libcxxwrap_julia_jll": {
+          "version": "0.14.12+0",
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f"
+        },
+        "Episteme": {
+          "version": "0.1.0",
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6"
+        },
+        "Delone": {
+          "version": "0.1.0",
+          "tree": "nothing"
+        },
+        "CxxWrap": {
+          "version": "0.17.5",
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "be4cb1d1560813203e065a24a12c9a867c8f1088cf387a6c39186b6dd299542c",
+        "bytes": 16453,
+        "local_snapshot": "snapshots/be4cb1d1560813203e065a24a12c9a867c8f1088cf387a6c39186b6dd299542c.toml"
+      },
+      "general_registry_tree": "4785bd4b6bf2d4d8c717c1c4cb6fd9adf8456174",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Delone": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "bfef55456815cf0ee5e6d70e6cf9449a365c225b",
+          "archive_sha256": "9ab34e7aa12bd5b930b6a402de1dd49e17c98e5c792de9030259c33a3e6fe839",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/NGSolveNetgen-bfef5545/NGSolveNetgen.tar.gz"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "a983e9b16cd9acf7ddc1dd4d0c4b3f67cc4e2975",
+          "archive_sha256": "7132ede827a84cf021a454592c46118aef08afce25b925a5311c602d2d96fc88",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-a983e9b1/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.10",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      },
+      "julia_version": "1.10.11",
+      "started_at": "2026-10-24T08:26:23.949333+00:00",
+      "finished_at": "2026-10-24T08:41:12.377038+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "148a7f1e74769e7c799394bf0d4adf0ebd9a9273001dffdf730de27992d1c15e",
+          "bytes": 5557,
+          "local_snapshot": "snapshots/148a7f1e74769e7c799394bf0d4adf0ebd9a9273001dffdf730de27992d1c15e.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "3f77115f2682e144538a84da1afc40d0c45b7cd54871013ad280cafc5683da22",
+          "bytes": 30,
+          "local_snapshot": "snapshots/3f77115f2682e144538a84da1afc40d0c45b7cd54871013ad280cafc5683da22.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "d70b4004139973fa41af0bebe2efd32264b6d7f240c6eeb145b506c8df81b8db",
+          "bytes": 32,
+          "local_snapshot": "snapshots/d70b4004139973fa41af0bebe2efd32264b6d7f240c6eeb145b506c8df81b8db.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "4cb57d3d686fbcc03650dc00590a4f4b5f85eb2e2874bfdfe101cdcde93d879b",
+          "bytes": 142426,
+          "local_snapshot": "snapshots/4cb57d3d686fbcc03650dc00590a4f4b5f85eb2e2874bfdfe101cdcde93d879b.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Semantic chair exact and visual artifact qualification |  147    147  5.6s",
+        "Monge static architecture | 1622   1622  6.1s",
+        "OCCT runtime toolkit preload |    2      2  55.1s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  5.9s",
+        "Monge.jl (public Julian API) | 11791       1  11792  12m06.1s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/767cd6ee48466391ac96f00d3114aa953549bec0/lib/libopencascade_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "Monge": {
+          "tree": "nothing",
+          "version": "0.1.0"
+        },
+        "libcxxwrap_julia_jll": {
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f",
+          "version": "0.14.12+0"
+        },
+        "Episteme": {
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6",
+          "version": "0.1.0"
+        },
+        "CxxWrap": {
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d",
+          "version": "0.17.5"
+        },
+        "OCCT_jll": {
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+          "version": "7.9.3+0"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "d1ef47d038e49e92273768db33caa962356cbeafd4067abb47bc649dcbbb75dd",
+        "bytes": 6784,
+        "local_snapshot": "snapshots/d1ef47d038e49e92273768db33caa962356cbeafd4067abb47bc649dcbbb75dd.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "767cd6ee48466391ac96f00d3114aa953549bec0",
+          "archive_sha256": "283e380f1a457182b7addf674a6eff8e7883b8edfe4a554609222b4f9979e263",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-767cd6ee/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.11",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      },
+      "julia_version": "1.11.9",
+      "started_at": "2026-10-24T08:41:12.491078+00:00",
+      "finished_at": "2026-10-24T08:58:32.352525+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "1c32934468dc20706b5a49bcbdcbf2bb1b61cc851c4954ef166fab30e6a3ed43",
+          "bytes": 5684,
+          "local_snapshot": "snapshots/1c32934468dc20706b5a49bcbdcbf2bb1b61cc851c4954ef166fab30e6a3ed43.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "0e8ec48d6d974e6744517ff9eb71afddcd4d6ffd3aa5976c361677dd7a2642f4",
+          "bytes": 901,
+          "local_snapshot": "snapshots/0e8ec48d6d974e6744517ff9eb71afddcd4d6ffd3aa5976c361677dd7a2642f4.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "49c685141b64f0ed374cb04644f39824c8c826fe6003eb94a64246db38664692",
+          "bytes": 31,
+          "local_snapshot": "snapshots/49c685141b64f0ed374cb04644f39824c8c826fe6003eb94a64246db38664692.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "7e0fcb5a7c09a73a5db01608dbfcd433c8b216b76b9b1ddda71f6503bca41d40",
+          "bytes": 143542,
+          "local_snapshot": "snapshots/7e0fcb5a7c09a73a5db01608dbfcd433c8b216b76b9b1ddda71f6503bca41d40.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Semantic chair exact and visual artifact qualification |  147    147  8.0s",
+        "Monge static architecture | 1622   1622  10.8s",
+        "OCCT runtime toolkit preload |    2      2  1m01.8s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  7.9s",
+        "Monge.jl (public Julian API) | 11791       1  11792  14m29.2s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/b2a338c1c49857da6080f63c929cfbce2c140066/lib/libopencascade_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "Monge": {
+          "tree": "nothing",
+          "version": "0.1.0"
+        },
+        "libcxxwrap_julia_jll": {
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f",
+          "version": "0.14.12+0"
+        },
+        "Episteme": {
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6",
+          "version": "0.1.0"
+        },
+        "CxxWrap": {
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d",
+          "version": "0.17.5"
+        },
+        "OCCT_jll": {
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+          "version": "7.9.3+0"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "8511e3b10d2d36c1a9291794cc05196b83afc0a1ef3a5d8dd06758cbb5d3e1f7",
+        "bytes": 6935,
+        "local_snapshot": "snapshots/8511e3b10d2d36c1a9291794cc05196b83afc0a1ef3a5d8dd06758cbb5d3e1f7.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "b2a338c1c49857da6080f63c929cfbce2c140066",
+          "archive_sha256": "24c70daf5aa5b16ba5ec11a49849d249b85c7cf1a485a255dc093fb761b3bcaf",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-b2a338c1/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.12",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      },
+      "julia_version": "1.12.6",
+      "started_at": "2026-10-24T08:58:32.453460+00:00",
+      "finished_at": "2026-10-24T09:15:13.971841+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "88a131a82f18ad71258622c093f70437b28ad9d01e95dbd4c56de4205cf88e1a",
+          "bytes": 6141,
+          "local_snapshot": "snapshots/88a131a82f18ad71258622c093f70437b28ad9d01e95dbd4c56de4205cf88e1a.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "7e3b884b330cabb70529bc0370a414774a9091572e403de3f818536e77c2c1f7",
+          "bytes": 904,
+          "local_snapshot": "snapshots/7e3b884b330cabb70529bc0370a414774a9091572e403de3f818536e77c2c1f7.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "944f670e8e2a465216b9e27e8ce609518487c1b67e1c1cc790f37a8b5040791c",
+          "bytes": 31,
+          "local_snapshot": "snapshots/944f670e8e2a465216b9e27e8ce609518487c1b67e1c1cc790f37a8b5040791c.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "3ce8b3f3e9287c5b2167581f9b52a5d10db337579c49ce1041e4b3e2a08bf2ff",
+          "bytes": 143754,
+          "local_snapshot": "snapshots/3ce8b3f3e9287c5b2167581f9b52a5d10db337579c49ce1041e4b3e2a08bf2ff.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Semantic chair exact and visual artifact qualification |  147    147  8.7s",
+        "Monge static architecture | 1622   1622  8.9s",
+        "OCCT runtime toolkit preload |    2      2  1m05.2s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  7.2s",
+        "Monge.jl (public Julian API) | 11791       1  11792  13m39.3s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/52eda2983406f3d28ef35be0bacc96277139ba15/lib/libopencascade_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "Monge": {
+          "tree": "nothing",
+          "version": "0.1.0"
+        },
+        "libcxxwrap_julia_jll": {
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f",
+          "version": "0.14.12+0"
+        },
+        "Episteme": {
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6",
+          "version": "0.1.0"
+        },
+        "CxxWrap": {
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d",
+          "version": "0.17.5"
+        },
+        "OCCT_jll": {
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+          "version": "7.9.3+0"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "720ec820f33594fad716c8a6f7ae0e63719db011e2bfa14a06f488318231ef39",
+        "bytes": 6934,
+        "local_snapshot": "snapshots/720ec820f33594fad716c8a6f7ae0e63719db011e2bfa14a06f488318231ef39.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "52eda2983406f3d28ef35be0bacc96277139ba15",
+          "archive_sha256": "eb2b7a194d2c69fef5a07d9bffef8125ff36cb7734e9699ed43eac406fce3a60",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-52eda298/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
+    },
+    {
+      "platform": "macOS aarch64",
+      "package": "Monge",
+      "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
+      "julia_minor": "1.13",
+      "stages": {
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "PASS"
+      },
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      },
+      "julia_version": "1.13.1",
+      "started_at": "2026-10-24T09:15:14.147447+00:00",
+      "finished_at": "2026-10-24T09:29:33.030357+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "ed0d80c5db7e823924ea59add50456693e71c05cd08f82b3a2c6994e87dd95d4",
+          "bytes": 5982,
+          "local_snapshot": "snapshots/ed0d80c5db7e823924ea59add50456693e71c05cd08f82b3a2c6994e87dd95d4.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "24eef76bae5ab33c4bf5d96ef658d4c7df1c5292de78485f156a26989017bc74",
+          "bytes": 29,
+          "local_snapshot": "snapshots/24eef76bae5ab33c4bf5d96ef658d4c7df1c5292de78485f156a26989017bc74.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "e168ed98d89751f6ae34e9c9caff251d5790da3eff4a80bd9fd6e3649dcee30b",
+          "bytes": 31,
+          "local_snapshot": "snapshots/e168ed98d89751f6ae34e9c9caff251d5790da3eff4a80bd9fd6e3649dcee30b.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "02f31df848e45df2b2be55be8f2e6d30396581f3dadb3e41f16304df8a098944",
+          "bytes": 143463,
+          "local_snapshot": "snapshots/02f31df848e45df2b2be55be8f2e6d30396581f3dadb3e41f16304df8a098944.log"
+        }
+      ],
+      "full_test_summaries": [
+        "Semantic chair exact and visual artifact qualification |  147    147  7.2s",
+        "Monge static architecture | 1622   1622  6.6s",
+        "OCCT runtime toolkit preload |    2      2  4.9s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  6.4s",
+        "Monge.jl (public Julian API) | 11791       1  11792  12m27.0s"
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/c44d084b938bdff2cbb7988e754616f867d604dc/lib/libopencascade_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "OCCT_jll": {
+          "version": "7.9.3+0",
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a"
+        },
+        "libcxxwrap_julia_jll": {
+          "version": "0.14.12+0",
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f"
+        },
+        "Episteme": {
+          "version": "0.1.0",
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6"
+        },
+        "Monge": {
+          "version": "0.1.0",
+          "tree": "nothing"
+        },
+        "CxxWrap": {
+          "version": "0.17.5",
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "c5479c0bc6bfa5bfbf51a16a9cdea79d60538d7f459d7a9951b510feebb9f59e",
+        "bytes": 7718,
+        "local_snapshot": "snapshots/c5479c0bc6bfa5bfbf51a16a9cdea79d60538d7f459d7a9951b510feebb9f59e.toml"
+      },
+      "general_registry_tree": "4785bd4b6bf2d4d8c717c1c4cb6fd9adf8456174",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "dependency_versions_in_test_log": {
+        "CxxWrap": "0.17.5",
+        "OCCT_jll": "7.9.3+0",
+        "libcxxwrap_julia_jll": "0.14.12+0",
+        "Episteme": "0.1.0",
+        "Monge": "0.1.0"
+      },
+      "selected_artifacts": [
+        {
+          "artifact": "libopencascade_cxxwrap",
+          "tree_hash": "c44d084b938bdff2cbb7988e754616f867d604dc",
+          "archive_sha256": "065f4d9d1e14d8819ea069d43f15d42f8ed0d117168d07b6cc6e5dc8dea3f76a",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libopencascade_cxxwrap-c44d084b/libopencascade_cxxwrap.tar.gz"
+        }
+      ]
+    }
+  ],
+  "interrupted_attempts": [
+    {
+      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334165",
+      "job_id": 120821334165,
+      "started_at": "2026-10-24T08:38:51Z",
+      "finished_at": "2026-10-24T08:57:55Z",
+      "conclusion": "failure",
+      "annotations": [
+        "The self-hosted runner lost communication with the server. Verify the machine is running and has a healthy network connection. Anything in your workflow that terminates the runner process, starves it for CPU/Memory, or blocks its network access can cause this error."
+      ],
+      "completed_step_outcomes": {
+        "Set up job": "success",
+        "Check out trusted source candidate": "success",
+        "Configure read-only private test dependency access": "success",
+        "Install selected Julia minor": "success",
+        "Prepare an empty depot and record identity": "success",
+        "Resolve source and published dependencies": "success",
+        "Load package": "success",
+        "Execute native geometry": "success"
+      },
+      "remaining_stages": "UNVERIFIED",
+      "log_evidence": "Check-run metadata and lost-runner annotation; no completed full-suite snapshot recorded for this attempt"
+    },
+    {
+      "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177135",
+      "job_id": 120818177135,
+      "started_at": "2026-10-24T08:35:59Z",
+      "finished_at": "2026-10-24T08:45:59Z",
+      "conclusion": "failure",
+      "annotations": [
+        "The self-hosted runner lost communication with the server. Verify the machine is running and has a healthy network connection. Anything in your workflow that terminates the runner process, starves it for CPU/Memory, or blocks its network access can cause this error."
+      ],
+      "completed_step_outcomes": {
+        "Set up job": "success",
+        "Check out trusted source candidate": "success",
+        "Install selected Julia minor": "success",
+        "Prepare an empty depot and record identity": "success",
+        "Resolve source and published dependencies": "success"
+      },
+      "remaining_stages": "UNVERIFIED",
+      "log_evidence": "Check-run metadata and lost-runner annotation; no completed full-suite snapshot recorded for this attempt"
+    }
+  ]
+}
