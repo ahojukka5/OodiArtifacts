@@ -24,8 +24,8 @@ existing artifact contents.
 | Julia Pkg / Artifacts | Downloads the selected asset and checks the archive SHA-256 and extracted artifact Git tree |
 
 The public artifact downloads do **not** make private Julia package source
-repositories public. The OodiRegistry currently registers Episteme; Monge,
-Delone and DelonePortable have separate source/registration work in progress.
+repositories public. OodiRegistry now lists Episteme, Monge, Delone and DelonePortable,
+each at version 0.1.0. Registry metadata does not grant source access.
 Publishing a binary release here does not register a Julia package in
 OodiRegistry or Julia General.
 
@@ -71,15 +71,17 @@ maintained separately in
 [NetgenCxxWrap_jll](https://github.com/ahojukka5/NetgenCxxWrap_jll).
 
 Source integration is merged in
-[Monge #564](https://github.com/ahojukka5/Monge.jl/pull/564) and proposed in
+[Monge #564](https://github.com/ahojukka5/Monge.jl/pull/564) and
 [Delone #1055](https://github.com/ahojukka5/Delone.jl/pull/1055).
+The 0.1.0 release tags and [OodiRegistry #6](https://github.com/ahojukka5/OodiRegistry/pull/6)
+registration were completed after qualification.
 The [integration qualification](docs/native-integration-20261024.md)
 tests their exact source revisions from fresh depots, with separate
 resolution, loading, geometry/meshing and complete-suite outcomes.
 Both packages passed all four stages on macOS aarch64 and Linux x86_64/glibc
 for Julia 1.10–1.13: sixteen complete package/platform/minor cases.
-These results qualify the revisions in the report; package release and
-registration remain separate. The [original compatibility evidence](docs/native-matrix-20261023.md)
+These results qualify the exact revisions in the report. Tagging and
+registration are separate, subsequently completed release operations. The [original compatibility evidence](docs/native-matrix-20261023.md)
 and [historical results](docs/native-matrix-20261023-results.json) retain
 earlier successes and failures, including the unsuccessful Delone Linux
 1.12 suite. Cancelled, timed-out and partial runs never count as successes.
