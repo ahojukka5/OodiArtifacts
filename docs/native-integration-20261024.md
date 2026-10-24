@@ -90,7 +90,7 @@ inferred; the interrupted stages remain unverified pending completed retries.
 | --- | --- | --- | --- | --- | --- | --- |
 | Linux x86_64 glibc | Delone | 1.10.12 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Delone | 1.11 | PASS | PASS | PASS | UNVERIFIED |
-| Linux x86_64 glibc | Delone | 1.12 | PASS | IN_PROGRESS | PENDING | PENDING |
+| Linux x86_64 glibc | Delone | 1.12 | PASS | PASS | PASS | IN_PROGRESS |
 | Linux x86_64 glibc | Delone | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | Linux x86_64 glibc | Monge | 1.10.12 | PASS | PASS | PASS | PASS |
 | Linux x86_64 glibc | Monge | 1.11 | PASS | UNVERIFIED | UNVERIFIED | UNVERIFIED |
@@ -98,11 +98,11 @@ inferred; the interrupted stages remain unverified pending completed retries.
 | Linux x86_64 glibc | Monge | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | macOS aarch64 | Delone | 1.10.11 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Delone | 1.11.9 | PASS | PASS | PASS | PASS |
-| macOS aarch64 | Delone | 1.12.6 | PASS | PASS | PASS | IN_PROGRESS |
-| macOS aarch64 | Delone | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| macOS aarch64 | Delone | 1.12.6 | PASS | PASS | PASS | PASS |
+| macOS aarch64 | Delone | 1.13.1 | PASS | IN_PROGRESS | NOT RUN | NOT RUN |
 | macOS aarch64 | Monge | 1.10.11 | PASS | PASS | PASS | PASS |
 | macOS aarch64 | Monge | 1.11.9 | PASS | PASS | PASS | PASS |
-| macOS aarch64 | Monge | 1.12.6 | PASS | IN_PROGRESS | NOT RUN | NOT RUN |
+| macOS aarch64 | Monge | 1.12.6 | PASS | PASS | PASS | IN_PROGRESS |
 | macOS aarch64 | Monge | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 
 ## Compatibility limits
