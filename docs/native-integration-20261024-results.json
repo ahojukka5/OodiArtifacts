@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T11:12:22.976398+00:00",
+  "collected_at": "2026-10-24T11:14:08.709018+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -1292,7 +1292,7 @@
         "Execute native geometry": "success"
       },
       "remaining_stages": "UNVERIFIED",
-      "log_availability": "GitHub returned BlobNotFound; check-run metadata retained"
+      "log_evidence": "Check-run metadata and lost-runner annotation; no completed full-suite snapshot recorded for this attempt"
     },
     {
       "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177135",
@@ -1311,7 +1311,7 @@
         "Resolve source and published dependencies": "success"
       },
       "remaining_stages": "UNVERIFIED",
-      "log_availability": "GitHub returned BlobNotFound; check-run metadata retained"
+      "log_evidence": "Check-run metadata and lost-runner annotation; no completed full-suite snapshot recorded for this attempt"
     }
   ]
 }
