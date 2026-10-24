@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T08:48:32.721316+00:00",
+  "collected_at": "2026-10-24T08:59:51.672818+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -40,7 +40,8 @@
         {
           "path": "linux-delone-1.10.log",
           "sha256": "4b3b7b28709ea668f2566555cbb8fc4eaa538958f6615239024deb5789a06e6c",
-          "bytes": 115493
+          "bytes": 115493,
+          "local_snapshot": "snapshots/4b3b7b28709ea668f2566555cbb8fc4eaa538958f6615239024deb5789a06e6c.log"
         }
       ],
       "started_at": "2026-10-24T08:05:42Z",
@@ -68,14 +69,20 @@
       "workflow_revision": "9c2f0aa6ebb03c153c62585e5c9350385e9d13e4",
       "workflow_event": "workflow_dispatch",
       "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334165",
-      "job_conclusion": "",
+      "job_conclusion": "failure",
       "stages": {
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "UNVERIFIED"
       },
-      "status": "IN_PROGRESS"
+      "status": "INTERRUPTED",
+      "annotations": [
+        "The self-hosted runner lost communication with the server. Verify the machine is running and has a healthy network connection. Anything in your workflow that terminates the runner process, starves it for CPU/Memory, or blocks its network access can cause this error."
+      ],
+      "actual_checkout_verified": false,
+      "started_at": "2026-10-24T08:38:51Z",
+      "finished_at": "2026-10-24T08:57:55Z"
     },
     {
       "platform": "Linux x86_64 glibc",
@@ -87,12 +94,12 @@
       "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334200",
       "job_conclusion": "",
       "stages": {
-        "resolve": "NOT RUN",
-        "load": "NOT RUN",
-        "native": "NOT RUN",
-        "full": "NOT RUN"
+        "resolve": "PASS",
+        "load": "IN_PROGRESS",
+        "native": "PENDING",
+        "full": "PENDING"
       },
-      "status": "QUEUED"
+      "status": "IN_PROGRESS"
     },
     {
       "platform": "Linux x86_64 glibc",
@@ -143,7 +150,8 @@
         {
           "path": "linux-monge-1.10.log",
           "sha256": "b8379a4bb98c9c4c1e942f119abdb3c1768faf0b3635ecc454cf41e0de40b4b8",
-          "bytes": 203813
+          "bytes": 203813,
+          "local_snapshot": "snapshots/b8379a4bb98c9c4c1e942f119abdb3c1768faf0b3635ecc454cf41e0de40b4b8.log"
         }
       ],
       "started_at": "2026-10-24T07:53:39Z",
@@ -191,9 +199,9 @@
       "job_conclusion": "",
       "stages": {
         "resolve": "PASS",
-        "load": "IN_PROGRESS",
-        "native": "PENDING",
-        "full": "PENDING"
+        "load": "PASS",
+        "native": "PASS",
+        "full": "IN_PROGRESS"
       },
       "status": "IN_PROGRESS"
     },
@@ -226,6 +234,10 @@
         "full": "PASS"
       },
       "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      },
       "julia_version": "1.10.11",
       "started_at": "2026-10-24T08:26:24.657866+00:00",
       "finished_at": "2026-10-24T08:37:27.303170+00:00",
@@ -236,22 +248,26 @@
         {
           "path": "resolve.log",
           "sha256": "ff574daa07669d0c1d13977e1c86dc4b3663c34c5f78dca6a475827cb846345d",
-          "bytes": 10153
+          "bytes": 10153,
+          "local_snapshot": "snapshots/ff574daa07669d0c1d13977e1c86dc4b3663c34c5f78dca6a475827cb846345d.log"
         },
         {
           "path": "load.log",
           "sha256": "125a2b1be340435c9d1817b08d975447d412700f6e5352fef6671646f5402f5b",
-          "bytes": 265
+          "bytes": 265,
+          "local_snapshot": "snapshots/125a2b1be340435c9d1817b08d975447d412700f6e5352fef6671646f5402f5b.log"
         },
         {
           "path": "native.log",
           "sha256": "2c63918a86a3b0506a163ec9168990576e7e265fde42dabf6a002c8df393ff0e",
-          "bytes": 33
+          "bytes": 33,
+          "local_snapshot": "snapshots/2c63918a86a3b0506a163ec9168990576e7e265fde42dabf6a002c8df393ff0e.log"
         },
         {
           "path": "full.log",
           "sha256": "c02e934758bba1a68611075770c19091dddfdaf0fb861eb9fcb93e8e1d21419e",
-          "bytes": 44589
+          "bytes": 44589,
+          "local_snapshot": "snapshots/c02e934758bba1a68611075770c19091dddfdaf0fb861eb9fcb93e8e1d21419e.log"
         }
       ],
       "full_test_summaries": [
@@ -287,8 +303,11 @@
       "manifest": {
         "path": "Manifest.toml",
         "sha256": "ca6ea431e0af626bc2be7fea6002ed70b39aa59d837c39b5d14d59ae40fc32e6",
-        "bytes": 14777
+        "bytes": 14777,
+        "local_snapshot": "snapshots/ca6ea431e0af626bc2be7fea6002ed70b39aa59d837c39b5d14d59ae40fc32e6.toml"
       },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
       "selected_artifacts": [
         {
           "artifact": "NGSolveNetgen",
@@ -313,29 +332,47 @@
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "PASS"
       },
-      "status": "RUNNING",
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      },
       "julia_version": "1.11.9",
       "started_at": "2026-10-24T08:37:27.812019+00:00",
+      "finished_at": "2026-10-24T08:52:38.355979+00:00",
       "user_depot_initially_empty": true,
       "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
       "logs": [
         {
           "path": "resolve.log",
           "sha256": "7d5a7a894c91dbfd4637cfc3c61c26ee40fa17bdb8012b1b0a0c49e0cfed9f07",
-          "bytes": 9705
+          "bytes": 9705,
+          "local_snapshot": "snapshots/7d5a7a894c91dbfd4637cfc3c61c26ee40fa17bdb8012b1b0a0c49e0cfed9f07.log"
         },
         {
           "path": "load.log",
           "sha256": "a2e8f630429c4c2d21af2d19ba4f32209b897b0a6086cbd18ea6bc4d8476c471",
-          "bytes": 1945
+          "bytes": 1945,
+          "local_snapshot": "snapshots/a2e8f630429c4c2d21af2d19ba4f32209b897b0a6086cbd18ea6bc4d8476c471.log"
         },
         {
           "path": "native.log",
           "sha256": "c69eac7fc69fa06c245bd8f842e1476852dc447ec7494c3ec5a97b4b982c3cd1",
-          "bytes": 32
+          "bytes": 32,
+          "local_snapshot": "snapshots/c69eac7fc69fa06c245bd8f842e1476852dc447ec7494c3ec5a97b4b982c3cd1.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "459f3bd8d58e7b236cd1feea452a4f08d5c778d8baf27a46703b33d488280700",
+          "bytes": 46681,
+          "local_snapshot": "snapshots/459f3bd8d58e7b236cd1feea452a4f08d5c778d8baf27a46703b33d488280700.log"
         }
+      ],
+      "full_test_summaries": [
+        "Delone.jl (full qualification) | 93888  93888  11m44.4s"
       ],
       "loaded_native_libraries": [
         "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
@@ -367,8 +404,11 @@
       "manifest": {
         "path": "Manifest.toml",
         "sha256": "a9202a99414562b86e831c73443f703ce2b33fe9f85d1f9107f646bcc3f9a172",
-        "bytes": 14650
+        "bytes": 14650,
+        "local_snapshot": "snapshots/a9202a99414562b86e831c73443f703ce2b33fe9f85d1f9107f646bcc3f9a172.toml"
       },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
       "selected_artifacts": [
         {
           "artifact": "NGSolveNetgen",
@@ -390,12 +430,89 @@
       "source_revision": "631628e08f577f2c1b99830b3d55eff6bea831c8",
       "julia_minor": "1.12",
       "stages": {
-        "resolve": "NOT RUN",
-        "load": "NOT RUN",
-        "native": "NOT RUN",
-        "full": "NOT RUN"
+        "resolve": "PASS",
+        "load": "PASS",
+        "native": "PASS",
+        "full": "IN_PROGRESS"
       },
-      "status": "NOT RUN"
+      "status": "RUNNING",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      },
+      "julia_version": "1.12.6",
+      "started_at": "2026-10-24T08:52:38.845764+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "60cc7847a848b1616ce5e368371719d70313825f706c5a54fa36541999992fc5",
+          "bytes": 10027,
+          "local_snapshot": "snapshots/60cc7847a848b1616ce5e368371719d70313825f706c5a54fa36541999992fc5.log"
+        },
+        {
+          "path": "load.log",
+          "sha256": "12cef37cb450ef362479a3b5446811af6590390ba0d326f2c0387e4a5e64c629",
+          "bytes": 1948,
+          "local_snapshot": "snapshots/12cef37cb450ef362479a3b5446811af6590390ba0d326f2c0387e4a5e64c629.log"
+        },
+        {
+          "path": "native.log",
+          "sha256": "d16ebca9ac6d55340d49e9abca2af8f5bea75533c57b59d95e4efe4742b14dec",
+          "bytes": 32,
+          "local_snapshot": "snapshots/d16ebca9ac6d55340d49e9abca2af8f5bea75533c57b59d95e4efe4742b14dec.log"
+        }
+      ],
+      "loaded_native_libraries": [
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libngcore.dylib",
+        "<case-depot>/artifacts/bfef55456815cf0ee5e6d70e6cf9449a365c225b/lib/libnglib.dylib",
+        "<case-depot>/artifacts/c6d9956843da841ea19199116fda7f802ec42f6e/lib/libnetgen_cxxwrap.dylib"
+      ],
+      "selected_dependencies": {
+        "Delone": {
+          "tree": "nothing",
+          "version": "0.1.0"
+        },
+        "libcxxwrap_julia_jll": {
+          "tree": "2eecfd1759a176424159c1993b66f012a230319f",
+          "version": "0.14.12+0"
+        },
+        "Episteme": {
+          "tree": "c6a42200a4b1497ef82ef8b88d772a266d7b7fc6",
+          "version": "0.1.0"
+        },
+        "CxxWrap": {
+          "tree": "f7a997d3959648a818c45dda059a45844300b94d",
+          "version": "0.17.5"
+        },
+        "OCCT_jll": {
+          "tree": "b4d728dcd7f9c42862180d2ee881eeb4b471a02a",
+          "version": "7.9.3+0"
+        }
+      },
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "c6d88baa3edc2759f862dfac008a1c6dc4aa51c63ee86b40106535d0176fc603",
+        "bytes": 14927,
+        "local_snapshot": "snapshots/c6d88baa3edc2759f862dfac008a1c6dc4aa51c63ee86b40106535d0176fc603.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
+      "selected_artifacts": [
+        {
+          "artifact": "NGSolveNetgen",
+          "tree_hash": "bfef55456815cf0ee5e6d70e6cf9449a365c225b",
+          "archive_sha256": "9ab34e7aa12bd5b930b6a402de1dd49e17c98e5c792de9030259c33a3e6fe839",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/NGSolveNetgen-bfef5545/NGSolveNetgen.tar.gz"
+        },
+        {
+          "artifact": "libnetgen_cxxwrap",
+          "tree_hash": "c6d9956843da841ea19199116fda7f802ec42f6e",
+          "archive_sha256": "d85c3b93ab48acadcaa8cbaee9d9cf427d932c16727deab5cb36473e72f911e2",
+          "download_url": "https://github.com/ahojukka5/OodiArtifacts/releases/download/libnetgen_cxxwrap-c6d99568/libnetgen_cxxwrap.tar.gz"
+        }
+      ]
     },
     {
       "platform": "macOS aarch64",
@@ -408,7 +525,11 @@
         "native": "NOT RUN",
         "full": "NOT RUN"
       },
-      "status": "NOT RUN"
+      "status": "NOT RUN",
+      "source_files_sha256": {
+        "Project.toml": "8816ee6eb8d1f37df3446f177ce49456af0809b853407a4a297e9c1170c74be9",
+        "Artifacts.toml": "275922f2c80edc2301221a63106f0d615cc1f379f93fe0880eb3caddbc878360"
+      }
     },
     {
       "platform": "macOS aarch64",
@@ -422,6 +543,10 @@
         "full": "PASS"
       },
       "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      },
       "julia_version": "1.10.11",
       "started_at": "2026-10-24T08:26:23.949333+00:00",
       "finished_at": "2026-10-24T08:41:12.377038+00:00",
@@ -432,22 +557,26 @@
         {
           "path": "resolve.log",
           "sha256": "148a7f1e74769e7c799394bf0d4adf0ebd9a9273001dffdf730de27992d1c15e",
-          "bytes": 5557
+          "bytes": 5557,
+          "local_snapshot": "snapshots/148a7f1e74769e7c799394bf0d4adf0ebd9a9273001dffdf730de27992d1c15e.log"
         },
         {
           "path": "load.log",
           "sha256": "3f77115f2682e144538a84da1afc40d0c45b7cd54871013ad280cafc5683da22",
-          "bytes": 30
+          "bytes": 30,
+          "local_snapshot": "snapshots/3f77115f2682e144538a84da1afc40d0c45b7cd54871013ad280cafc5683da22.log"
         },
         {
           "path": "native.log",
           "sha256": "d70b4004139973fa41af0bebe2efd32264b6d7f240c6eeb145b506c8df81b8db",
-          "bytes": 32
+          "bytes": 32,
+          "local_snapshot": "snapshots/d70b4004139973fa41af0bebe2efd32264b6d7f240c6eeb145b506c8df81b8db.log"
         },
         {
           "path": "full.log",
           "sha256": "4cb57d3d686fbcc03650dc00590a4f4b5f85eb2e2874bfdfe101cdcde93d879b",
-          "bytes": 142426
+          "bytes": 142426,
+          "local_snapshot": "snapshots/4cb57d3d686fbcc03650dc00590a4f4b5f85eb2e2874bfdfe101cdcde93d879b.log"
         }
       ],
       "full_test_summaries": [
@@ -485,8 +614,11 @@
       "manifest": {
         "path": "Manifest.toml",
         "sha256": "d1ef47d038e49e92273768db33caa962356cbeafd4067abb47bc649dcbbb75dd",
-        "bytes": 6784
+        "bytes": 6784,
+        "local_snapshot": "snapshots/d1ef47d038e49e92273768db33caa962356cbeafd4067abb47bc649dcbbb75dd.toml"
       },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
       "selected_artifacts": [
         {
           "artifact": "libopencascade_cxxwrap",
@@ -505,29 +637,51 @@
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "IN_PROGRESS"
+        "full": "PASS"
       },
-      "status": "RUNNING",
+      "status": "PASS",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      },
       "julia_version": "1.11.9",
       "started_at": "2026-10-24T08:41:12.491078+00:00",
+      "finished_at": "2026-10-24T08:58:32.352525+00:00",
       "user_depot_initially_empty": true,
       "source_checkout_dirty_before": false,
+      "source_checkout_dirty_after": false,
       "logs": [
         {
           "path": "resolve.log",
           "sha256": "1c32934468dc20706b5a49bcbdcbf2bb1b61cc851c4954ef166fab30e6a3ed43",
-          "bytes": 5684
+          "bytes": 5684,
+          "local_snapshot": "snapshots/1c32934468dc20706b5a49bcbdcbf2bb1b61cc851c4954ef166fab30e6a3ed43.log"
         },
         {
           "path": "load.log",
           "sha256": "0e8ec48d6d974e6744517ff9eb71afddcd4d6ffd3aa5976c361677dd7a2642f4",
-          "bytes": 901
+          "bytes": 901,
+          "local_snapshot": "snapshots/0e8ec48d6d974e6744517ff9eb71afddcd4d6ffd3aa5976c361677dd7a2642f4.log"
         },
         {
           "path": "native.log",
           "sha256": "49c685141b64f0ed374cb04644f39824c8c826fe6003eb94a64246db38664692",
-          "bytes": 31
+          "bytes": 31,
+          "local_snapshot": "snapshots/49c685141b64f0ed374cb04644f39824c8c826fe6003eb94a64246db38664692.log"
+        },
+        {
+          "path": "full.log",
+          "sha256": "7e0fcb5a7c09a73a5db01608dbfcd433c8b216b76b9b1ddda71f6503bca41d40",
+          "bytes": 143542,
+          "local_snapshot": "snapshots/7e0fcb5a7c09a73a5db01608dbfcd433c8b216b76b9b1ddda71f6503bca41d40.log"
         }
+      ],
+      "full_test_summaries": [
+        "Semantic chair exact and visual artifact qualification |  147    147  8.0s",
+        "Monge static architecture | 1622   1622  10.8s",
+        "OCCT runtime toolkit preload |    2      2  1m01.8s",
+        "Monge.OCC (strict 1:1 bindings) |  936    936  7.9s",
+        "Monge.jl (public Julian API) | 11791       1  11792  14m29.2s"
       ],
       "loaded_native_libraries": [
         "<case-depot>/artifacts/b2a338c1c49857da6080f63c929cfbce2c140066/lib/libopencascade_cxxwrap.dylib"
@@ -557,8 +711,11 @@
       "manifest": {
         "path": "Manifest.toml",
         "sha256": "8511e3b10d2d36c1a9291794cc05196b83afc0a1ef3a5d8dd06758cbb5d3e1f7",
-        "bytes": 6935
+        "bytes": 6935,
+        "local_snapshot": "snapshots/8511e3b10d2d36c1a9291794cc05196b83afc0a1ef3a5d8dd06758cbb5d3e1f7.toml"
       },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9",
       "selected_artifacts": [
         {
           "artifact": "libopencascade_cxxwrap",
@@ -574,12 +731,36 @@
       "source_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
       "julia_minor": "1.12",
       "stages": {
-        "resolve": "NOT RUN",
-        "load": "NOT RUN",
+        "resolve": "PASS",
+        "load": "IN_PROGRESS",
         "native": "NOT RUN",
         "full": "NOT RUN"
       },
-      "status": "NOT RUN"
+      "status": "RUNNING",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      },
+      "julia_version": "1.12.6",
+      "started_at": "2026-10-24T08:58:32.453460+00:00",
+      "user_depot_initially_empty": true,
+      "source_checkout_dirty_before": false,
+      "logs": [
+        {
+          "path": "resolve.log",
+          "sha256": "88a131a82f18ad71258622c093f70437b28ad9d01e95dbd4c56de4205cf88e1a",
+          "bytes": 6141,
+          "local_snapshot": "snapshots/88a131a82f18ad71258622c093f70437b28ad9d01e95dbd4c56de4205cf88e1a.log"
+        }
+      ],
+      "manifest": {
+        "path": "Manifest.toml",
+        "sha256": "720ec820f33594fad716c8a6f7ae0e63719db011e2bfa14a06f488318231ef39",
+        "bytes": 6934,
+        "local_snapshot": "snapshots/720ec820f33594fad716c8a6f7ae0e63719db011e2bfa14a06f488318231ef39.toml"
+      },
+      "general_registry_tree": "6f8ec071755f1ff554e056ede0dc78810719f780",
+      "oodi_registry_revision": "12f682a4d716c541f3d60c858bdf7354d80a81d9"
     },
     {
       "platform": "macOS aarch64",
@@ -592,7 +773,54 @@
         "native": "NOT RUN",
         "full": "NOT RUN"
       },
-      "status": "NOT RUN"
+      "status": "NOT RUN",
+      "source_files_sha256": {
+        "Project.toml": "47930ee46ca3db0db06ef55a93e9a1571c502e2289c0ca7cb8ea6742084e0f1a",
+        "Artifacts.toml": "8afee7a367f23dc78d59d6f15f066f44bc7db08ec8d97de6381e4fa85798eb24"
+      }
+    }
+  ],
+  "interrupted_attempts": [
+    {
+      "job_url": "https://github.com/ahojukka5/Delone.jl/actions/runs/40076654905/job/120821334165",
+      "job_id": 120821334165,
+      "started_at": "2026-10-24T08:38:51Z",
+      "finished_at": "2026-10-24T08:57:55Z",
+      "conclusion": "failure",
+      "annotations": [
+        "The self-hosted runner lost communication with the server. Verify the machine is running and has a healthy network connection. Anything in your workflow that terminates the runner process, starves it for CPU/Memory, or blocks its network access can cause this error."
+      ],
+      "completed_step_outcomes": {
+        "Set up job": "success",
+        "Check out trusted source candidate": "success",
+        "Configure read-only private test dependency access": "success",
+        "Install selected Julia minor": "success",
+        "Prepare an empty depot and record identity": "success",
+        "Resolve source and published dependencies": "success",
+        "Load package": "success",
+        "Execute native geometry": "success"
+      },
+      "remaining_stages": "UNVERIFIED",
+      "log_availability": "GitHub returned BlobNotFound; check-run metadata retained"
+    },
+    {
+      "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177135",
+      "job_id": 120818177135,
+      "started_at": "2026-10-24T08:35:59Z",
+      "finished_at": "2026-10-24T08:45:59Z",
+      "conclusion": "failure",
+      "annotations": [
+        "The self-hosted runner lost communication with the server. Verify the machine is running and has a healthy network connection. Anything in your workflow that terminates the runner process, starves it for CPU/Memory, or blocks its network access can cause this error."
+      ],
+      "completed_step_outcomes": {
+        "Set up job": "success",
+        "Check out trusted source candidate": "success",
+        "Install selected Julia minor": "success",
+        "Prepare an empty depot and record identity": "success",
+        "Resolve source and published dependencies": "success"
+      },
+      "remaining_stages": "UNVERIFIED",
+      "log_availability": "GitHub returned BlobNotFound; check-run metadata retained"
     }
   ]
 }
