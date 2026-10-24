@@ -80,25 +80,29 @@ complete-suite summaries, job links and completed-log SHA-256 values.
 Raw logs and environments remain in the local qualification cache rather
 than in this repository.
 
+Monge's Linux Julia 1.11 first attempt stopped during loading because the
+self-hosted runner lost communication with GitHub. Its check-run annotation
+is retained in the results; no package test failure is inferred, and its
+loading/native/full stages remain unverified pending a completed retry.
+
 | Platform | Package | Julia | Resolution | Loading | Native execution | Full suite |
 | --- | --- | --- | --- | --- | --- | --- |
 | Linux x86_64 glibc | Delone | 1.10.12 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Delone | 1.11 | PASS | IN_PROGRESS | PENDING | PENDING |
+| Linux x86_64 glibc | Delone | 1.11 | PASS | PASS | PASS | IN_PROGRESS |
 | Linux x86_64 glibc | Delone | 1.12 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | Linux x86_64 glibc | Delone | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | Linux x86_64 glibc | Monge | 1.10.12 | PASS | PASS | PASS | PASS |
-| Linux x86_64 glibc | Monge | 1.11 | PASS | IN_PROGRESS | PENDING | PENDING |
-| Linux x86_64 glibc | Monge | 1.12 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
+| Linux x86_64 glibc | Monge | 1.11 | PASS | UNVERIFIED | UNVERIFIED | UNVERIFIED |
+| Linux x86_64 glibc | Monge | 1.12 | PASS | IN_PROGRESS | PENDING | PENDING |
 | Linux x86_64 glibc | Monge | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | macOS aarch64 | Delone | 1.10.11 | PASS | PASS | PASS | PASS |
-| macOS aarch64 | Delone | 1.11.9 | PASS | PASS | PASS | NOT RUN |
+| macOS aarch64 | Delone | 1.11.9 | PASS | PASS | PASS | IN_PROGRESS |
 | macOS aarch64 | Delone | 1.12 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | macOS aarch64 | Delone | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | macOS aarch64 | Monge | 1.10.11 | PASS | PASS | PASS | PASS |
-| macOS aarch64 | Monge | 1.11.9 | PASS | PASS | PASS | NOT RUN |
+| macOS aarch64 | Monge | 1.11.9 | PASS | PASS | PASS | IN_PROGRESS |
 | macOS aarch64 | Monge | 1.12 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
 | macOS aarch64 | Monge | 1.13 | NOT RUN | NOT RUN | NOT RUN | NOT RUN |
-
 
 ## Compatibility limits
 

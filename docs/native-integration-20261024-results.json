@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "collected_at": "2026-10-24T08:43:25.614176+00:00",
+  "collected_at": "2026-10-24T08:48:32.721316+00:00",
   "issue": "https://github.com/ahojukka5/OodiArtifacts/issues/20",
   "sources": {
     "Monge": "0d593d7df62ca302b73003a86bc488f5df8fb709",
@@ -71,9 +71,9 @@
       "job_conclusion": "",
       "stages": {
         "resolve": "PASS",
-        "load": "IN_PROGRESS",
-        "native": "PENDING",
-        "full": "PENDING"
+        "load": "PASS",
+        "native": "PASS",
+        "full": "IN_PROGRESS"
       },
       "status": "IN_PROGRESS"
     },
@@ -165,14 +165,20 @@
       "workflow_revision": "0d593d7df62ca302b73003a86bc488f5df8fb709",
       "workflow_event": "workflow_dispatch",
       "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177135",
-      "job_conclusion": "",
+      "job_conclusion": "failure",
       "stages": {
         "resolve": "PASS",
-        "load": "IN_PROGRESS",
-        "native": "PENDING",
-        "full": "PENDING"
+        "load": "UNVERIFIED",
+        "native": "UNVERIFIED",
+        "full": "UNVERIFIED"
       },
-      "status": "IN_PROGRESS"
+      "status": "INTERRUPTED",
+      "annotations": [
+        "The self-hosted runner lost communication with the server. Verify the machine is running and has a healthy network connection. Anything in your workflow that terminates the runner process, starves it for CPU/Memory, or blocks its network access can cause this error."
+      ],
+      "actual_checkout_verified": false,
+      "started_at": "2026-10-24T08:35:59Z",
+      "finished_at": "2026-10-24T08:45:59Z"
     },
     {
       "platform": "Linux x86_64 glibc",
@@ -184,12 +190,12 @@
       "job_url": "https://github.com/ahojukka5/Monge.jl/actions/runs/40075611982/job/120818177035",
       "job_conclusion": "",
       "stages": {
-        "resolve": "NOT RUN",
-        "load": "NOT RUN",
-        "native": "NOT RUN",
-        "full": "NOT RUN"
+        "resolve": "PASS",
+        "load": "IN_PROGRESS",
+        "native": "PENDING",
+        "full": "PENDING"
       },
-      "status": "QUEUED"
+      "status": "IN_PROGRESS"
     },
     {
       "platform": "Linux x86_64 glibc",
@@ -307,7 +313,7 @@
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "NOT RUN"
+        "full": "IN_PROGRESS"
       },
       "status": "RUNNING",
       "julia_version": "1.11.9",
@@ -499,7 +505,7 @@
         "resolve": "PASS",
         "load": "PASS",
         "native": "PASS",
-        "full": "NOT RUN"
+        "full": "IN_PROGRESS"
       },
       "status": "RUNNING",
       "julia_version": "1.11.9",
