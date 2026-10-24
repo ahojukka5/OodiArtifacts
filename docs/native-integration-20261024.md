@@ -12,11 +12,15 @@ immutable native source, ABI, archive SHA-256 and artifact tree identities.
 | Package | Exact revision | Integration status |
 | --- | --- | --- |
 | Monge 0.1.0 | `0d593d7df62ca302b73003a86bc488f5df8fb709` | Merged [PR #564](https://github.com/ahojukka5/Monge.jl/pull/564) |
-| Delone / DelonePortable 0.1.0 | `631628e08f577f2c1b99830b3d55eff6bea831c8` | Candidate [PR #1055](https://github.com/ahojukka5/Delone.jl/pull/1055); qualification does not merge or release it |
+| Delone / DelonePortable 0.1.0 | `631628e08f577f2c1b99830b3d55eff6bea831c8` | Qualified PR head; [#1055](https://github.com/ahojukka5/Delone.jl/pull/1055) subsequently rebase-merged, identical release tree |
 
 The earlier Monge #560 and Delone #1047 candidates were superseded during
 integration. Results are tied to the exact revisions above, not to moving
-branch names or to the workflow-event revision.
+branch names or to the workflow-event revision. Delone's resulting master
+commit `98b13fae8c8260015a24c949f3f1fb9636a0a7fd` has the same
+root package tree as the tested PR head. Both packages were subsequently
+tagged as 0.1.0 and registered in [OodiRegistry #6](https://github.com/ahojukka5/OodiRegistry/pull/6).
+Those release operations are not part of the qualification runs.
 
 ## Method
 
